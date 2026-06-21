@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Super Admin Login | B Socio AR</title>
+<script type='text/javascript' nonce='Y/4Vha9+5h4YrV0ifg1NVg==' src='https://contribution.usercontent.google.com/3-EqF1T6sFIZr2u05KWOX65sPEX78DzmIYl3jRWQoZCnnl6uXiiP9XVOJiZwLuOSVlYghlSk9gJe6N70x7ICbH9Aji4VxwnVqeIB2UvV5_YrfhVJIUzRyyJbWpAFv5G8WQWDZ67zsuk4OuMANFiuQ3_Nt2cOUWs1NKClufFLiRCkh7oUusA6fQsDVNLD6FOyJLfqgSXFe90U0-xeLNnCC1XSDZFj1YEl4RzuP2MclLT_WghWea7KoyENpq6iTzR_GGdKvxhvSswhjNT-lfGDse5PA-NEq1QrrtFmgk3C4tx-ic7oQPFTdRO67fs1wzSdTT6pE31oYmd7eeYftn2HeV9-FWxQSTDf6MWxeHsS7dmahiDc0iRwDT4m8CyJkka4gI_QX8wPStzd_b1qulUDX10lLB7ayuQqX7LE5XpOogl0uvSCCUDY1-xW2u7-sBiRSSS9yheHdRrqMFI6q6Ug3nJuG4ndMJCoz4Axpxq02wyN-tRs9wOLOmo1W11G4lQlT8FKqBhzllLij-aEn01bQUfOZ92yViC8OdEHppdeP4LREasj3gnEhCizPB7EWSaJaMo2VoUZxxczICRUpMe4CYeAEBaGSRhUhr2S_XIJcbSFUeY5htKTDY7g12d3nuCQm8Znu0DPe5p1Q5NhzTjgMBNtYsRw36KRirxI7daae9a65onNN0jgbeJ090EjpammHEiBFjfghPcJEwTooSHy1z2ShNkufqfW_DESDdDJfLGnjS6I4lhNO5s5X_kN_hLo1CGZ65RMy5QGwYKbkPy-RFEOxy3-sEH0ZIYanA'></script><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;family=Geist:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                            "on-surface": "#e1e1ef",
+                            "on-secondary-container": "#00686f",
+                            "secondary-container": "#00eefc",
+                            "on-secondary": "#00363a",
+                            "inverse-on-surface": "#2e303a",
+                            "primary-fixed": "#f8d8ff",
+                            "on-primary-fixed-variant": "#74009f",
+                            "inverse-surface": "#e1e1ef",
+                            "surface-container-lowest": "#0c0e17",
+                            "on-tertiary-container": "#fffeff",
+                            "on-primary-container": "#ffffff",
+                            "surface-container-high": "#282933",
+                            "primary-fixed-dim": "#ecb2ff",
+                            "outline": "#9d8ba0",
+                            "tertiary": "#ffaed9",
+                            "surface-container-low": "#191b24",
+                            "surface-bright": "#373943",
+                            "surface": "#11131c",
+                            "secondary-fixed": "#7df4ff",
+                            "tertiary-fixed": "#ffd8ea",
+                            "on-surface-variant": "#d4c0d7",
+                            "on-secondary-fixed": "#002022",
+                            "tertiary-fixed-dim": "#ffaed9",
+                            "on-error": "#690005",
+                            "on-tertiary-fixed-variant": "#890064",
+                            "primary-container": "#bd00ff",
+                            "surface-container": "#1d1f29",
+                            "on-tertiary": "#610046",
+                            "surface-tint": "#ecb2ff",
+                            "outline-variant": "#514255",
+                            "error": "#ffb4ab",
+                            "on-primary-fixed": "#320047",
+                            "error-container": "#93000a",
+                            "on-primary": "#520071",
+                            "tertiary-container": "#dd00a3",
+                            "background": "#11131c",
+                            "secondary": "#d3fbff",
+                            "primary": "#ecb2ff",
+                            "on-tertiary-fixed": "#3c002a",
+                            "secondary-fixed-dim": "#00dbe9",
+                            "on-background": "#e1e1ef",
+                            "on-error-container": "#ffdad6",
+                            "inverse-primary": "#9900cf",
+                            "surface-variant": "#32343e",
+                            "surface-dim": "#11131c",
+                            "on-secondary-fixed-variant": "#004f54",
+                            "surface-container-highest": "#32343e"
+                    },
+                    "borderRadius": {
+                            "DEFAULT": "0.25rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                    },
+                    "spacing": {
+                            "unit": "8px",
+                            "margin-desktop": "64px",
+                            "gutter": "24px",
+                            "stack-md": "16px",
+                            "margin-mobile": "20px",
+                            "stack-xl": "48px",
+                            "container-max": "1440px",
+                            "stack-xs": "4px"
+                    },
+                    "fontFamily": {
+                            "display-lg": ["Space Grotesk"],
+                            "label-md": ["Geist"],
+                            "body-lg": ["Inter"],
+                            "label-sm": ["Geist"],
+                            "headline-md": ["Space Grotesk"],
+                            "headline-lg": ["Space Grotesk"],
+                            "body-md": ["Inter"],
+                            "headline-lg-mobile": ["Space Grotesk"]
+                    },
+                    "fontSize": {
+                            "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                            "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                            "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                            "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                            "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                            "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                            "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                            "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #05060A; /* Level 0 Base */
+            background-image: 
+                radial-gradient(circle at 15% 50%, rgba(0, 238, 252, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 85% 30%, rgba(189, 0, 255, 0.05) 0%, transparent 50%);
+            overflow: hidden;
+        }
+
+        .glass-panel-level-1 {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .input-field {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .input-field:focus {
+            outline: none;
+            border-bottom-color: transparent;
+            box-shadow: inset 0 0 0 1px #00eefc, 0 0 10px rgba(0, 238, 252, 0.2);
+            border-radius: 4px;
+            background: rgba(0, 238, 252, 0.02);
+        }
+
+        .btn-primary {
+            background: rgba(0, 238, 252, 0.05);
+            border: 1px solid #00eefc;
+            box-shadow: inset 0 0 10px rgba(0, 238, 252, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, rgba(0, 238, 252, 0.2) 0%, rgba(0, 238, 252, 0.8) 100%);
+            box-shadow: 0 0 15px rgba(0, 238, 252, 0.3);
+            color: #00363a;
+        }
+
+        .cyber-grid {
+            position: absolute;
+            inset: 0;
+            background-image: 
+                linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: -1;
+            perspective: 1000px;
+            transform: rotateX(60deg) scale(2);
+            transform-origin: center top;
+            opacity: 0.3;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-on-surface font-body-md h-screen w-screen flex items-center justify-center relative">
+<!-- Background Elements -->
+<div class="cyber-grid"></div>
+<!-- Top Bar (Minimal for Login) -->
+<header class="fixed top-0 left-0 w-full p-6 flex justify-between items-center z-50">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container text-3xl" style="font-variation-settings: &#39;FILL&#39; 1;">view_in_ar</span>
+<span class="font-headline-md text-headline-md text-on-surface tracking-tight">B Socio <span class="text-secondary-container font-bold">AR</span></span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full border border-secondary-container/30 bg-secondary-container/10">
+<div class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></div>
+<span class="font-label-sm text-label-sm text-secondary-container uppercase tracking-widest">ar.bsocio.in Secure Gateway</span>
+</div>
+</header>
+<!-- Main Content Container -->
+<main class="w-full max-w-md px-6 relative z-10">
+<!-- Login Card -->
+<div class="glass-panel-level-1 rounded-xl p-10 flex flex-col items-center relative overflow-hidden group">
+<!-- Hover Glow Effect -->
+<div class="absolute -inset-full bg-gradient-to-tr from-secondary-container/0 via-secondary-container/5 to-secondary-container/0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 blur-2xl z-0 rounded-full"></div>
+<div class="relative z-10 w-full flex flex-col items-center">
+<!-- Badge -->
+<div class="mb-6 flex items-center gap-2 bg-inverse-surface/10 border border-secondary-container/50 text-secondary-container px-4 py-1.5 rounded-sm font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">admin_panel_settings</span>
+                    SUPER ADMIN
+                </div>
+<!-- Headline -->
+<h1 class="font-headline-lg text-headline-lg text-on-surface mb-2 text-center">Studio Command</h1>
+<p class="font-body-md text-body-md text-on-surface-variant text-center mb-8">Authenticate to access global ecosystem controls.</p>
+<!-- Form -->
+<form class="w-full space-y-6">
+<!-- Email Field -->
+<div class="relative">
+<span class="material-symbols-outlined absolute left-0 top-3 text-on-surface-variant">person</span>
+<input autocomplete="email" class="input-field w-full pl-8 py-3 text-on-surface placeholder-on-surface-variant/50 font-body-md text-body-md" placeholder="Admin Identity (Email)" required="" type="email"/>
+</div>
+<!-- Password Field -->
+<div class="relative">
+<span class="material-symbols-outlined absolute left-0 top-3 text-on-surface-variant">lock</span>
+<input autocomplete="current-password" class="input-field w-full pl-8 pr-10 py-3 text-on-surface placeholder-on-surface-variant/50 font-body-md text-body-md" placeholder="Passphrase" required="" type="password"/>
+<button class="absolute right-0 top-3 text-secondary-container hover:text-secondary-fixed transition-colors" type="button">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 1;">fingerprint</span>
+</button>
+</div>
+<!-- Actions -->
+<div class="pt-4 flex flex-col gap-4">
+<button class="btn-primary w-full py-4 rounded-lg font-label-md text-label-md text-secondary-container flex justify-center items-center gap-2 group/btn" type="submit">
+                            Access Studio Control
+                            <span class="material-symbols-outlined group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<a class="text-center font-label-sm text-label-sm text-on-surface-variant hover:text-secondary-container transition-colors" href="#">Emergency Reset Protocol</a>
+</div>
+</form>
+</div>
+<!-- Bottom decorative border line -->
+<div class="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-secondary-container/50 to-transparent"></div>
+</div>
+</main>
+<!-- Footer / Security Notice -->
+<footer class="fixed bottom-0 left-0 w-full p-6 text-center z-0">
+<p class="font-label-sm text-label-sm text-on-surface-variant/50">
+<span class="material-symbols-outlined text-[14px] align-middle mr-1">encrypted</span>
+            End-to-end encrypted connection. Unauthorized access attempts are logged.
+        </p>
+</footer>
+</body></html>

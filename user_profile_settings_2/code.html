@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Profile - B Socio AR Studio</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Geist:wght@500;600&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script type='text/javascript' nonce='q+9TySVU7ZXMm+0Scg0BeA==' src='https://contribution.usercontent.google.com/sERkxixPYkcufWlI9_TpaL8yL9HhgaVJ-bYTV7WzMCdfuIwMtKuYLRI0zTxlko7HsrrOxOoinf9BtIz66QSgR1NAcM6b1Zwvh0yzPPa2YZWVPga5HIeVVH_LXHcnpeiMyyagQ3cFi2B3N1L9jouQmrRJ263XHnB5mtQZytGme7nfwCLsnLl5_4usRV-Rj1JHCQ5CMwRlmhgK8Oh68BVswAV2cdFOWeBE2FV6C4xOUcaK1es8h5hz_lz5t3LX5S9teKM3raoOjCZxP32WkJCLnPCG3ldvqtA1Z4vorAFhnBvdX_cGiOBrFq7M6VDyCI3wpIa3GfJhWyhEbglt_du19SU3f11n-F7oMDrr0jN-Zo2iXIa5wEFNNE2OGKnUkaBXSYuVRkR5dqBLhrCLWUIDSosz56bU1Ai9H28pg5X0Amb7oxvh9M8VVtL3OE2dk3WOEuJR8qtVTGgwv0jPHgHLe5vbpQXHyXG8ZNuJOC3kPOhS84O7J9V9yq_ZPHEZRFA1UWGbZV2GilkPKS-Am8gJKfkMLDODzW6yihxDgjhIpLBGnxF6-pVtlTT2LYjWvugp2He-hFP2vOt7IeQE_h0DpAbibCCB_Sl9Vuc3juLIwZ5-T4ed2YEDpoHpDa1tkGor8gvf5ntlw8F-Ni6AK7WhAcIISx8u5NXiNR2CfJxvwKvD1LyWZ4lJPKMU_gBs8267sZhSsTI3FMYXMQZo8kSZr1IaS8U80-imKjOY1UqquJxncnOyyY_8dz-q-yQGCU63dMbhkY9lzFNqGnBESeBYTwOs9AFAf4THgrzQFQ'></script><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-low": "#191b24",
+                    "surface-container-lowest": "#0c0e17",
+                    "secondary-fixed-dim": "#00dbe9",
+                    "surface-container": "#1d1f29",
+                    "background": "#11131c",
+                    "outline": "#9d8ba0",
+                    "on-tertiary-fixed-variant": "#890064",
+                    "tertiary-container": "#dd00a3",
+                    "error": "#ffb4ab",
+                    "surface-variant": "#32343e",
+                    "primary-container": "#bd00ff",
+                    "primary-fixed": "#f8d8ff",
+                    "inverse-surface": "#e1e1ef",
+                    "surface-bright": "#373943",
+                    "primary": "#ecb2ff",
+                    "inverse-on-surface": "#2e303a",
+                    "tertiary-fixed": "#ffd8ea",
+                    "on-error-container": "#ffdad6",
+                    "on-secondary-fixed": "#002022",
+                    "on-secondary-container": "#00686f",
+                    "on-secondary-fixed-variant": "#004f54",
+                    "secondary-container": "#00eefc",
+                    "surface": "#11131c",
+                    "secondary": "#d3fbff",
+                    "on-secondary": "#00363a",
+                    "surface-dim": "#11131c",
+                    "on-primary-fixed-variant": "#74009f",
+                    "on-primary-fixed": "#320047",
+                    "surface-container-high": "#282933",
+                    "surface-tint": "#ecb2ff",
+                    "primary-fixed-dim": "#ecb2ff",
+                    "on-tertiary": "#610046",
+                    "on-background": "#e1e1ef",
+                    "outline-variant": "#514255",
+                    "on-surface-variant": "#d4c0d7",
+                    "tertiary-fixed-dim": "#ffaed9",
+                    "on-primary": "#520071",
+                    "secondary-fixed": "#7df4ff",
+                    "on-tertiary-fixed": "#3c002a",
+                    "error-container": "#93000a",
+                    "inverse-primary": "#9900cf",
+                    "on-primary-container": "#ffffff",
+                    "on-surface": "#e1e1ef",
+                    "surface-container-highest": "#32343e",
+                    "tertiary": "#ffaed9",
+                    "on-error": "#690005",
+                    "on-tertiary-container": "#fffeff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1440px",
+                    "margin-mobile": "20px",
+                    "margin-desktop": "64px",
+                    "gutter": "24px",
+                    "unit": "8px",
+                    "stack-xs": "4px",
+                    "stack-xl": "48px",
+                    "stack-md": "16px"
+            },
+            "fontFamily": {
+                    "label-sm": ["Geist"],
+                    "headline-lg-mobile": ["Space Grotesk"],
+                    "body-lg": ["Inter"],
+                    "label-md": ["Geist"],
+                    "headline-md": ["Space Grotesk"],
+                    "body-md": ["Inter"],
+                    "headline-lg": ["Space Grotesk"],
+                    "display-lg": ["Space Grotesk"]
+            },
+            "fontSize": {
+                    "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                    "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                    "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                    "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                    "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                    "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                    "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                    "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body {
+            background-color: #0c0e17; /* surface-container-lowest */
+            color: #e1e1ef; /* on-surface */
+        }
+        
+        /* Glassmorphism Utilities */
+        .glass-panel {
+            background-color: rgba(25, 27, 36, 0.4); /* surface-container-low */
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+        
+        .glass-panel-hover:hover {
+            background-color: rgba(25, 27, 36, 0.6);
+            border-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        
+        /* Custom Scrollbar for sleek UI */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #32343e; /* surface-variant */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #514255; /* outline-variant */
+        }
+        
+        /* Decorative Background Elements */
+        .bg-glow-purple {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(189, 0, 255, 0.08) 0%, rgba(12, 14, 23, 0) 70%);
+            top: -100px;
+            right: -200px;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .bg-glow-cyan {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(0, 219, 233, 0.05) 0%, rgba(12, 14, 23, 0) 70%);
+            bottom: -100px;
+            left: 100px;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        /* Toggle Switch Styles */
+        .toggle-checkbox:checked {
+            right: 0;
+            border-color: #bd00ff;
+        }
+        .toggle-checkbox:checked + .toggle-label {
+            background-color: #bd00ff;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="flex h-screen w-full overflow-hidden antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- Ambient Glows -->
+<div class="bg-glow-purple"></div>
+<div class="bg-glow-cyan"></div>
+<!-- SHARED COMPONENT: NavigationDrawer (Desktop Only) -->
+<!-- Applying exact styles from style_* keys -->
+<nav class="hidden md:flex flex-col fixed left-0 top-0 bottom-0 z-40 h-full w-64 rounded-r-xl border-r border-white/10 shadow-2xl bg-surface-container-lowest/30 backdrop-blur-[40px] transition-all duration-300 ease-in-out">
+<!-- Drawer Header -->
+<div class="flex flex-col p-6 border-b border-white/5">
+<div class="flex items-center space-x-4 mb-2">
+<img class="w-12 h-12 rounded-full object-cover border border-outline/30" data-alt="A hyper-detailed, high-tech stylized 3D avatar of a professional AR creator. The avatar has subtle neon cyan and purple highlights indicating a digital environment. High contrast, studio lighting, glowing rim lights, dark modern background, 8k resolution, volumetric rendering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoz-7LMFoJDe_uruzZMYH3gMoLTqZuiTpgBhM8Csvm03uIY46JH6k687cnKgIBgnrshYPzGzQqsShCHA4HGvKqwlzYtmKMEnpfiEZsabLIrIsR0sx7LqR_z3rfUw39kF-aVJ-9atVEk7nw1DJUdV1FNQHrwgBYln0wA1dcRO3hoYwsTxZo3rV1De8LNW_TEQv9g1FxbnmsnHvxbmBD8QuKIQIORvZMVQwtw58vtx3XGu4vvjfurLmf0hkkXJF4aEbuo8yVs3YT4NU"/>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary font-bold">AetherAR</span>
+</div>
+</div>
+<div class="mt-4">
+<span class="block font-label-md text-label-md text-on-surface">Enterprise Account</span>
+<span class="block font-label-sm text-label-sm text-secondary-fixed-dim mt-1">Enterprise Tier</span>
+</div>
+</div>
+<!-- Drawer Links -->
+<div class="flex-1 overflow-y-auto py-4 flex flex-col gap-1 px-3">
+<!-- Asset Library -->
+<a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-white/5 transition-colors group" href="#">
+<span class="material-symbols-outlined mr-4 group-hover:text-primary transition-colors" data-icon="inventory_2">inventory_2</span>
+<span class="font-label-md text-label-md">Asset Library</span>
+</a>
+<!-- Workspace -->
+<a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-white/5 transition-colors group" href="#">
+<span class="material-symbols-outlined mr-4 group-hover:text-primary transition-colors" data-icon="layers">layers</span>
+<span class="font-label-md text-label-md">Workspace</span>
+</a>
+<!-- Analytics -->
+<a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-white/5 transition-colors group" href="#">
+<span class="material-symbols-outlined mr-4 group-hover:text-primary transition-colors" data-icon="bar_chart">bar_chart</span>
+<span class="font-label-md text-label-md">Analytics</span>
+</a>
+<!-- Settings (ACTIVE for Profile Context) -->
+<a class="flex items-center px-4 py-3 rounded-lg bg-primary/20 text-primary border-r-2 border-primary transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined mr-4" data-icon="settings" style="font-variation-settings: &#39;FILL&#39; 1;">settings</span>
+<span class="font-label-md text-label-md font-bold">Settings</span>
+</a>
+<!-- Subscription -->
+<a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-white/5 transition-colors group" href="#">
+<span class="material-symbols-outlined mr-4 group-hover:text-primary transition-colors" data-icon="credit_card">credit_card</span>
+<span class="font-label-md text-label-md">Subscription</span>
+</a>
+</div>
+</nav>
+<!-- SHARED COMPONENT: TopAppBar (Mobile Only) -->
+<!-- Fixed position, exact class injection from JSON -->
+<header class="md:hidden flex justify-between items-center px-margin-desktop w-full fixed top-0 docked full-width border-b border-white/10 shadow-lg bg-surface-container/30 backdrop-blur-[40px] z-30 py-4">
+<div class="flex items-center gap-3">
+<img class="w-8 h-8 rounded-full object-cover" data-alt="A minimalistic, high-tech user profile photo placeholder. Glowing edges, dark obsidian background, subtle neon magenta lighting from the bottom left. Professional, sleek, sci-fi aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcfAWNKdWRAHic9VOuB0TuWmKImpoXPFWd9InNdNezRCQlc8YIWGj2TuSns4A-TpeOwDKV_NCOboDaIhoCmP6UnXWUZTs4sxjxyAJMH6pWbuLJYKMDQ4U00Pjf9MxAI9Yom7ZQV19R_KJPCboSwUlWNj_vTJAx2-hBYUXrzLvSJnvmP8slk8gSm0KO1vPfnLveh7xxPoYlTasZ4MmxgwfTVqLzVo3nI9zVjAWdjLavicwUCRljesYjaFexsHIwzjxeMQkVJrPrrZM"/>
+<span class="font-display-lg text-headline-md font-bold text-primary">AetherAR</span>
+</div>
+<button class="text-primary hover:bg-white/5 transition-colors p-2 rounded-full Active: scale-95 duration-200">
+<span class="material-symbols-outlined text-2xl" data-icon="add_circle">add_circle</span>
+</button>
+</header>
+<!-- MAIN CANVAS -->
+<main class="flex-1 ml-0 md:ml-64 pt-[80px] md:pt-0 pb-[100px] md:pb-0 h-screen overflow-y-auto relative z-10 px-gutter">
+<div class="max-w-container-max mx-auto py-8">
+<!-- Page Header -->
+<div class="mb-8">
+<h1 class="font-headline-lg text-headline-lg md:font-display-lg md:text-display-lg text-on-surface tracking-tight mb-2">Workspace Settings</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">Manage your digital identity, monitor workspace statistics, and configure studio preferences and billing.</p>
+</div>
+<!-- BENTO GRID LAYOUT -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Profile Identity Card (Spans 8 cols on desktop) -->
+<div class="md:col-span-8 glass-panel rounded-xl p-8 relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-bl-full blur-3xl transition-opacity duration-500 opacity-50 group-hover:opacity-100"></div>
+<div class="flex flex-col md:flex-row items-start md:items-center gap-8 relative z-10">
+<div class="relative">
+<img class="w-32 h-32 rounded-2xl object-cover border-2 border-primary/30 shadow-[0_0_20px_rgba(236,178,255,0.2)]" data-alt="A portrait of an AR Creator Pro. The subject has a serious expression, illuminated by dramatic neon cyan and deep violet light suggesting reflections from a holographic interface. High-end, photorealistic, 8k resolution, cinematic lighting, sleek techwear." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDUtHs2DtcXtGWliBxK3V4Xq4ME07UUX87mJ36I0ea8fTzwRx1C9vVUTn8MDWevprFKlsDhhpCdDFMNOUOqHmsXEZXs3h8Bp3kBFLNx3KVnyRVj2ZJ9FROHrXiSfriKa0vtBrGiRA5vOLTfXG0uLiRTeVLq5uwxo23nSVxJtxkhaLg_Liph_kLxE1SfSuyIdAXMkYfqWVNJpRL8gfi1rFFLY9dDrx9cGOaYrlNVT6vsQjQWia76UJANWHt_VWy9IgFaivyhPzt6kc"/>
+<div class="absolute -bottom-2 -right-2 bg-surface px-3 py-1 rounded-full border border-primary/50 flex items-center gap-1 shadow-lg">
+<div class="w-2 h-2 rounded-full bg-secondary-fixed-dim animate-pulse"></div>
+<span class="font-label-sm text-label-sm text-secondary-fixed-dim uppercase tracking-wider">Online</span>
+</div>
+</div>
+<div class="flex-1">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold mb-1">Alex Mercer</h2>
+<h3 class="font-label-md text-label-md text-primary uppercase tracking-widest mb-4">Enterprise Architect</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md leading-relaxed">
+                                Specializing in spatial computing, volumetric captures, and mixed reality environmental design. Lead architect for the Neo-Tokyo virtual overlay project.
+                            </p>
+<div class="mt-6 flex flex-wrap gap-3">
+<span class="px-3 py-1.5 rounded-lg bg-surface border border-outline/20 font-label-sm text-label-sm text-on-surface flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-[#00F0FF]"></span> Spatial UI
+                                </span>
+<span class="px-3 py-1.5 rounded-lg bg-surface border border-outline/20 font-label-sm text-label-sm text-on-surface flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-[#BD00FF]"></span> 3D Modeling
+                                </span>
+<span class="px-3 py-1.5 rounded-lg bg-surface border border-outline/20 font-label-sm text-label-sm text-on-surface flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Shaders
+                                </span>
+</div>
+</div>
+<button class="md:self-start px-4 py-2 rounded-lg bg-primary/10 text-primary border border-primary/30 hover:bg-primary/20 hover:border-primary transition-all font-label-md text-label-md flex items-center gap-2">
+<span class="material-symbols-outlined text-lg" data-icon="edit">edit</span>
+                            Edit Profile
+                        </button>
+</div>
+</div>
+<!-- Stats Vertical Column (Spans 4 cols on desktop) -->
+<div class="md:col-span-4 flex flex-col gap-gutter">
+<!-- Stat Card 1 -->
+<div class="glass-panel glass-panel-hover rounded-xl p-6 flex-1 flex flex-col justify-center relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 opacity-5">
+<span class="material-symbols-outlined text-[120px]" data-icon="view_in_ar">view_in_ar</span>
+</div>
+<div class="flex items-center gap-3 mb-2">
+<div class="w-8 h-8 rounded-lg bg-tertiary-container/20 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-sm" data-icon="folder_open">folder_open</span>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface-variant">Active Environments</h4>
+</div>
+<div class="flex items-end gap-3">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">142</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed-dim mb-2 flex items-center">
+<span class="material-symbols-outlined text-xs mr-1" data-icon="trending_up">trending_up</span> +12%
+                            </span>
+</div>
+</div>
+<!-- Stat Card 2 -->
+<div class="glass-panel glass-panel-hover rounded-xl p-6 flex-1 flex flex-col justify-center relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 opacity-5">
+<span class="material-symbols-outlined text-[120px]" data-icon="qr_code_scanner">qr_code_scanner</span>
+</div>
+<div class="flex items-center gap-3 mb-2">
+<div class="w-8 h-8 rounded-lg bg-secondary-container/20 flex items-center justify-center text-secondary-fixed-dim">
+<span class="material-symbols-outlined text-sm" data-icon="radar">radar</span>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface-variant">API Calls (Monthly)</h4>
+</div>
+<div class="flex items-end gap-3">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">12.4M</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed-dim mb-2 flex items-center">
+<span class="material-symbols-outlined text-xs mr-1" data-icon="trending_up">trending_up</span> +5.2%
+                            </span>
+</div>
+</div>
+</div>
+<!-- Subscription & Billing (Spans 6 cols) -->
+<div class="md:col-span-6 glass-panel rounded-xl p-6 flex flex-col">
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="credit_card">credit_card</span>
+                            Subscription &amp; Billing
+                        </h3>
+<span class="px-3 py-1 rounded-full bg-primary/20 text-primary font-label-sm text-label-sm border border-primary/30">Active</span>
+</div>
+<div class="flex flex-col gap-4">
+<!-- Plan Details -->
+<div class="p-5 rounded-lg bg-surface/50 border border-outline/20 flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<h4 class="font-label-md text-label-md text-on-surface-variant mb-1">Current Plan</h4>
+<p class="font-headline-md text-headline-md text-on-surface font-bold">Enterprise Tier</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-2">Billed annually. Next cycle: Nov 14, 2024</p>
+</div>
+<div class="text-right">
+<p class="font-headline-md text-headline-md text-on-surface font-bold">$499<span class="font-label-md text-label-md text-on-surface-variant font-normal">/mo</span></p>
+<button class="mt-2 text-primary hover:text-primary-fixed-dim font-label-sm text-label-sm underline underline-offset-2 transition-colors">Change Plan</button>
+</div>
+</div>
+<!-- Payment Method -->
+<div class="p-5 rounded-lg bg-surface/50 border border-outline/20 flex items-center justify-between group hover:border-outline/40 transition-all">
+<div class="flex items-center gap-4">
+<div class="w-12 h-8 bg-surface-bright rounded border border-outline/30 flex items-center justify-center">
+<!-- Visa Icon Placeholder -->
+<span class="font-bold text-xs text-white">VISA</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface">•••• •••• •••• 4242</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Expires 12/26</p>
+</div>
+</div>
+<button class="px-4 py-2 rounded-lg bg-surface text-on-surface border border-outline/30 hover:bg-white/5 transition-all font-label-sm text-label-sm">
+                            Update
+                        </button>
+</div>
+</div>
+</div>
+<!-- Workspace Preferences (Spans 6 cols) -->
+<div class="md:col-span-6 glass-panel rounded-xl p-6 flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="toggle_on">toggle_on</span>
+                        System Preferences
+                    </h3>
+<div class="flex flex-col gap-4">
+<!-- Preference Item 1 -->
+<div class="w-full flex items-center justify-between p-4 rounded-lg bg-surface/50 border border-outline/10">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-bright flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="deployed_code">deployed_code</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface mb-0.5">Hardware Acceleration</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Utilize GPU for spatial rendering</p>
+</div>
+</div>
+<!-- Toggle -->
+<div class="relative inline-block w-12 mr-2 align-middle select-none transition duration-200 ease-in">
+<input checked="" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer z-10 transition-transform duration-200 ease-in-out translate-x-6" id="toggle1" name="toggle1" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-6 rounded-full bg-primary cursor-pointer transition-colors duration-200 ease-in-out" for="toggle1"></label>
+</div>
+</div>
+<!-- Preference Item 2 -->
+<div class="w-full flex items-center justify-between p-4 rounded-lg bg-surface/50 border border-outline/10">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-bright flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="cloud_sync">cloud_sync</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface mb-0.5">Auto-Sync Assets</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Continuously back up 3D models to cloud</p>
+</div>
+</div>
+<!-- Toggle -->
+<div class="relative inline-block w-12 mr-2 align-middle select-none transition duration-200 ease-in">
+<input checked="" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer z-10 transition-transform duration-200 ease-in-out translate-x-6" id="toggle2" name="toggle2" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-6 rounded-full bg-primary cursor-pointer transition-colors duration-200 ease-in-out" for="toggle2"></label>
+</div>
+</div>
+<!-- Preference Item 3 -->
+<div class="w-full flex items-center justify-between p-4 rounded-lg bg-surface/50 border border-outline/10">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-bright flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="api">api</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface mb-0.5">Developer Mode</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Enable advanced logging and API access</p>
+</div>
+</div>
+<!-- Toggle -->
+<div class="relative inline-block w-12 mr-2 align-middle select-none transition duration-200 ease-in">
+<input class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-surface-variant border-4 border-outline/30 appearance-none cursor-pointer z-10 transition-transform duration-200 ease-in-out" id="toggle3" name="toggle3" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-6 rounded-full bg-surface-bright cursor-pointer transition-colors duration-200 ease-in-out" for="toggle3"></label>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- SHARED COMPONENT: BottomNavBar (Mobile Only) -->
+<!-- Applying exact styles and structural elements -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center py-stack-md bg-background/80 bg-surface-container-lowest/50 backdrop-blur-[40px] rounded-t-xl border-t border-white/10 scale-110 duration-150">
+<!-- Library -->
+<a class="flex flex-col items-center text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="database">database</span>
+<span class="font-label-sm text-label-sm-mobile">Library</span>
+</a>
+<!-- Editor -->
+<a class="flex flex-col items-center text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="view_in_ar">view_in_ar</span>
+<span class="font-label-sm text-label-sm-mobile">Editor</span>
+</a>
+<!-- Stats -->
+<a class="flex flex-col items-center text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="insights">insights</span>
+<span class="font-label-sm text-label-sm-mobile">Stats</span>
+</a>
+<!-- Profile (ACTIVE state mapped to intent) -->
+<a class="flex flex-col items-center text-primary font-bold" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person" style="font-variation-settings: &#39;FILL&#39; 1;">person</span>
+<span class="font-label-sm text-label-sm-mobile">Profile</span>
+</a>
+</nav>
+</body></html>
