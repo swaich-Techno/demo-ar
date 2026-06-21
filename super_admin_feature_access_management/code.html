@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Platform Permissions - AetherAR Super Admin</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;family=Geist:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script type='text/javascript' nonce='5m4hdYIvuCQYiV/pq/7zIw==' src='https://contribution.usercontent.google.com/akf9i4fI9qNxOyO5TwcvHfsK7DUIgIvWIs5FrAWVPFbsgIrH_pBF4AIo7lNP5Bb-w9BoARoAEmaPuYzZtaVtdEhgnylgWBwWFH0DRDq_Q9ALPzL_SQE2-1kelg_9c9naqtGegsxC-41kOWmKtAlhGqkmrblI2OOW62_pc4kiqQg-Cgu1GHkN2sLHmrfSEiDqNq2qPC6DbRne20HXC8SnEV55zntZrj7tI4tLiIvAKxv9OBcNEuOVb7h5FaEkhveAkMmmAAonYpcZgLXF_ULeGeE2SV9p_QQM-z1N0PR0hIiBRsLr8j55xqaUvRIhC7SIgW5GJK7BG2KP9nQiXsV_TeQDEYfA-D_8yaZmwLYEyTeiRTWan4ea9tw4NL4EGA6Yfgd_I-QGHaclyEs8VvkenL1LzbMhDnyCqJx5g32PqcWfpxp0lVJu71D075Eqzf30WUpPZgVdeWn32DtbmpzcJ9fsveQEaKipSRWECj9HCCK07u7-tZsmhnsVysDIp0pNpZtDPMenweEqQPu06uI7djrfwjw2kZvG4kZOxeHoRuWygBCZvo2bBMHdQd49AzV3O8oHI3n82olWrtSRbA-1X2kiCOUkLtQL2z8tunt8ZPF9i0qDpfBr69qTK8dKkzylcTa57RDJ972T6DXAqqMrBN08pGvr3f2CKR1TM1G6arZUhZD01LjHdQ_M9HtVAbjZqE_2on1khSD56IuQqGlUa3L1VwjVAs-JOEXWOMti_hEKOfgEizzJnZTYHR-2rKz-qf85TQErbzvDQ83ozThuu8BTGldwRt6-q89TXA'></script><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#32343e",
+                        "on-primary": "#520071",
+                        "primary-container": "#bd00ff",
+                        "tertiary": "#ffaed9",
+                        "surface-container-lowest": "#0c0e17",
+                        "surface-container": "#1d1f29",
+                        "secondary-fixed": "#7df4ff",
+                        "inverse-surface": "#e1e1ef",
+                        "on-surface-variant": "#d4c0d7",
+                        "surface-dim": "#11131c",
+                        "error-container": "#93000a",
+                        "outline": "#9d8ba0",
+                        "background": "#11131c",
+                        "outline-variant": "#514255",
+                        "on-secondary-container": "#00686f",
+                        "on-tertiary": "#610046",
+                        "surface-bright": "#373943",
+                        "surface-container-highest": "#32343e",
+                        "tertiary-container": "#dd00a3",
+                        "surface-container-high": "#282933",
+                        "secondary": "#d3fbff",
+                        "on-tertiary-fixed": "#3c002a",
+                        "on-secondary-fixed": "#002022",
+                        "tertiary-fixed-dim": "#ffaed9",
+                        "on-secondary": "#00363a",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary-container": "#fffeff",
+                        "secondary-fixed-dim": "#00dbe9",
+                        "error": "#ffb4ab",
+                        "surface-container-low": "#191b24",
+                        "primary": "#ecb2ff",
+                        "surface": "#11131c",
+                        "secondary-container": "#00eefc",
+                        "on-background": "#e1e1ef",
+                        "tertiary-fixed": "#ffd8ea",
+                        "on-primary-fixed": "#320047",
+                        "on-error": "#690005",
+                        "surface-tint": "#ecb2ff",
+                        "on-surface": "#e1e1ef",
+                        "inverse-primary": "#9900cf",
+                        "on-primary-fixed-variant": "#74009f",
+                        "primary-fixed": "#f8d8ff",
+                        "on-primary-container": "#ffffff",
+                        "on-secondary-fixed-variant": "#004f54",
+                        "primary-fixed-dim": "#ecb2ff",
+                        "on-tertiary-fixed-variant": "#890064",
+                        "inverse-on-surface": "#2e303a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-xs": "4px",
+                        "stack-xl": "48px",
+                        "stack-md": "16px",
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "container-max": "1440px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "headline-lg-mobile": ["Space Grotesk"],
+                        "display-lg": ["Space Grotesk"],
+                        "headline-md": ["Space Grotesk"],
+                        "headline-lg": ["Space Grotesk"],
+                        "label-sm": ["Geist"],
+                        "label-md": ["Geist"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        /* Custom toggle styles */
+        .toggle-checkbox:checked {
+            right: 0;
+            border-color: theme('colors.primary');
+        }
+        .toggle-checkbox:checked + .toggle-label {
+            background-color: theme('colors.primary-container');
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-panel:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: theme('colors.background');
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen flex flex-col md:flex-row font-body-md text-body-md overflow-x-hidden">
+<!-- ambient background glow -->
+<div class="fixed inset-0 pointer-events-none z-0">
+<div class="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] rounded-full bg-primary/10 blur-[120px]"></div>
+<div class="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] rounded-full bg-secondary-fixed/5 blur-[120px]"></div>
+</div>
+<!-- Web NavigationDrawer -->
+<aside class="hidden md:flex flex-col bg-surface-container-lowest/30 backdrop-blur-[40px] h-full w-64 rounded-r-xl border-r border-white/10 shadow-2xl fixed left-0 top-0 bottom-0 z-40 transition-all duration-300 ease-in-out">
+<!-- Header -->
+<div class="p-6 border-b border-white/10 flex items-center space-x-4">
+<div class="w-10 h-10 rounded-full overflow-hidden border border-white/20">
+<img alt="Creator Avatar" class="w-full h-full object-cover" data-alt="A futuristic, neon-lit avatar profile picture of a tech administrator, highly detailed, cyberpunk aesthetic, dark mode lighting with subtle magenta and cyan rim lights, professional yet edgy, perfectly framed face." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxsnc4SIF3A6hvnAb5gaYpB7aNAN5BnW484atgu9pIEN9_Auzt-pBhzqow3t2veCtONw4QeWSkvdIUfWsq3CptiWUONLSUsMgMogFmKnyVI591E5kL86-jMseUyPzOwyoQ1u5ugSzCy9IAKz9KV4-s4a-owKpm6bx2TYRTVsMU2d6be6oW5s2c0XBZsEz2boJqEEp4xt11lPKidVkspipEknAJ1XwmdYmL_yrOo7XTwjMMSiFod3Wnfap_4_PJg46FOrKNO-AEld4"/>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-on-surface">Business Account</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Pro Plan</p>
+</div>
+</div>
+<!-- Navigation Links -->
+<nav class="flex-1 py-4 overflow-y-auto">
+<ul class="space-y-1 px-3">
+<li>
+<a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-white/5 transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined mr-3 text-[20px]">inventory_2</span>
+<span class="font-label-md text-label-md">Asset Library</span>
+</a>
+</li>
+<li>
+<a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-white/5 transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined mr-3 text-[20px]">layers</span>
+<span class="font-label-md text-label-md">Workspace</span>
+</a>
+</li>
+<li>
+<a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-white/5 transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined mr-3 text-[20px]">bar_chart</span>
+<span class="font-label-md text-label-md">Analytics</span>
+</a>
+</li>
+<li>
+<!-- Active State for Permissions/Settings -->
+<a class="flex items-center px-4 py-3 rounded-lg bg-primary/20 text-primary border-r-2 border-primary transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined mr-3 text-[20px]" style="font-variation-settings: &#39;FILL&#39; 1;">settings</span>
+<span class="font-label-md text-label-md">Settings</span>
+</a>
+</li>
+<li>
+<a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-white/5 transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined mr-3 text-[20px]">credit_card</span>
+<span class="font-label-md text-label-md">Subscription</span>
+</a>
+</li>
+</ul>
+</nav>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 flex flex-col md:ml-64 relative z-10 w-full min-h-screen">
+<!-- TopAppBar -->
+<header class="bg-surface-container/30 backdrop-blur-[40px] docked full-width top-0 border-b border-white/10 shadow-lg flex justify-between items-center px-margin-mobile md:px-margin-desktop w-full h-20 sticky z-30">
+<div class="flex items-center space-x-4">
+<div class="md:hidden w-8 h-8 rounded-full overflow-hidden border border-white/20">
+<img alt="User profile photo" class="w-full h-full object-cover" data-alt="A highly detailed, neon-lit avatar profile picture of a tech administrator, cyberpunk aesthetic, dark mode lighting, subtle magenta and cyan rim lights, professional, perfectly framed." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2kJOtXR8e_HCGivjEjr-iWMPYxrtmhI15GWoBsY734xpJ6qZyk_Rr5kOOdjX49z7BtH616gbVMbdEbETN3ivegkU-toAeauSQ0F1PrnjMrusAFhVvJgbRaMvwkwf_c05ic2BtFZifbUj4OkG-YxS-zTBjn1KbM4shLCYV_OvOn-hgA9DpfI3MYHiHxG7RDWBl9TAlRdF5NxdkXJTHhD80N8kqX3gllATp-AgSbnD1uVqncU0iZTFlImknZe-U37Co_85fLg5O-CM"/>
+</div>
+<h1 class="font-display-lg text-headline-md font-bold text-primary tracking-tight">AetherAR</h1>
+</div>
+<div class="flex items-center space-x-4">
+<button class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-white/5 hover:text-primary transition-colors Active: scale-95 duration-200">
+<span class="material-symbols-outlined text-[24px]">add_circle</span>
+</button>
+</div>
+</header>
+<!-- Canvas -->
+<div class="p-margin-mobile md:p-margin-desktop flex-1 max-w-[container-max] mx-auto w-full">
+<!-- Page Header -->
+<div class="mb-stack-xl">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-stack-xs">Platform Permissions</h2>
+<p class="text-on-surface-variant max-w-2xl">Super Admin control center. Manage feature availability across client tiers and oversee individual user access rights.</p>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Feature Access Control (Left Column, spans 8) -->
+<section class="lg:col-span-8 flex flex-col space-y-stack-md">
+<h3 class="font-headline-md text-headline-md text-on-surface flex items-center">
+<span class="material-symbols-outlined mr-2 text-secondary-fixed">vpn_key</span>
+                        Tier Feature Access
+                    </h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-unit">
+<!-- Standard Tier Card -->
+<div class="glass-panel rounded-xl p-6 flex flex-col transition-all duration-300">
+<div class="flex items-center justify-between mb-4">
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Tier 1</span>
+<span class="material-symbols-outlined text-outline">group</span>
+</div>
+<h4 class="font-headline-md text-[20px] text-on-surface mb-6">Standard</h4>
+<div class="space-y-4 mt-auto">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">Sales Deck</span>
+<!-- Toggle -->
+<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+<input class="toggle-checkbox absolute block w-5 h-5 rounded-full bg-white border-4 appearance-none cursor-pointer transition-all duration-300 border-surface-container" id="toggle1" name="toggle" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-5 rounded-full bg-surface-container cursor-pointer transition-colors duration-300" for="toggle1"></label>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">Marketing Launchpad</span>
+<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+<input class="toggle-checkbox absolute block w-5 h-5 rounded-full bg-white border-4 appearance-none cursor-pointer transition-all duration-300 border-surface-container" id="toggle2" name="toggle" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-5 rounded-full bg-surface-container cursor-pointer transition-colors duration-300" for="toggle2"></label>
+</div>
+</div>
+</div>
+</div>
+<!-- Pro Tier Card -->
+<div class="glass-panel rounded-xl p-6 flex flex-col border-primary/30 relative overflow-hidden transition-all duration-300">
+<div class="absolute top-0 right-0 w-24 h-24 bg-primary/10 blur-2xl rounded-full pointer-events-none"></div>
+<div class="flex items-center justify-between mb-4 relative z-10">
+<span class="px-2 py-1 rounded bg-primary/20 text-primary font-label-sm text-label-sm uppercase tracking-wider">Tier 2</span>
+<span class="material-symbols-outlined text-primary">workspace_premium</span>
+</div>
+<h4 class="font-headline-md text-[20px] text-on-surface mb-6 relative z-10">Professional</h4>
+<div class="space-y-4 mt-auto relative z-10">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Sales Deck</span>
+<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+<input checked="" class="toggle-checkbox absolute block w-5 h-5 rounded-full bg-white border-4 appearance-none cursor-pointer transition-all duration-300 border-primary" id="toggle3" name="toggle" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-5 rounded-full bg-primary-container cursor-pointer transition-colors duration-300" for="toggle3"></label>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Marketing Launchpad</span>
+<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+<input checked="" class="toggle-checkbox absolute block w-5 h-5 rounded-full bg-white border-4 appearance-none cursor-pointer transition-all duration-300 border-primary" id="toggle4" name="toggle" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-5 rounded-full bg-primary-container cursor-pointer transition-colors duration-300" for="toggle4"></label>
+</div>
+</div>
+</div>
+</div>
+<!-- Enterprise Tier Card -->
+<div class="glass-panel rounded-xl p-6 flex flex-col border-secondary-fixed/30 relative overflow-hidden transition-all duration-300">
+<div class="absolute top-0 right-0 w-24 h-24 bg-secondary-fixed/10 blur-2xl rounded-full pointer-events-none"></div>
+<div class="flex items-center justify-between mb-4 relative z-10">
+<span class="px-2 py-1 rounded bg-secondary-fixed/20 text-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider">Tier 3</span>
+<span class="material-symbols-outlined text-secondary-fixed">corporate_fare</span>
+</div>
+<h4 class="font-headline-md text-[20px] text-on-surface mb-6 relative z-10">Enterprise</h4>
+<div class="space-y-4 mt-auto relative z-10">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Sales Deck</span>
+<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+<input checked="" class="toggle-checkbox absolute block w-5 h-5 rounded-full bg-surface-variant border-4 appearance-none cursor-not-allowed border-primary/50 right-0" disabled="" id="toggle5" name="toggle" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-5 rounded-full bg-primary-container/50 cursor-not-allowed" for="toggle5"></label>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Marketing Launchpad</span>
+<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+<input checked="" class="toggle-checkbox absolute block w-5 h-5 rounded-full bg-surface-variant border-4 appearance-none cursor-not-allowed border-primary/50 right-0" disabled="" id="toggle6" name="toggle" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-5 rounded-full bg-primary-container/50 cursor-not-allowed" for="toggle6"></label>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- User Management & Quick Actions (Right Column, spans 4) -->
+<section class="lg:col-span-4 flex flex-col space-y-stack-md">
+<h3 class="font-headline-md text-headline-md text-on-surface flex items-center">
+<span class="material-symbols-outlined mr-2 text-primary">admin_panel_settings</span>
+                        User Overview
+                    </h3>
+<div class="glass-panel rounded-xl overflow-hidden flex-1 flex flex-col">
+<!-- Search/Filter Header -->
+<div class="p-4 border-b border-white/10 bg-white/5 flex items-center">
+<span class="material-symbols-outlined text-outline mr-2 text-[20px]">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-on-surface text-label-md w-full placeholder-outline-variant p-0" placeholder="Search users..." type="text"/>
+</div>
+<!-- User List -->
+<div class="overflow-y-auto max-h-[400px]">
+<!-- User Row 1 -->
+<div class="p-4 border-b border-white/5 flex items-center justify-between hover:bg-white/5 transition-colors">
+<div class="flex items-center space-x-3">
+<div class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center text-label-sm font-bold text-on-surface border border-white/10">JD</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface leading-none mb-1">Jane Doe</p>
+<p class="text-[11px] text-on-surface-variant uppercase tracking-wider flex items-center">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mr-1"></span> Pro
+                                        </p>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="text-[10px] text-on-surface-variant mb-1 uppercase">Premium</span>
+<div class="relative inline-block w-8 align-middle select-none transition duration-200 ease-in">
+<input checked="" class="toggle-checkbox absolute block w-4 h-4 rounded-full bg-white border-2 appearance-none cursor-pointer transition-all duration-300 border-primary top-[2px]" id="user1" name="toggle" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-5 rounded-full bg-primary-container cursor-pointer transition-colors duration-300" for="user1"></label>
+</div>
+</div>
+</div>
+<!-- User Row 2 -->
+<div class="p-4 border-b border-white/5 flex items-center justify-between hover:bg-white/5 transition-colors">
+<div class="flex items-center space-x-3">
+<div class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center text-label-sm font-bold text-on-surface border border-white/10">MS</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface leading-none mb-1">Mark Smith</p>
+<p class="text-[11px] text-on-surface-variant uppercase tracking-wider flex items-center">
+<span class="w-1.5 h-1.5 rounded-full bg-outline mr-1"></span> Std
+                                        </p>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="text-[10px] text-on-surface-variant mb-1 uppercase">Premium</span>
+<div class="relative inline-block w-8 align-middle select-none transition duration-200 ease-in">
+<input class="toggle-checkbox absolute block w-4 h-4 rounded-full bg-white border-2 appearance-none cursor-pointer transition-all duration-300 border-surface-container top-[2px]" id="user2" name="toggle" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-5 rounded-full bg-surface-container cursor-pointer transition-colors duration-300" for="user2"></label>
+</div>
+</div>
+</div>
+<!-- User Row 3 -->
+<div class="p-4 border-b border-white/5 flex items-center justify-between hover:bg-white/5 transition-colors">
+<div class="flex items-center space-x-3">
+<div class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center text-label-sm font-bold text-on-surface border border-white/10">AW</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface leading-none mb-1">Alice Wong</p>
+<p class="text-[11px] text-on-surface-variant uppercase tracking-wider flex items-center">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed mr-1"></span> Ent
+                                        </p>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="text-[10px] text-on-surface-variant mb-1 uppercase">Premium</span>
+<div class="relative inline-block w-8 align-middle select-none transition duration-200 ease-in">
+<input checked="" class="toggle-checkbox absolute block w-4 h-4 rounded-full bg-white border-2 appearance-none cursor-pointer transition-all duration-300 border-primary top-[2px]" id="user3" name="toggle" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-5 rounded-full bg-primary-container cursor-pointer transition-colors duration-300" for="user3"></label>
+</div>
+</div>
+</div>
+</div>
+<div class="p-3 mt-auto border-t border-white/10 text-center">
+<button class="font-label-sm text-label-sm text-secondary-fixed hover:text-primary transition-colors">View All Directory</button>
+</div>
+</div>
+</section>
+</div>
+<!-- Bottom padding for mobile nav clearance -->
+<div class="h-24 md:h-8"></div>
+</div>
+</main>
+<!-- Mobile BottomNavBar -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center py-stack-md bg-background/80 bg-surface-container-lowest/50 backdrop-blur-[40px] rounded-t-xl border-t border-white/10 shadow-none pb-safe">
+<a class="flex flex-col items-center text-on-surface-variant hover:text-secondary-fixed-dim scale-110 duration-150" href="#">
+<span class="material-symbols-outlined text-[24px] mb-1">database</span>
+<span class="font-label-sm text-label-sm-mobile">Library</span>
+</a>
+<a class="flex flex-col items-center text-on-surface-variant hover:text-secondary-fixed-dim scale-110 duration-150" href="#">
+<span class="material-symbols-outlined text-[24px] mb-1">view_in_ar</span>
+<span class="font-label-sm text-label-sm-mobile">Editor</span>
+</a>
+<a class="flex flex-col items-center text-on-surface-variant hover:text-secondary-fixed-dim scale-110 duration-150" href="#">
+<span class="material-symbols-outlined text-[24px] mb-1">insights</span>
+<span class="font-label-sm text-label-sm-mobile">Stats</span>
+</a>
+<!-- Active State mapped to Profile for user/admin tasks on mobile -->
+<a class="flex flex-col items-center text-primary font-bold scale-110 duration-150" href="#">
+<span class="material-symbols-outlined text-[24px] mb-1" style="font-variation-settings: &#39;FILL&#39; 1;">person</span>
+<span class="font-label-sm text-label-sm-mobile">Profile</span>
+</a>
+</nav>
+</body></html>

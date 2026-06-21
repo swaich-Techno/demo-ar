@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>B SOCIO AR - Ecosystem Control</title>
+<script type='text/javascript' nonce='jeEAB0ns4V+Fdxros2dPlQ==' src='https://contribution.usercontent.google.com/wld4tnGSXOHVuo_djZ9v4O5JDYT_BkHE6Yv_qR21iph8D7TGZL9VXMSmJKhZy_1muitFgMvmTglC7XTk59p37Yx37-HfGMD-gnFV0Wue9KYhFHHG-GAqbABYDSaILFgPDF458nA04ljajrLtjeAFHamZ-JQAOUMp6hxknBUb-PLI0NbxpOK3zbF29RL7T1dNICPQfu6MMgC9P6t_OsceJ5MK6jcxVtrScpFW1-3eG9t-aUk7IGbn7-wlCuyu7FXierYYW0cqYZFnbXmwfrAO37_AF_MhQY9dAgh5ujbTPPcFPJHa_0e-Gy-VTfJc8zMA9lxTK0-De72K5cjtck5c25AiC17jovIlUkv8sX7sG8clqnUujqxsm-Q9pSW6R8NP6nV8lXCP5x_4eE6Z5XjbbaGrGqXpsMxfS_XaRafxMffV7V_41fVvLTZYCotryegQK3IRe4ji5B6yTTfKhD94P4frpFArssUkifLlFgNHN0txcxCfUMc0U6PrvEgzMYjR6lHM-KA9x843NAS-l1NjPsfaIeVxo-s4nezjVVzzfJMPBneUwQURqP_YMVkRT2ar797-PY97g7dwveGHtZdffMuQe5BULkMBI-_BOthhHztFd1M75Ev40zTQBrGQvB38-OiKSz1TK4iGvHS42ms5M7jEntlFy5BG-zTr8N_KpxVdKvdEyrIab444Fa4W25oD3lgDggbMp9ql6zQcJgnj-Yc_U7vOGFo7YCpxEwDdvxrxKPQXWHKncP3VREZvFy0TlwuZAO5GV1S9EaCcQIs0FJovWIP_UJmIG1BHqQ'></script><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;family=Geist:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-fixed-variant": "#890064",
+                      "secondary-fixed": "#7df4ff",
+                      "on-error-container": "#ffdad6",
+                      "on-secondary": "#00363a",
+                      "tertiary-fixed-dim": "#ffaed9",
+                      "secondary-fixed-dim": "#00dbe9",
+                      "primary": "#ecb2ff",
+                      "on-secondary-fixed": "#002022",
+                      "surface-dim": "#11131c",
+                      "on-tertiary-container": "#fffeff",
+                      "surface-container": "#1d1f29",
+                      "on-primary-fixed": "#320047",
+                      "tertiary": "#ffaed9",
+                      "surface-tint": "#ecb2ff",
+                      "primary-fixed-dim": "#ecb2ff",
+                      "error-container": "#93000a",
+                      "primary-fixed": "#f8d8ff",
+                      "background": "#11131c",
+                      "tertiary-container": "#dd00a3",
+                      "surface-container-low": "#191b24",
+                      "on-tertiary": "#610046",
+                      "surface-container-lowest": "#0c0e17",
+                      "secondary-container": "#00eefc",
+                      "on-primary-fixed-variant": "#74009f",
+                      "inverse-primary": "#9900cf",
+                      "surface-container-high": "#282933",
+                      "on-surface-variant": "#d4c0d7",
+                      "on-error": "#690005",
+                      "primary-container": "#bd00ff",
+                      "tertiary-fixed": "#ffd8ea",
+                      "on-secondary-fixed-variant": "#004f54",
+                      "on-primary": "#520071",
+                      "on-tertiary-fixed": "#3c002a",
+                      "on-surface": "#e1e1ef",
+                      "inverse-surface": "#e1e1ef",
+                      "outline": "#9d8ba0",
+                      "surface-bright": "#373943",
+                      "on-primary-container": "#ffffff",
+                      "on-background": "#e1e1ef",
+                      "surface-variant": "#32343e",
+                      "surface": "#11131c",
+                      "outline-variant": "#514255",
+                      "error": "#ffb4ab",
+                      "secondary": "#d3fbff",
+                      "inverse-on-surface": "#2e303a",
+                      "surface-container-highest": "#32343e",
+                      "on-secondary-container": "#00686f"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "unit": "8px",
+                      "container-max": "1440px",
+                      "margin-mobile": "20px",
+                      "stack-xl": "48px",
+                      "stack-md": "16px",
+                      "gutter": "24px",
+                      "stack-xs": "4px",
+                      "margin-desktop": "64px"
+              },
+              "fontFamily": {
+                      "headline-lg": [
+                              "Space Grotesk"
+                      ],
+                      "label-md": [
+                              "Geist"
+                      ],
+                      "display-lg": [
+                              "Space Grotesk"
+                      ],
+                      "headline-md": [
+                              "Space Grotesk"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "headline-lg-mobile": [
+                              "Space Grotesk"
+                      ],
+                      "label-sm": [
+                              "Geist"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg": [
+                              "72px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body {
+            background-color: #05060A; /* Level 0 Base */
+            color: #e1e1ef;
+        }
+        .glass-panel {
+            background-color: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(40px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-panel:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        .glass-popover {
+            background-color: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(40px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .neon-border-btn {
+            border: 1px solid #bd00ff;
+            box-shadow: inset 0 0 10px rgba(189, 0, 255, 0.2);
+            background: transparent;
+            transition: all 0.3s ease;
+        }
+        .neon-border-btn:hover {
+            background: linear-gradient(135deg, rgba(189, 0, 255, 0.4) 0%, rgba(189, 0, 255, 0.1) 100%);
+            box-shadow: 0 0 15px rgba(189, 0, 255, 0.4), inset 0 0 10px rgba(189, 0, 255, 0.3);
+        }
+        .neon-border-btn-success {
+            border: 1px solid #00eefc;
+            box-shadow: inset 0 0 10px rgba(0, 238, 252, 0.2);
+            background: transparent;
+            transition: all 0.3s ease;
+        }
+        .neon-border-btn-success:hover {
+            background: linear-gradient(135deg, rgba(0, 238, 252, 0.4) 0%, rgba(0, 238, 252, 0.1) 100%);
+            box-shadow: 0 0 15px rgba(0, 238, 252, 0.4), inset 0 0 10px rgba(0, 238, 252, 0.3);
+        }
+        .neon-border-btn-danger {
+            border: 1px solid #ffb4ab;
+            box-shadow: inset 0 0 10px rgba(255, 180, 171, 0.2);
+            background: transparent;
+            transition: all 0.3s ease;
+        }
+        .neon-border-btn-danger:hover {
+            background: linear-gradient(135deg, rgba(255, 180, 171, 0.4) 0%, rgba(255, 180, 171, 0.1) 100%);
+            box-shadow: 0 0 15px rgba(255, 180, 171, 0.4), inset 0 0 10px rgba(255, 180, 171, 0.3);
+        }
+        .pb-safe { padding-bottom: env(safe-area-inset-bottom); }
+        .glass-stroke { border-color: rgba(255, 255, 255, 0.1); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background min-h-screen text-on-background font-body-md text-body-md overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar (Web) -->
+<header class="hidden md:flex justify-between items-center px-margin-desktop h-20 w-full fixed top-0 z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-xl shadow-none">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary-fixed cursor-pointer hover:bg-white/5 transition-colors p-2 rounded-full active:scale-95 transition-transform" data-icon="menu">menu</span>
+<h1 class="font-headline-lg text-headline-lg font-bold tracking-tighter text-primary-fixed drop-shadow-[0_0_8px_rgba(0,238,252,0.4)]">B SOCIO AR</h1>
+</div>
+<nav class="flex gap-8 items-center">
+<a class="font-label-md text-label-md text-on-surface-variant hover:bg-white/5 transition-colors p-2 rounded-lg cursor-pointer active:scale-95 transition-transform flex flex-col items-center gap-1" href="#"><span class="material-symbols-outlined" data-icon="folder_open">folder_open</span>Projects</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:bg-white/5 transition-colors p-2 rounded-lg cursor-pointer active:scale-95 transition-transform flex flex-col items-center gap-1" href="#"><span class="material-symbols-outlined" data-icon="precision_manufacturing">precision_manufacturing</span>Editor</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:bg-white/5 transition-colors p-2 rounded-lg cursor-pointer active:scale-95 transition-transform flex flex-col items-center gap-1" href="#"><span class="material-symbols-outlined" data-icon="dashboard_customize">dashboard_customize</span>Templates</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:bg-white/5 transition-colors p-2 rounded-lg cursor-pointer active:scale-95 transition-transform flex flex-col items-center gap-1" href="#"><span class="material-symbols-outlined" data-icon="insights">insights</span>Analytics</a>
+<div class="relative cursor-pointer active:scale-95 transition-transform ml-4">
+<img alt="User profile photo" class="w-10 h-10 rounded-full border border-glass-stroke object-cover" data-alt="A futuristic avatar portrait in an AR interface, neon cyberpunk lighting, sharp focus, digital art style, glowing accents, minimalist framing, dark background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKBE9XooLtYQgbDM3iWUyNEZzn9d_9QLGrXIBS3UknOr-qt75zZvF-Q6zyBpByovYwyV1ZBPOh8SkB_033ZvrcCsurEmM0T0PVENGQadpZmniEIK82BbIiCN77XIOCX2VxvKxkhFotUz-YByPySwvkxq1994k8MnX4rovpgcQnXfhnj_lxlgEFLzektixWdjKkCwIst45M9nyHrwiiFI9buDRb2MTFN-9iQN7uZgHRmNvEAaq0gELuUZCrg5fI59v8c6yCaS7mg5Q"/>
+<div class="absolute inset-0 rounded-full border border-primary-fixed opacity-50 shadow-[0_0_8px_rgba(189,0,255,0.6)] pointer-events-none"></div>
+</div>
+</nav>
+</header>
+<!-- TopAppBar (Mobile) -->
+<header class="flex md:hidden justify-between items-center px-margin-mobile h-16 w-full fixed top-0 z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-xl shadow-none">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed cursor-pointer active:scale-95 transition-transform" data-icon="menu">menu</span>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold tracking-tighter text-primary-fixed drop-shadow-[0_0_8px_rgba(0,238,252,0.4)]">B SOCIO AR</h1>
+</div>
+<div class="relative cursor-pointer active:scale-95 transition-transform">
+<img alt="User profile photo" class="w-8 h-8 rounded-full border border-glass-stroke object-cover" data-alt="A futuristic avatar portrait in an AR interface, neon cyberpunk lighting, sharp focus, digital art style, glowing accents, minimalist framing, dark background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMPkmeBPdZ0JfxRpYP7PjEVe2M_BUkTytfnhsqR8Hh9voEKm-EhUxyUcaxV46K0lBYHJpPclPn6UnlxkiTLCoc6t-55DHPhkWkZC2v_K1uiv2jY4UowV-GtzjxI1Oaj1mHnDQ21CbDv8eZ-KnWKkl4aSyNjGSjFT6E7znQD-VRB_GlaY0qtV6erH1sM33H2YOb8eno0Doo5qK5lmz8pnOTfSxR_8Wm3mn0r5qy-o1LDA5mkN0WDA2sjkZhpmrmz0b1B8q4DCZs1W4"/>
+<div class="absolute inset-0 rounded-full border border-primary-fixed opacity-50 shadow-[0_0_8px_rgba(189,0,255,0.6)] pointer-events-none"></div>
+</div>
+</header>
+<!-- NavigationDrawer (Hidden by default on mobile, can be toggled) -->
+<aside class="hidden xl:flex flex-col h-full p-gutter w-80 fixed left-0 top-0 z-[60] bg-surface-container-high/95 dark:bg-surface-container-high/95 backdrop-blur-2xl border-r border-glass-stroke shadow-2xl shadow-black transition-all duration-300 ease-in-out pt-28">
+<div class="flex items-center gap-4 mb-8 pb-6 border-b border-glass-stroke">
+<img alt="User profile" class="w-12 h-12 rounded-full object-cover" data-alt="A high-tech digital avatar of an AR creator, glowing neon purple visor, futuristic styling, dark obsidian background, sharp details." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUjoA892JIpZ_ysN56uO4BoXoDgaW0gf5WrXAnJLM35xt2V3yV7zRhb65hMKw8hh7hvYPb4c2PHkmRwoEk5vPiZFDLJre6VyleyGDm0MC5hYudt6doE4qMQIMAC8CLDhk2zxf_dJL_wg3qPITDaKFCEUlhOONZsYHBuFRVujBSe4Pn2QlpO3NN4GyMBHl2-trL3SE-oIbYF0v-HSekZYjGCBqV4mGPvYr-YdFDycagiCtyRwjyg93phe9TU7g0OS5SGsP9l9ADIk0"/>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">AR Creator</h3>
+<p class="font-label-sm text-label-sm text-primary-container">Pro Tier <span class="text-on-surface-variant ml-2">v2.4.0</span></p>
+</div>
+</div>
+<nav class="flex flex-col gap-2 flex-grow">
+<a class="flex items-center gap-3 p-3 rounded-lg text-on-surface-variant hover:bg-white/5 hover:text-on-surface transition-all duration-300 ease-in-out" href="#"><span class="material-symbols-outlined" data-icon="view_in_ar">view_in_ar</span><span class="font-body-md text-body-md">Scene Settings</span></a>
+<a class="flex items-center gap-3 p-3 rounded-lg text-on-surface-variant hover:bg-white/5 hover:text-on-surface transition-all duration-300 ease-in-out" href="#"><span class="material-symbols-outlined" data-icon="inventory_2">inventory_2</span><span class="font-body-md text-body-md">Asset Library</span></a>
+<a class="flex items-center gap-3 p-3 rounded-lg text-on-surface-variant hover:bg-white/5 hover:text-on-surface transition-all duration-300 ease-in-out" href="#"><span class="material-symbols-outlined" data-icon="lightbulb">lightbulb</span><span class="font-body-md text-body-md">Light Studio</span></a>
+<a class="flex items-center gap-3 p-3 rounded-lg text-on-surface-variant hover:bg-white/5 hover:text-on-surface transition-all duration-300 ease-in-out" href="#"><span class="material-symbols-outlined" data-icon="settings_suggest">settings_suggest</span><span class="font-body-md text-body-md">Render Engine</span></a>
+</nav>
+</aside>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-32 md:pb-12 xl:ml-80 px-margin-mobile md:px-margin-desktop min-h-screen">
+<!-- Header Section -->
+<div class="mb-stack-xl flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<h2 class="font-display-lg text-display-lg font-bold tracking-tight text-on-surface mb-2">Ecosystem Control</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Review and manage pending AR assets and scene deployments.</p>
+</div>
+<!-- Filters -->
+<div class="flex flex-wrap gap-4 items-center">
+<div class="relative glass-panel rounded-lg overflow-hidden flex items-center px-4 h-12 focus-within:border-secondary-container focus-within:shadow-[0_0_10px_rgba(0,238,252,0.3)] transition-all">
+<span class="material-symbols-outlined text-on-surface-variant mr-2" data-icon="filter_list">filter_list</span>
+<select class="bg-transparent border-none text-on-surface focus:ring-0 font-label-md text-label-md appearance-none pr-8 cursor-pointer w-full">
+<option disabled="" selected="" value="">Category</option>
+<option class="bg-surface" value="ar">AR Project</option>
+<option class="bg-surface" value="qr">QR Design</option>
+<option class="bg-surface" value="menu">Interactive Menu</option>
+</select>
+</div>
+<div class="relative glass-panel rounded-lg overflow-hidden flex items-center px-4 h-12 focus-within:border-primary-container focus-within:shadow-[0_0_10px_rgba(189,0,255,0.3)] transition-all">
+<span class="material-symbols-outlined text-on-surface-variant mr-2" data-icon="schedule">schedule</span>
+<select class="bg-transparent border-none text-on-surface focus:ring-0 font-label-md text-label-md appearance-none pr-8 cursor-pointer w-full">
+<option disabled="" selected="" value="">Urgency</option>
+<option class="bg-surface" value="high">High Priority</option>
+<option class="bg-surface" value="normal">Normal</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Approval Queue Bento Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-gutter">
+<!-- Item 1: High Priority -->
+<div class="glass-panel rounded-xl p-6 relative overflow-hidden group flex flex-col justify-between h-full min-h-[280px]">
+<div class="absolute top-0 right-0 w-32 h-32 bg-error/10 rounded-bl-full blur-2xl pointer-events-none"></div>
+<div class="flex justify-between items-start mb-6 relative z-10">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-surface-variant flex items-center justify-center border border-glass-stroke">
+<span class="material-symbols-outlined text-error" data-icon="view_in_ar">view_in_ar</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface">Neon Cafe Menu</h4>
+<p class="font-label-md text-label-md text-on-surface-variant">by <span class="text-secondary-fixed">CyberBites Inc.</span></p>
+</div>
+</div>
+<div class="flex flex-col items-end gap-2">
+<span class="inline-flex items-center px-2 py-1 rounded-full bg-error/20 border border-error/30 font-label-sm text-label-sm text-error uppercase tracking-wider backdrop-blur-sm">
+<span class="w-2 h-2 rounded-full bg-error mr-2 animate-pulse"></span>High Urgency
+                        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Submitted 2h ago</span>
+</div>
+</div>
+<div class="mb-6 relative z-10 flex-grow">
+<div class="flex gap-2 mb-4">
+<span class="font-label-sm text-label-sm font-mono bg-white/5 border border-white/10 rounded px-2 py-1 text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-[#00F0FF]"></span>Table QR
+                        </span>
+<span class="font-label-sm text-label-sm font-mono bg-white/5 border border-white/10 rounded px-2 py-1 text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-[#BD00FF]"></span>3D Assets: 4
+                        </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Interactive 3D dessert menu requiring final approval before live deployment. Includes shader-heavy particle effects.</p>
+</div>
+<div class="flex items-center gap-3 relative z-10 mt-auto pt-4 border-t border-glass-stroke">
+<button class="flex-1 neon-border-btn rounded-lg py-3 font-label-md text-label-md text-primary-fixed flex items-center justify-center gap-2 group-hover:shadow-[0_0_15px_rgba(189,0,255,0.2)]">
+<span class="material-symbols-outlined text-xl" data-icon="preview">preview</span> Review Assets
+                    </button>
+<div class="flex gap-2">
+<button aria-label="Approve" class="w-12 h-12 rounded-lg neon-border-btn-success flex items-center justify-center text-secondary-container hover:text-surface-container-lowest">
+<span class="material-symbols-outlined" data-icon="check">check</span>
+</button>
+<button aria-label="Reject" class="w-12 h-12 rounded-lg neon-border-btn-danger flex items-center justify-center text-error hover:text-surface-container-lowest">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 2: Normal -->
+<div class="glass-panel rounded-xl p-6 relative overflow-hidden group flex flex-col justify-between h-full min-h-[280px]">
+<div class="flex justify-between items-start mb-6 relative z-10">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-surface-variant flex items-center justify-center border border-glass-stroke">
+<span class="material-symbols-outlined text-secondary-fixed" data-icon="qr_code_scanner">qr_code_scanner</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface">Storefront Marker</h4>
+<p class="font-label-md text-label-md text-on-surface-variant">by <span class="text-secondary-fixed">Metro Retail</span></p>
+</div>
+</div>
+<div class="flex flex-col items-end gap-2">
+<span class="inline-flex items-center px-2 py-1 rounded-full bg-surface-variant border border-glass-stroke font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+                            Normal
+                        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Submitted 5h ago</span>
+</div>
+</div>
+<div class="mb-6 relative z-10 flex-grow">
+<div class="flex gap-2 mb-4">
+<span class="font-label-sm text-label-sm font-mono bg-white/5 border border-white/10 rounded px-2 py-1 text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>Window QR
+                        </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Standard AR marker for storefront window. Triggers seasonal promotional holographic display.</p>
+</div>
+<div class="flex items-center gap-3 relative z-10 mt-auto pt-4 border-t border-glass-stroke">
+<button class="flex-1 neon-border-btn rounded-lg py-3 font-label-md text-label-md text-primary-fixed flex items-center justify-center gap-2 group-hover:shadow-[0_0_15px_rgba(189,0,255,0.2)]">
+<span class="material-symbols-outlined text-xl" data-icon="preview">preview</span> Review Marker
+                    </button>
+<div class="flex gap-2">
+<button aria-label="Approve" class="w-12 h-12 rounded-lg neon-border-btn-success flex items-center justify-center text-secondary-container hover:text-surface-container-lowest">
+<span class="material-symbols-outlined" data-icon="check">check</span>
+</button>
+<button aria-label="Reject" class="w-12 h-12 rounded-lg neon-border-btn-danger flex items-center justify-center text-error hover:text-surface-container-lowest">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 3: Normal -->
+<div class="glass-panel rounded-xl p-6 relative overflow-hidden group flex flex-col justify-between h-full min-h-[280px]">
+<div class="flex justify-between items-start mb-6 relative z-10">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-surface-variant flex items-center justify-center border border-glass-stroke">
+<span class="material-symbols-outlined text-primary-fixed" data-icon="architecture">architecture</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface">Museum Tour v2</h4>
+<p class="font-label-md text-label-md text-on-surface-variant">by <span class="text-secondary-fixed">City Heritage</span></p>
+</div>
+</div>
+<div class="flex flex-col items-end gap-2">
+<span class="inline-flex items-center px-2 py-1 rounded-full bg-surface-variant border border-glass-stroke font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+                            Normal
+                        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Submitted 1d ago</span>
+</div>
+</div>
+<div class="mb-6 relative z-10 flex-grow">
+<div class="flex gap-2 mb-4">
+<span class="font-label-sm text-label-sm font-mono bg-white/5 border border-white/10 rounded px-2 py-1 text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-[#BD00FF]"></span>Spatial Anchors: 12
+                        </span>
+<span class="font-label-sm text-label-sm font-mono bg-white/5 border border-white/10 rounded px-2 py-1 text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>Audio: Yes
+                        </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Update to existing museum spatial tour. Added 3 new waypoints and enhanced 3D artifact rendering.</p>
+</div>
+<div class="flex items-center gap-3 relative z-10 mt-auto pt-4 border-t border-glass-stroke">
+<button class="flex-1 neon-border-btn rounded-lg py-3 font-label-md text-label-md text-primary-fixed flex items-center justify-center gap-2 group-hover:shadow-[0_0_15px_rgba(189,0,255,0.2)]">
+<span class="material-symbols-outlined text-xl" data-icon="preview">preview</span> Review Scene
+                    </button>
+<div class="flex gap-2">
+<button aria-label="Approve" class="w-12 h-12 rounded-lg neon-border-btn-success flex items-center justify-center text-secondary-container hover:text-surface-container-lowest">
+<span class="material-symbols-outlined" data-icon="check">check</span>
+</button>
+<button aria-label="Reject" class="w-12 h-12 rounded-lg neon-border-btn-danger flex items-center justify-center text-error hover:text-surface-container-lowest">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden bg-surface-container/90 dark:bg-surface-container/90 backdrop-blur-xl font-label-sm text-label-sm font-headline-lg text-headline-lg text-primary-fixed fixed bottom-0 w-full z-50 border-t border-glass-stroke shadow-2xl shadow-primary-fixed/5 hover:text-primary-fixed transition-all active:scale-90 transition-transform duration-200 fixed bottom-0 left-0 w-full flex justify-around items-center h-20 px-2 pb-safe">
+<a class="flex flex-col items-center justify-center text-on-surface-variant" href="#"><span class="material-symbols-outlined mb-1" data-icon="folder_open">folder_open</span>Projects</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant" href="#"><span class="material-symbols-outlined mb-1" data-icon="precision_manufacturing">precision_manufacturing</span>Editor</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant" href="#"><span class="material-symbols-outlined mb-1" data-icon="dashboard_customize">dashboard_customize</span>Templates</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant" href="#"><span class="material-symbols-outlined mb-1" data-icon="insights">insights</span>Analytics</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant" href="#"><span class="material-symbols-outlined mb-1" data-icon="account_circle">account_circle</span>Profile</a>
+</nav>
+</body></html>
