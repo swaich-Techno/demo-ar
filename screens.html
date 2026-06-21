@@ -1,0 +1,1132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AR Studio APP - Exported Screen Index</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #090b12;
+      --panel: rgba(255, 255, 255, 0.055);
+      --panel-strong: rgba(255, 255, 255, 0.09);
+      --line: rgba(255, 255, 255, 0.12);
+      --text: #f3f7ff;
+      --muted: #aeb8c9;
+      --cyan: #69f6ff;
+      --pink: #ff72cf;
+      --purple: #c891ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 10% 10%, rgba(105, 246, 255, 0.16), transparent 24rem),
+        radial-gradient(circle at 90% 0%, rgba(255, 114, 207, 0.14), transparent 24rem),
+        linear-gradient(180deg, #11131c 0%, var(--bg) 58%, #05060a 100%);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      min-height: 100vh;
+    }
+    header, main { width: min(1180px, calc(100% - 32px)); margin: 0 auto; }
+    header { padding: 48px 0 28px; }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 34px;
+    }
+    nav a, .open {
+      color: var(--text);
+      text-decoration: none;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px 14px;
+      background: var(--panel);
+    }
+    nav a.primary {
+      color: #001b1d;
+      border-color: transparent;
+      background: linear-gradient(135deg, var(--cyan), var(--purple));
+      font-weight: 800;
+    }
+    h1 {
+      font-size: clamp(40px, 8vw, 88px);
+      line-height: 0.95;
+      margin: 0 0 18px;
+      letter-spacing: 0;
+      max-width: 980px;
+    }
+    .lead {
+      color: var(--muted);
+      font-size: clamp(17px, 2vw, 22px);
+      line-height: 1.55;
+      max-width: 760px;
+      margin: 0;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 28px;
+      max-width: 740px;
+    }
+    .stat, .screen-group {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      backdrop-filter: blur(22px);
+      border-radius: 8px;
+    }
+    .stat { padding: 18px; }
+    .stat b { display: block; font-size: 28px; }
+    .stat span { color: var(--muted); font-size: 13px; }
+    main { padding: 14px 0 64px; }
+    .screen-group { padding: 20px; margin-top: 24px; }
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    h2 { margin: 0; font-size: 22px; }
+    .section-heading span, .card-body p, .card-body span { color: var(--muted); }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 14px;
+    }
+    .card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: rgba(0, 0, 0, 0.22);
+      border-radius: 8px;
+    }
+    .thumb {
+      display: block;
+      height: 160px;
+      overflow: hidden;
+      border-bottom: 1px solid var(--line);
+      background: #11131c;
+    }
+    .thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .card-body { padding: 14px; }
+    .card-body p {
+      margin: 0 0 8px;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .card-body h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+      line-height: 1.25;
+    }
+    .card-body span {
+      display: block;
+      min-height: 40px;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .open {
+      display: inline-flex;
+      margin-top: 14px;
+      padding: 8px 11px;
+      font-size: 13px;
+      color: var(--cyan);
+    }
+    .docs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .docs a { color: var(--cyan); }
+    @media (max-width: 720px) {
+      header, main { width: min(100% - 24px, 1180px); }
+      header { padding-top: 28px; }
+      .stats { grid-template-columns: 1fr; }
+      .section-heading { align-items: flex-start; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="primary" href="index.html">Open production landing page</a>
+      <a href="project_readme_deployment_guide.md">Deployment guide</a>
+      <a href="screens.json">Screen manifest</a>
+    </nav>
+    <h1>AR Studio APP screen library</h1>
+    <p class="lead">A clean static package generated from the Google Stitch export. The production landing page is at the root, and every exported HTML screen is preserved below for review, GitHub upload, Netlify drag-and-drop, or Vercel static deployment.</p>
+    <div class="stats">
+      <div class="stat"><b>83</b><span>HTML screens</span></div>
+      <div class="stat"><b>3</b><span>Markdown guides</span></div>
+      <div class="stat"><b>No build</b><span>Static deploy ready</span></div>
+    </div>
+    <div class="docs"><a href="deployment_user_management_guide.md">deployment user management guide.md</a><a href="mobile_app_3d_optimization_guide.md">mobile app 3d optimization guide.md</a><a href="project_readme_deployment_guide.md">project readme deployment guide.md</a></div>
+  </header>
+  <main>
+        <section class="screen-group">
+          <div class="section-heading">
+            <h2>Public &amp; Marketing</h2>
+            <span>10 screens</span>
+          </div>
+          <div class="grid">
+          <article class="card">
+            <a class="thumb" href="b_socio_ar_studio_production_landing_page/code.html" aria-label="Open B Socio AR Studio - Empowering Digital Reality">
+              <img src="b_socio_ar_studio_production_landing_page/screen.png" alt="B Socio AR Studio - Empowering Digital Reality preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Public &amp; Marketing</p>
+              <h3>B Socio AR Studio - Empowering Digital Reality</h3>
+              <span>Project Reality. No Code Required.</span>
+              <a class="open" href="b_socio_ar_studio_production_landing_page/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="landing_page_b_socio_ar_studio/code.html" aria-label="Open B Socio AR Studio - Empowering Digital Reality">
+              <img src="landing_page_b_socio_ar_studio/screen.png" alt="B Socio AR Studio - Empowering Digital Reality preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Public &amp; Marketing</p>
+              <h3>B Socio AR Studio - Empowering Digital Reality</h3>
+              <span>Project Reality. No Code Required.</span>
+              <a class="open" href="landing_page_b_socio_ar_studio/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="public_ar_showcase/code.html" aria-label="Open B SOCIO AR - Showcase">
+              <img src="public_ar_showcase/screen.png" alt="B SOCIO AR - Showcase preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Public &amp; Marketing</p>
+              <h3>B SOCIO AR - Showcase</h3>
+              <span>B SOCIO AR</span>
+              <a class="open" href="public_ar_showcase/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="sales_deck_showcase_metrics/code.html" aria-label="Open B SOCIO AR STUDIO - AR Showcase &amp;amp; Results">
+              <img src="sales_deck_showcase_metrics/screen.png" alt="B SOCIO AR STUDIO - AR Showcase &amp;amp; Results preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Public &amp; Marketing</p>
+              <h3>B SOCIO AR STUDIO - AR Showcase &amp;amp; Results</h3>
+              <span>AR Showcase &amp;amp; Results</span>
+              <a class="open" href="sales_deck_showcase_metrics/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="landing_page_b_socio_ar_studio_teal/code.html" aria-label="Open B Socio AR Studio - Empowering Digital Reality">
+              <img src="landing_page_b_socio_ar_studio_teal/screen.png" alt="B Socio AR Studio - Empowering Digital Reality preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Public &amp; Marketing</p>
+              <h3>B Socio AR Studio - Empowering Digital Reality</h3>
+              <span>Project Reality. No Code Required.</span>
+              <a class="open" href="landing_page_b_socio_ar_studio_teal/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="public_creator_profile/code.html" aria-label="Open Creator Profile - B SOCIO AR">
+              <img src="public_creator_profile/screen.png" alt="Creator Profile - B SOCIO AR preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Public &amp; Marketing</p>
+              <h3>Creator Profile - B SOCIO AR</h3>
+              <span>Aura Design Lab</span>
+              <a class="open" href="public_creator_profile/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="marketing_launchpad/code.html" aria-label="Open Marketing Launchpad">
+              <img src="marketing_launchpad/screen.png" alt="Marketing Launchpad preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Public &amp; Marketing</p>
+              <h3>Marketing Launchpad</h3>
+              <span>Campaign Launchpad</span>
+              <a class="open" href="marketing_launchpad/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="refined_marketing_launchpad_local_storage/code.html" aria-label="Open Marketing Launchpad">
+              <img src="refined_marketing_launchpad_local_storage/screen.png" alt="Marketing Launchpad preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Public &amp; Marketing</p>
+              <h3>Marketing Launchpad</h3>
+              <span>Campaign Launchpad</span>
+              <a class="open" href="refined_marketing_launchpad_local_storage/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="user_profile_settings_1/code.html" aria-label="Open Profile - B Socio AR Studio">
+              <img src="user_profile_settings_1/screen.png" alt="Profile - B Socio AR Studio preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Public &amp; Marketing</p>
+              <h3>Profile - B Socio AR Studio</h3>
+              <span>Creator Profile</span>
+              <a class="open" href="user_profile_settings_1/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="user_profile_settings_2/code.html" aria-label="Open Profile - B Socio AR Studio">
+              <img src="user_profile_settings_2/screen.png" alt="Profile - B Socio AR Studio preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Public &amp; Marketing</p>
+              <h3>Profile - B Socio AR Studio</h3>
+              <span>Workspace Settings</span>
+              <a class="open" href="user_profile_settings_2/code.html">Open screen</a>
+            </div>
+          </article></div>
+        </section>
+        <section class="screen-group">
+          <div class="section-heading">
+            <h2>Dashboards &amp; Operations</h2>
+            <span>20 screens</span>
+          </div>
+          <div class="grid">
+          <article class="card">
+            <a class="thumb" href="project_dashboard/code.html" aria-label="Open B Socio AR Studio - Projects">
+              <img src="project_dashboard/screen.png" alt="B Socio AR Studio - Projects preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Dashboards &amp; Operations</p>
+              <h3>B Socio AR Studio - Projects</h3>
+              <span>Active Projects</span>
+              <a class="open" href="project_dashboard/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="ar_analytics_professional_edition/code.html" aria-label="Open AR Analytics Dashboard - B SOCIO AR">
+              <img src="ar_analytics_professional_edition/screen.png" alt="AR Analytics Dashboard - B SOCIO AR preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Dashboards &amp; Operations</p>
+              <h3>AR Analytics Dashboard - B SOCIO AR</h3>
+              <span>Ar Analytics Professional Edition</span>
+              <a class="open" href="ar_analytics_professional_edition/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="client_side_analytics_portal/code.html" aria-label="Open Analytics - B Socio AR Studio">
+              <img src="client_side_analytics_portal/screen.png" alt="Analytics - B Socio AR Studio preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Dashboards &amp; Operations</p>
+              <h3>Analytics - B Socio AR Studio</h3>
+              <span>Campaign Performance</span>
+              <a class="open" href="client_side_analytics_portal/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="desktop_command_center_analytics/code.html" aria-label="Open Analytics Command Center - B Socio AR Studio">
+              <img src="desktop_command_center_analytics/screen.png" alt="Analytics Command Center - B Socio AR Studio preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Dashboards &amp; Operations</p>
+              <h3>Analytics Command Center - B Socio AR Studio</h3>
+              <span>B Socio AR</span>
+              <a class="open" href="desktop_command_center_analytics/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="ar_analytics_dashboard/code.html" aria-label="Open AR Analytics Dashboard - B SOCIO AR">
+              <img src="ar_analytics_dashboard/screen.png" alt="AR Analytics Dashboard - B SOCIO AR preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Dashboards &amp; Operations</p>
+              <h3>AR Analytics Dashboard - B SOCIO AR</h3>
+              <span>B SOCIO AR</span>
+              <a class="open" href="ar_analytics_dashboard/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="ar_analytics_with_global_hotspots/code.html" aria-label="Open AR Analytics Dashboard - B SOCIO AR">
+              <img src="ar_analytics_with_global_hotspots/screen.png" alt="AR Analytics Dashboard - B SOCIO AR preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Dashboards &amp; Operations</p>
+              <h3>AR Analytics Dashboard - B SOCIO AR</h3>
+              <span>B SOCIO AR</span>
+              <a class="open" href="ar_analytics_with_global_hotspots/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="developer_api_logs_debugging/code.html" aria-label="Open AXON STUDIO - Console Logs">
+              <img src="developer_api_logs_debugging/screen.png" alt="AXON STUDIO - Console Logs preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Dashboards &amp; Operations</p>
+              <h3>AXON STUDIO - Console Logs</h3>
+              <span>API Request Logs</span>
+              <a class="open" href="developer_api_logs_debugging/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="mobile_client_dashboard/code.html" aria-label="Open B Socio AR - Dashboard">
+              <img src="mobile_client_dashboard/screen.png" alt="B Socio AR - Dashboard preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Dashboards &amp; Operations</p>
+              <h3>B Socio AR - Dashboard</h3>
+              <span>NEON_GENESIS</span>
+              <a class="open" href="mobile_client_dashboard/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="system_notifications/code.html" aria-label="Open B Socio AR - Notification Center">
+              <img src="system_notifications/screen.png" alt="B Socio AR - Notification Center preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Dashboards &amp; Operations</p>
+              <h3>B Socio AR - Notification Center</h3>
+              <span>B SOCIO AR</span>
+              <a class="open" href="system_notifications/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="global_user_access_logs/code.html" aria-label="Open B SOCIO AR - User Access Logs">
+              <img src="global_user_access_logs/screen.png" alt="B SOCIO AR - User Access Logs preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Dashboards &amp; Operations</p>
+              <h3>B SOCIO AR - User Access Logs</h3>
+              <span>B SOCIO AR</span>
+              <a class="open" href="global_user_access_logs/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="desktop_command_center_asset_library/code.html" aria-label="Open B Socio AR Studio - Assets">
+              <img src="desktop_command_center_asset_library/screen.png" alt="B Socio AR Studio - Assets preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Dashboards &amp; Operations</p>
+              <h3>B Socio AR Studio - Assets</h3>
+              <span>B Socio AR</span>
+              <a class="open" href="desktop_command_center_asset_library/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="b_socio_ar_studio_production_dashboard/code.html" aria-label="Open B Socio AR Studio - Dashboard">
+              <img src="b_socio_ar_studio_production_dashboard/screen.png" alt="B Socio AR Studio - Dashboard preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Dashboards &amp; Operations</p>
+              <h3>B Socio AR Studio - Dashboard</h3>
+              <span>Active Deployments</span>
+              <a class="open" href="b_socio_ar_studio_production_dashboard/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="desktop_command_center_dashboard/code.html" aria-label="Open B Socio AR Studio - Dashboard">
+              <img src="desktop_command_center_dashboard/screen.png" alt="B Socio AR Studio - Dashboard preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Dashboards &amp; Operations</p>
+              <h3>B Socio AR Studio - Dashboard</h3>
+              <span>B Socio AR</span>
+              <a class="open" href="desktop_command_center_dashboard/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="desktop_command_center_professional_edition/code.html" aria-label="Open B Socio AR Studio - Dashboard">
+              <img src="desktop_command_center_professional_edition/screen.png" alt="B Socio AR Studio - Dashboard preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Dashboards &amp; Operations</p>
+              <h3>B Socio AR Studio - Dashboard</h3>
+              <span>B Socio AR</span>
+              <a class="open" href="desktop_command_center_professional_edition/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="project_dashboard_teal/code.html" aria-label="Open B Socio AR Studio - Projects">
+              <img src="project_dashboard_teal/screen.png" alt="B Socio AR Studio - Projects preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Dashboards &amp; Operations</p>
+              <h3>B Socio AR Studio - Projects</h3>
+              <span>Active Projects</span>
+              <a class="open" href="project_dashboard_teal/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="desktop_command_center_admin_billing/code.html" aria-label="Open B Socio AR Studio - Subscription Management">
+              <img src="desktop_command_center_admin_billing/screen.png" alt="B Socio AR Studio - Subscription Management preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Dashboards &amp; Operations</p>
+              <h3>B Socio AR Studio - Subscription Management</h3>
+              <span>B Socio AR</span>
+              <a class="open" href="desktop_command_center_admin_billing/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="project_dashboard_professional_edition_1/code.html" aria-label="Open B Socio AR Studio Pro - Dashboard">
+              <img src="project_dashboard_professional_edition_1/screen.png" alt="B Socio AR Studio Pro - Dashboard preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Dashboards &amp; Operations</p>
+              <h3>B Socio AR Studio Pro - Dashboard</h3>
+              <span>Active Deployments</span>
+              <a class="open" href="project_dashboard_professional_edition_1/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="project_dashboard_professional_edition_2/code.html" aria-label="Open B Socio AR Studio Pro - Dashboard">
+              <img src="project_dashboard_professional_edition_2/screen.png" alt="B Socio AR Studio Pro - Dashboard preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Dashboards &amp; Operations</p>
+              <h3>B Socio AR Studio Pro - Dashboard</h3>
+              <span>Active Deployments</span>
+              <a class="open" href="project_dashboard_professional_edition_2/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="global_search_system_health/code.html" aria-label="Open Global Search &amp;amp; System Health">
+              <img src="global_search_system_health/screen.png" alt="Global Search &amp;amp; System Health preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Dashboards &amp; Operations</p>
+              <h3>Global Search &amp;amp; System Health</h3>
+              <span>B SOCIO AR</span>
+              <a class="open" href="global_search_system_health/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="global_user_management/code.html" aria-label="Open Global User Management - Super Admin">
+              <img src="global_user_management/screen.png" alt="Global User Management - Super Admin preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Dashboards &amp; Operations</p>
+              <h3>Global User Management - Super Admin</h3>
+              <span>B SOCIO AR</span>
+              <a class="open" href="global_user_management/code.html">Open screen</a>
+            </div>
+          </article></div>
+        </section>
+        <section class="screen-group">
+          <div class="section-heading">
+            <h2>Creation Tools</h2>
+            <span>23 screens</span>
+          </div>
+          <div class="grid">
+          <article class="card">
+            <a class="thumb" href="ar_studio_professional_editor_1/code.html" aria-label="Open B Socio AR Studio - Editor">
+              <img src="ar_studio_professional_editor_1/screen.png" alt="B Socio AR Studio - Editor preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Creation Tools</p>
+              <h3>B Socio AR Studio - Editor</h3>
+              <span>AR STUDIO</span>
+              <a class="open" href="ar_studio_professional_editor_1/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="3d_preview_interaction/code.html" aria-label="Open 3D Preview Interaction - AR Studio">
+              <img src="3d_preview_interaction/screen.png" alt="3D Preview Interaction - AR Studio preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Creation Tools</p>
+              <h3>3D Preview Interaction - AR Studio</h3>
+              <span>3d Preview Interaction</span>
+              <a class="open" href="3d_preview_interaction/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="ar_business_card_studio/code.html" aria-label="Open AR Business Card Studio">
+              <img src="ar_business_card_studio/screen.png" alt="AR Business Card Studio preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Creation Tools</p>
+              <h3>AR Business Card Studio</h3>
+              <span>AR Business Card Studio</span>
+              <a class="open" href="ar_business_card_studio/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="3d_native_optimization_settings_1/code.html" aria-label="Open AR Studio Settings">
+              <img src="3d_native_optimization_settings_1/screen.png" alt="AR Studio Settings preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Creation Tools</p>
+              <h3>AR Studio Settings</h3>
+              <span>Branding Studio</span>
+              <a class="open" href="3d_native_optimization_settings_1/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="3d_native_optimization_settings_2/code.html" aria-label="Open AR Studio Settings">
+              <img src="3d_native_optimization_settings_2/screen.png" alt="AR Studio Settings preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Creation Tools</p>
+              <h3>AR Studio Settings</h3>
+              <span>Branding Studio</span>
+              <a class="open" href="3d_native_optimization_settings_2/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="internal_asset_approval_workflow/code.html" aria-label="Open Asset Approval Workflow">
+              <img src="internal_asset_approval_workflow/screen.png" alt="Asset Approval Workflow preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Creation Tools</p>
+              <h3>Asset Approval Workflow</h3>
+              <span>B SOCIO AR STUDIO</span>
+              <a class="open" href="internal_asset_approval_workflow/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="ar_asset_library/code.html" aria-label="Open Asset Library - B Socio AR Studio">
+              <img src="ar_asset_library/screen.png" alt="Asset Library - B Socio AR Studio preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Creation Tools</p>
+              <h3>Asset Library - B Socio AR Studio</h3>
+              <span>AetherAR</span>
+              <a class="open" href="ar_asset_library/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="ar_experience_editor_2/code.html" aria-label="Open B SOCIO - AR Experience Editor">
+              <img src="ar_experience_editor_2/screen.png" alt="B SOCIO - AR Experience Editor preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Creation Tools</p>
+              <h3>B SOCIO - AR Experience Editor</h3>
+              <span>B SOCIO</span>
+              <a class="open" href="ar_experience_editor_2/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="elite_jewelry_vto_tester/code.html" aria-label="Open B SOCIO - Jewelry VTO Calibration">
+              <img src="elite_jewelry_vto_tester/screen.png" alt="B SOCIO - Jewelry VTO Calibration preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Creation Tools</p>
+              <h3>B SOCIO - Jewelry VTO Calibration</h3>
+              <span>Elite Jewelry Vto Tester</span>
+              <a class="open" href="elite_jewelry_vto_tester/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="interactive_menu_designer_cafes/code.html" aria-label="Open B SOCIO AR - Interactive Menu Designer">
+              <img src="interactive_menu_designer_cafes/screen.png" alt="B SOCIO AR - Interactive Menu Designer preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Creation Tools</p>
+              <h3>B SOCIO AR - Interactive Menu Designer</h3>
+              <span>B SOCIO AR</span>
+              <a class="open" href="interactive_menu_designer_cafes/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="ar_product_catalogue_designer/code.html" aria-label="Open B SOCIO AR - Interactive Product Catalogue">
+              <img src="ar_product_catalogue_designer/screen.png" alt="B SOCIO AR - Interactive Product Catalogue preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Creation Tools</p>
+              <h3>B SOCIO AR - Interactive Product Catalogue</h3>
+              <span>B SOCIO AR</span>
+              <a class="open" href="ar_product_catalogue_designer/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="custom_qr_generator_studio/code.html" aria-label="Open B Socio AR Studio - Custom QR Generator">
+              <img src="custom_qr_generator_studio/screen.png" alt="B Socio AR Studio - Custom QR Generator preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Creation Tools</p>
+              <h3>B Socio AR Studio - Custom QR Generator</h3>
+              <span>B Socio AR</span>
+              <a class="open" href="custom_qr_generator_studio/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="ar_experience_editor_1/code.html" aria-label="Open B Socio AR Studio - Editor">
+              <img src="ar_experience_editor_1/screen.png" alt="B Socio AR Studio - Editor preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Creation Tools</p>
+              <h3>B Socio AR Studio - Editor</h3>
+              <span>B Socio AR Studio</span>
+              <a class="open" href="ar_experience_editor_1/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="ar_studio_professional_editor_2/code.html" aria-label="Open B Socio AR Studio - Editor">
+              <img src="ar_studio_professional_editor_2/screen.png" alt="B Socio AR Studio - Editor preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Creation Tools</p>
+              <h3>B Socio AR Studio - Editor</h3>
+              <span>AR STUDIO</span>
+              <a class="open" href="ar_studio_professional_editor_2/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="3d_scene_interactivity_studio/code.html" aria-label="Open B Socio AR Studio - Scene Interactivity">
+              <img src="3d_scene_interactivity_studio/screen.png" alt="B Socio AR Studio - Scene Interactivity preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Creation Tools</p>
+              <h3>B Socio AR Studio - Scene Interactivity</h3>
+              <span>Scene Interactivity</span>
+              <a class="open" href="3d_scene_interactivity_studio/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="ar_template_library/code.html" aria-label="Open B Socio AR Studio - Template Library">
+              <img src="ar_template_library/screen.png" alt="B Socio AR Studio - Template Library preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Creation Tools</p>
+              <h3>B Socio AR Studio - Template Library</h3>
+              <span>B Socio AR Studio</span>
+              <a class="open" href="ar_template_library/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="b_socio_ar_studio_pro_logo/code.html" aria-label="Open B Socio Ar Studio Pro Logo">
+              <img src="b_socio_ar_studio_pro_logo/screen.png" alt="B Socio Ar Studio Pro Logo preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Creation Tools</p>
+              <h3>B Socio Ar Studio Pro Logo</h3>
+              <span>B Socio Ar Studio Pro Logo</span>
+              <a class="open" href="b_socio_ar_studio_pro_logo/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="batch_qr_generator_enterprise/code.html" aria-label="Open Batch QR Generator - B Socio AR Studio">
+              <img src="batch_qr_generator_enterprise/screen.png" alt="Batch QR Generator - B Socio AR Studio preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Creation Tools</p>
+              <h3>Batch QR Generator - B Socio AR Studio</h3>
+              <span>B Socio AR</span>
+              <a class="open" href="batch_qr_generator_enterprise/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="enhanced_3d_asset_inspection_chat/code.html" aria-label="Open Collaboration Chat - B SOCIO AR">
+              <img src="enhanced_3d_asset_inspection_chat/screen.png" alt="Collaboration Chat - B SOCIO AR preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Creation Tools</p>
+              <h3>Collaboration Chat - B SOCIO AR</h3>
+              <span>Neon Genesis Concept</span>
+              <a class="open" href="enhanced_3d_asset_inspection_chat/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="elite_ad_customization_studio/code.html" aria-label="Open Elite Ad Customization">
+              <img src="elite_ad_customization_studio/screen.png" alt="Elite Ad Customization preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Creation Tools</p>
+              <h3>Elite Ad Customization</h3>
+              <span>Spatial Ad Customization</span>
+              <a class="open" href="elite_ad_customization_studio/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="enterprise_asset_approval/code.html" aria-label="Open Enterprise Asset Approval">
+              <img src="enterprise_asset_approval/screen.png" alt="Enterprise Asset Approval preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Creation Tools</p>
+              <h3>Enterprise Asset Approval</h3>
+              <span>B SOCIO AR</span>
+              <a class="open" href="enterprise_asset_approval/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="3d_visual_effects_studio/code.html" aria-label="Open NEON_FORGE VFX Editor">
+              <img src="3d_visual_effects_studio/screen.png" alt="NEON_FORGE VFX Editor preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Creation Tools</p>
+              <h3>NEON_FORGE VFX Editor</h3>
+              <span>3d Visual Effects Studio</span>
+              <a class="open" href="3d_visual_effects_studio/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="qr_customization_studio/code.html" aria-label="Open QR Customization Studio">
+              <img src="qr_customization_studio/screen.png" alt="QR Customization Studio preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Creation Tools</p>
+              <h3>QR Customization Studio</h3>
+              <span>B SOCIO AR</span>
+              <a class="open" href="qr_customization_studio/code.html">Open screen</a>
+            </div>
+          </article></div>
+        </section>
+        <section class="screen-group">
+          <div class="section-heading">
+            <h2>Admin &amp; Account</h2>
+            <span>14 screens</span>
+          </div>
+          <div class="grid">
+          <article class="card">
+            <a class="thumb" href="company_login/code.html" aria-label="Open AetherAR - Corporate Login">
+              <img src="company_login/screen.png" alt="AetherAR - Corporate Login preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Admin &amp; Account</p>
+              <h3>AetherAR - Corporate Login</h3>
+              <span>AetherAR</span>
+              <a class="open" href="company_login/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="team_member_login/code.html" aria-label="Open AetherAR - Team Access">
+              <img src="team_member_login/screen.png" alt="AetherAR - Team Access preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Admin &amp; Account</p>
+              <h3>AetherAR - Team Access</h3>
+              <span>Team Access</span>
+              <a class="open" href="team_member_login/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="premium_subscription_management/code.html" aria-label="Open AR Forge Admin - Subscriptions">
+              <img src="premium_subscription_management/screen.png" alt="AR Forge Admin - Subscriptions preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Admin &amp; Account</p>
+              <h3>AR Forge Admin - Subscriptions</h3>
+              <span>Subscriptions</span>
+              <a class="open" href="premium_subscription_management/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="super_admin_approval_queue/code.html" aria-label="Open B SOCIO AR - Ecosystem Control">
+              <img src="super_admin_approval_queue/screen.png" alt="B SOCIO AR - Ecosystem Control preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Admin &amp; Account</p>
+              <h3>B SOCIO AR - Ecosystem Control</h3>
+              <span>B SOCIO AR</span>
+              <a class="open" href="super_admin_approval_queue/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="enterprise_user_permissions/code.html" aria-label="Open B SOCIO AR | Team Management">
+              <img src="enterprise_user_permissions/screen.png" alt="B SOCIO AR | Team Management preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Admin &amp; Account</p>
+              <h3>B SOCIO AR | Team Management</h3>
+              <span>B SOCIO AR</span>
+              <a class="open" href="enterprise_user_permissions/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="developer_api_management/code.html" aria-label="Open B Socio AR Studio - Developer API Management">
+              <img src="developer_api_management/screen.png" alt="B Socio AR Studio - Developer API Management preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Admin &amp; Account</p>
+              <h3>B Socio AR Studio - Developer API Management</h3>
+              <span>NEON_GENESIS</span>
+              <a class="open" href="developer_api_management/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="subscription_billing_premium_features/code.html" aria-label="Open B Socio AR Studio - Subscription &amp;amp; Billing">
+              <img src="subscription_billing_premium_features/screen.png" alt="B Socio AR Studio - Subscription &amp;amp; Billing preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Admin &amp; Account</p>
+              <h3>B Socio AR Studio - Subscription &amp;amp; Billing</h3>
+              <span>AetherAR</span>
+              <a class="open" href="subscription_billing_premium_features/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="developer_api_management_console/code.html" aria-label="Open Developer Console - B SOCIO AR">
+              <img src="developer_api_management_console/screen.png" alt="Developer Console - B SOCIO AR preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Admin &amp; Account</p>
+              <h3>Developer Console - B SOCIO AR</h3>
+              <span>B SOCIO AR</span>
+              <a class="open" href="developer_api_management_console/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="secure_recovery_key_export/code.html" aria-label="Open Encrypted Recovery Key - B Socio AR Studio">
+              <img src="secure_recovery_key_export/screen.png" alt="Encrypted Recovery Key - B Socio AR Studio preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Admin &amp; Account</p>
+              <h3>Encrypted Recovery Key - B Socio AR Studio</h3>
+              <span>Secure Your Recovery Key</span>
+              <a class="open" href="secure_recovery_key_export/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="enterprise_backup_recovery/code.html" aria-label="Open Local Backup &amp;amp; Recovery | NEON_ARCADE">
+              <img src="enterprise_backup_recovery/screen.png" alt="Local Backup &amp;amp; Recovery | NEON_ARCADE preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Admin &amp; Account</p>
+              <h3>Local Backup &amp;amp; Recovery | NEON_ARCADE</h3>
+              <span>Local Backup &amp;amp; Recovery</span>
+              <a class="open" href="enterprise_backup_recovery/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="payment_gateway_settings/code.html" aria-label="Open Payment Gateway Configuration">
+              <img src="payment_gateway_settings/screen.png" alt="Payment Gateway Configuration preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Admin &amp; Account</p>
+              <h3>Payment Gateway Configuration</h3>
+              <span>Payment Gateways</span>
+              <a class="open" href="payment_gateway_settings/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="super_admin_feature_access_management/code.html" aria-label="Open Platform Permissions - AetherAR Super Admin">
+              <img src="super_admin_feature_access_management/screen.png" alt="Platform Permissions - AetherAR Super Admin preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Admin &amp; Account</p>
+              <h3>Platform Permissions - AetherAR Super Admin</h3>
+              <span>AetherAR</span>
+              <a class="open" href="super_admin_feature_access_management/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="super_admin_login/code.html" aria-label="Open Super Admin Login | B Socio AR">
+              <img src="super_admin_login/screen.png" alt="Super Admin Login | B Socio AR preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Admin &amp; Account</p>
+              <h3>Super Admin Login | B Socio AR</h3>
+              <span>Studio Command</span>
+              <a class="open" href="super_admin_login/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="white_label_branding_settings/code.html" aria-label="Open White-Label Branding - AR Studio">
+              <img src="white_label_branding_settings/screen.png" alt="White-Label Branding - AR Studio preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Admin &amp; Account</p>
+              <h3>White-Label Branding - AR Studio</h3>
+              <span>Branding Studio</span>
+              <a class="open" href="white_label_branding_settings/code.html">Open screen</a>
+            </div>
+          </article></div>
+        </section>
+        <section class="screen-group">
+          <div class="section-heading">
+            <h2>Other Screens</h2>
+            <span>3 screens</span>
+          </div>
+          <div class="grid">
+          <article class="card">
+            <a class="thumb" href="ar_experience_destination/code.html" aria-label="Open AR Experience Landing Page">
+              <img src="ar_experience_destination/screen.png" alt="AR Experience Landing Page preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Other Screens</p>
+              <h3>AR Experience Landing Page</h3>
+              <span>Stellar Solitaire Ring</span>
+              <a class="open" href="ar_experience_destination/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="elite_ad_revenue_sharing/code.html" aria-label="Open B Socio AR Studio - Elite Revenue">
+              <img src="elite_ad_revenue_sharing/screen.png" alt="B Socio AR Studio - Elite Revenue preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Other Screens</p>
+              <h3>B Socio AR Studio - Elite Revenue</h3>
+              <span>Revenue Analytics</span>
+              <a class="open" href="elite_ad_revenue_sharing/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="backend_infrastructure_tiers/code.html" aria-label="Open Backend &amp;amp; Infrastructure Settings">
+              <img src="backend_infrastructure_tiers/screen.png" alt="Backend &amp;amp; Infrastructure Settings preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Other Screens</p>
+              <h3>Backend &amp;amp; Infrastructure Settings</h3>
+              <span>B SOCIO AR</span>
+              <a class="open" href="backend_infrastructure_tiers/code.html">Open screen</a>
+            </div>
+          </article></div>
+        </section>
+        <section class="screen-group">
+          <div class="section-heading">
+            <h2>Client, Docs &amp; Mobile</h2>
+            <span>13 screens</span>
+          </div>
+          <div class="grid">
+          <article class="card">
+            <a class="thumb" href="client_local_data_ad_config/code.html" aria-label="Open B SOCIO AR - Settings">
+              <img src="client_local_data_ad_config/screen.png" alt="B SOCIO AR - Settings preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Client, Docs &amp; Mobile</p>
+              <h3>B SOCIO AR - Settings</h3>
+              <span>B SOCIO AR</span>
+              <a class="open" href="client_local_data_ad_config/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="client_project_onboarding/code.html" aria-label="Open B Socio AR Studio - Client Project Onboarding">
+              <img src="client_project_onboarding/screen.png" alt="B Socio AR Studio - Client Project Onboarding preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Client, Docs &amp; Mobile</p>
+              <h3>B Socio AR Studio - Client Project Onboarding</h3>
+              <span>NEON_GENESIS</span>
+              <a class="open" href="client_project_onboarding/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="customer_review_feedback_loop/code.html" aria-label="Open B Socio AR Studio - Customer Review">
+              <img src="customer_review_feedback_loop/screen.png" alt="B Socio AR Studio - Customer Review preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Client, Docs &amp; Mobile</p>
+              <h3>B Socio AR Studio - Customer Review</h3>
+              <span>B SOCIO AR</span>
+              <a class="open" href="customer_review_feedback_loop/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="sales_deck_why_ar/code.html" aria-label="Open B Socio AR Studio - Deck">
+              <img src="sales_deck_why_ar/screen.png" alt="B Socio AR Studio - Deck preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Client, Docs &amp; Mobile</p>
+              <h3>B Socio AR Studio - Deck</h3>
+              <span>Why B Socio AR ?</span>
+              <a class="open" href="sales_deck_why_ar/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="sales_deck_cover_slide/code.html" aria-label="Open B Socio AR Studio - Sales Deck">
+              <img src="sales_deck_cover_slide/screen.png" alt="B Socio AR Studio - Sales Deck preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Client, Docs &amp; Mobile</p>
+              <h3>B Socio AR Studio - Sales Deck</h3>
+              <span>The Future of Spatial Interaction.</span>
+              <a class="open" href="sales_deck_cover_slide/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="sales_deck_premium_gated_access/code.html" aria-label="Open B Socio AR Studio - Sales Deck">
+              <img src="sales_deck_premium_gated_access/screen.png" alt="B Socio AR Studio - Sales Deck preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Client, Docs &amp; Mobile</p>
+              <h3>B Socio AR Studio - Sales Deck</h3>
+              <span>The Future of Spatial Interaction.</span>
+              <a class="open" href="sales_deck_premium_gated_access/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="project_collaboration_chat/code.html" aria-label="Open Collaboration Chat - B SOCIO AR">
+              <img src="project_collaboration_chat/screen.png" alt="Collaboration Chat - B SOCIO AR preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Client, Docs &amp; Mobile</p>
+              <h3>Collaboration Chat - B SOCIO AR</h3>
+              <span>Neon Genesis Concept</span>
+              <a class="open" href="project_collaboration_chat/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="developer_documentation_portal/code.html" aria-label="Open Developer Documentation Portal">
+              <img src="developer_documentation_portal/screen.png" alt="Developer Documentation Portal preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Client, Docs &amp; Mobile</p>
+              <h3>Developer Documentation Portal</h3>
+              <span>Developer Docs</span>
+              <a class="open" href="developer_documentation_portal/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="final_project_delivery_portal/code.html" aria-label="Open Final Project Delivery">
+              <img src="final_project_delivery_portal/screen.png" alt="Final Project Delivery preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Client, Docs &amp; Mobile</p>
+              <h3>Final Project Delivery</h3>
+              <span>Project Handover</span>
+              <a class="open" href="final_project_delivery_portal/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="mobile_ar_viewer_prototype/code.html" aria-label="Open Mobile AR Viewer - NEON_FORGE">
+              <img src="mobile_ar_viewer_prototype/screen.png" alt="Mobile AR Viewer - NEON_FORGE preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Client, Docs &amp; Mobile</p>
+              <h3>Mobile AR Viewer - NEON_FORGE</h3>
+              <span>Mobile Ar Viewer Prototype</span>
+              <a class="open" href="mobile_ar_viewer_prototype/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="client_onboarding_welcome/code.html" aria-label="Open Onboarding - Create Project">
+              <img src="client_onboarding_welcome/screen.png" alt="Onboarding - Create Project preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Client, Docs &amp; Mobile</p>
+              <h3>Onboarding - Create Project</h3>
+              <span>Create Your First Project</span>
+              <a class="open" href="client_onboarding_welcome/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="request_demo_trial_information/code.html" aria-label="Open Request Demo | B SOCIO AR">
+              <img src="request_demo_trial_information/screen.png" alt="Request Demo | B SOCIO AR preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Client, Docs &amp; Mobile</p>
+              <h3>Request Demo | B SOCIO AR</h3>
+              <span>Try Before You Buy.</span>
+              <a class="open" href="request_demo_trial_information/code.html">Open screen</a>
+            </div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="client_onboarding_final_review/code.html" aria-label="Open Review &amp;amp; Launch - Axon Studio Onboarding">
+              <img src="client_onboarding_final_review/screen.png" alt="Review &amp;amp; Launch - Axon Studio Onboarding preview" loading="lazy">
+            </a>
+            <div class="card-body">
+              <p>Client, Docs &amp; Mobile</p>
+              <h3>Review &amp;amp; Launch - Axon Studio Onboarding</h3>
+              <span>Review &amp;amp; Launch</span>
+              <a class="open" href="client_onboarding_final_review/code.html">Open screen</a>
+            </div>
+          </article></div>
+        </section></main>
+</body>
+</html>

@@ -1,0 +1,666 @@
+[
+  {
+    "name": "b_socio_ar_studio_production_landing_page",
+    "title": "B Socio AR Studio - Empowering Digital Reality",
+    "heading": "Project Reality. No Code Required.",
+    "group": "Public & Marketing",
+    "codePath": "b_socio_ar_studio_production_landing_page/code.html",
+    "previewPath": "b_socio_ar_studio_production_landing_page/screen.png"
+  },
+  {
+    "name": "landing_page_b_socio_ar_studio",
+    "title": "B Socio AR Studio - Empowering Digital Reality",
+    "heading": "Project Reality. No Code Required.",
+    "group": "Public & Marketing",
+    "codePath": "landing_page_b_socio_ar_studio/code.html",
+    "previewPath": "landing_page_b_socio_ar_studio/screen.png"
+  },
+  {
+    "name": "project_dashboard",
+    "title": "B Socio AR Studio - Projects",
+    "heading": "Active Projects",
+    "group": "Dashboards & Operations",
+    "codePath": "project_dashboard/code.html",
+    "previewPath": "project_dashboard/screen.png"
+  },
+  {
+    "name": "ar_studio_professional_editor_1",
+    "title": "B Socio AR Studio - Editor",
+    "heading": "AR STUDIO",
+    "group": "Creation Tools",
+    "codePath": "ar_studio_professional_editor_1/code.html",
+    "previewPath": "ar_studio_professional_editor_1/screen.png"
+  },
+  {
+    "name": "ar_analytics_professional_edition",
+    "title": "AR Analytics Dashboard - B SOCIO AR",
+    "heading": "Ar Analytics Professional Edition",
+    "group": "Dashboards & Operations",
+    "codePath": "ar_analytics_professional_edition/code.html",
+    "previewPath": "ar_analytics_professional_edition/screen.png"
+  },
+  {
+    "name": "3d_preview_interaction",
+    "title": "3D Preview Interaction - AR Studio",
+    "heading": "3d Preview Interaction",
+    "group": "Creation Tools",
+    "codePath": "3d_preview_interaction/code.html",
+    "previewPath": "3d_preview_interaction/screen.png"
+  },
+  {
+    "name": "company_login",
+    "title": "AetherAR - Corporate Login",
+    "heading": "AetherAR",
+    "group": "Admin & Account",
+    "codePath": "company_login/code.html",
+    "previewPath": "company_login/screen.png"
+  },
+  {
+    "name": "team_member_login",
+    "title": "AetherAR - Team Access",
+    "heading": "Team Access",
+    "group": "Admin & Account",
+    "codePath": "team_member_login/code.html",
+    "previewPath": "team_member_login/screen.png"
+  },
+  {
+    "name": "client_side_analytics_portal",
+    "title": "Analytics - B Socio AR Studio",
+    "heading": "Campaign Performance",
+    "group": "Dashboards & Operations",
+    "codePath": "client_side_analytics_portal/code.html",
+    "previewPath": "client_side_analytics_portal/screen.png"
+  },
+  {
+    "name": "desktop_command_center_analytics",
+    "title": "Analytics Command Center - B Socio AR Studio",
+    "heading": "B Socio AR",
+    "group": "Dashboards & Operations",
+    "codePath": "desktop_command_center_analytics/code.html",
+    "previewPath": "desktop_command_center_analytics/screen.png"
+  },
+  {
+    "name": "ar_analytics_dashboard",
+    "title": "AR Analytics Dashboard - B SOCIO AR",
+    "heading": "B SOCIO AR",
+    "group": "Dashboards & Operations",
+    "codePath": "ar_analytics_dashboard/code.html",
+    "previewPath": "ar_analytics_dashboard/screen.png"
+  },
+  {
+    "name": "ar_analytics_with_global_hotspots",
+    "title": "AR Analytics Dashboard - B SOCIO AR",
+    "heading": "B SOCIO AR",
+    "group": "Dashboards & Operations",
+    "codePath": "ar_analytics_with_global_hotspots/code.html",
+    "previewPath": "ar_analytics_with_global_hotspots/screen.png"
+  },
+  {
+    "name": "ar_business_card_studio",
+    "title": "AR Business Card Studio",
+    "heading": "AR Business Card Studio",
+    "group": "Creation Tools",
+    "codePath": "ar_business_card_studio/code.html",
+    "previewPath": "ar_business_card_studio/screen.png"
+  },
+  {
+    "name": "ar_experience_destination",
+    "title": "AR Experience Landing Page",
+    "heading": "Stellar Solitaire Ring",
+    "group": "Other Screens",
+    "codePath": "ar_experience_destination/code.html",
+    "previewPath": "ar_experience_destination/screen.png"
+  },
+  {
+    "name": "premium_subscription_management",
+    "title": "AR Forge Admin - Subscriptions",
+    "heading": "Subscriptions",
+    "group": "Admin & Account",
+    "codePath": "premium_subscription_management/code.html",
+    "previewPath": "premium_subscription_management/screen.png"
+  },
+  {
+    "name": "3d_native_optimization_settings_1",
+    "title": "AR Studio Settings",
+    "heading": "Branding Studio",
+    "group": "Creation Tools",
+    "codePath": "3d_native_optimization_settings_1/code.html",
+    "previewPath": "3d_native_optimization_settings_1/screen.png"
+  },
+  {
+    "name": "3d_native_optimization_settings_2",
+    "title": "AR Studio Settings",
+    "heading": "Branding Studio",
+    "group": "Creation Tools",
+    "codePath": "3d_native_optimization_settings_2/code.html",
+    "previewPath": "3d_native_optimization_settings_2/screen.png"
+  },
+  {
+    "name": "internal_asset_approval_workflow",
+    "title": "Asset Approval Workflow",
+    "heading": "B SOCIO AR STUDIO",
+    "group": "Creation Tools",
+    "codePath": "internal_asset_approval_workflow/code.html",
+    "previewPath": "internal_asset_approval_workflow/screen.png"
+  },
+  {
+    "name": "ar_asset_library",
+    "title": "Asset Library - B Socio AR Studio",
+    "heading": "AetherAR",
+    "group": "Creation Tools",
+    "codePath": "ar_asset_library/code.html",
+    "previewPath": "ar_asset_library/screen.png"
+  },
+  {
+    "name": "developer_api_logs_debugging",
+    "title": "AXON STUDIO - Console Logs",
+    "heading": "API Request Logs",
+    "group": "Dashboards & Operations",
+    "codePath": "developer_api_logs_debugging/code.html",
+    "previewPath": "developer_api_logs_debugging/screen.png"
+  },
+  {
+    "name": "ar_experience_editor_2",
+    "title": "B SOCIO - AR Experience Editor",
+    "heading": "B SOCIO",
+    "group": "Creation Tools",
+    "codePath": "ar_experience_editor_2/code.html",
+    "previewPath": "ar_experience_editor_2/screen.png"
+  },
+  {
+    "name": "elite_jewelry_vto_tester",
+    "title": "B SOCIO - Jewelry VTO Calibration",
+    "heading": "Elite Jewelry Vto Tester",
+    "group": "Creation Tools",
+    "codePath": "elite_jewelry_vto_tester/code.html",
+    "previewPath": "elite_jewelry_vto_tester/screen.png"
+  },
+  {
+    "name": "mobile_client_dashboard",
+    "title": "B Socio AR - Dashboard",
+    "heading": "NEON_GENESIS",
+    "group": "Dashboards & Operations",
+    "codePath": "mobile_client_dashboard/code.html",
+    "previewPath": "mobile_client_dashboard/screen.png"
+  },
+  {
+    "name": "super_admin_approval_queue",
+    "title": "B SOCIO AR - Ecosystem Control",
+    "heading": "B SOCIO AR",
+    "group": "Admin & Account",
+    "codePath": "super_admin_approval_queue/code.html",
+    "previewPath": "super_admin_approval_queue/screen.png"
+  },
+  {
+    "name": "interactive_menu_designer_cafes",
+    "title": "B SOCIO AR - Interactive Menu Designer",
+    "heading": "B SOCIO AR",
+    "group": "Creation Tools",
+    "codePath": "interactive_menu_designer_cafes/code.html",
+    "previewPath": "interactive_menu_designer_cafes/screen.png"
+  },
+  {
+    "name": "ar_product_catalogue_designer",
+    "title": "B SOCIO AR - Interactive Product Catalogue",
+    "heading": "B SOCIO AR",
+    "group": "Creation Tools",
+    "codePath": "ar_product_catalogue_designer/code.html",
+    "previewPath": "ar_product_catalogue_designer/screen.png"
+  },
+  {
+    "name": "system_notifications",
+    "title": "B Socio AR - Notification Center",
+    "heading": "B SOCIO AR",
+    "group": "Dashboards & Operations",
+    "codePath": "system_notifications/code.html",
+    "previewPath": "system_notifications/screen.png"
+  },
+  {
+    "name": "client_local_data_ad_config",
+    "title": "B SOCIO AR - Settings",
+    "heading": "B SOCIO AR",
+    "group": "Client, Docs & Mobile",
+    "codePath": "client_local_data_ad_config/code.html",
+    "previewPath": "client_local_data_ad_config/screen.png"
+  },
+  {
+    "name": "public_ar_showcase",
+    "title": "B SOCIO AR - Showcase",
+    "heading": "B SOCIO AR",
+    "group": "Public & Marketing",
+    "codePath": "public_ar_showcase/code.html",
+    "previewPath": "public_ar_showcase/screen.png"
+  },
+  {
+    "name": "global_user_access_logs",
+    "title": "B SOCIO AR - User Access Logs",
+    "heading": "B SOCIO AR",
+    "group": "Dashboards & Operations",
+    "codePath": "global_user_access_logs/code.html",
+    "previewPath": "global_user_access_logs/screen.png"
+  },
+  {
+    "name": "enterprise_user_permissions",
+    "title": "B SOCIO AR | Team Management",
+    "heading": "B SOCIO AR",
+    "group": "Admin & Account",
+    "codePath": "enterprise_user_permissions/code.html",
+    "previewPath": "enterprise_user_permissions/screen.png"
+  },
+  {
+    "name": "sales_deck_showcase_metrics",
+    "title": "B SOCIO AR STUDIO - AR Showcase &amp; Results",
+    "heading": "AR Showcase &amp; Results",
+    "group": "Public & Marketing",
+    "codePath": "sales_deck_showcase_metrics/code.html",
+    "previewPath": "sales_deck_showcase_metrics/screen.png"
+  },
+  {
+    "name": "desktop_command_center_asset_library",
+    "title": "B Socio AR Studio - Assets",
+    "heading": "B Socio AR",
+    "group": "Dashboards & Operations",
+    "codePath": "desktop_command_center_asset_library/code.html",
+    "previewPath": "desktop_command_center_asset_library/screen.png"
+  },
+  {
+    "name": "client_project_onboarding",
+    "title": "B Socio AR Studio - Client Project Onboarding",
+    "heading": "NEON_GENESIS",
+    "group": "Client, Docs & Mobile",
+    "codePath": "client_project_onboarding/code.html",
+    "previewPath": "client_project_onboarding/screen.png"
+  },
+  {
+    "name": "custom_qr_generator_studio",
+    "title": "B Socio AR Studio - Custom QR Generator",
+    "heading": "B Socio AR",
+    "group": "Creation Tools",
+    "codePath": "custom_qr_generator_studio/code.html",
+    "previewPath": "custom_qr_generator_studio/screen.png"
+  },
+  {
+    "name": "customer_review_feedback_loop",
+    "title": "B Socio AR Studio - Customer Review",
+    "heading": "B SOCIO AR",
+    "group": "Client, Docs & Mobile",
+    "codePath": "customer_review_feedback_loop/code.html",
+    "previewPath": "customer_review_feedback_loop/screen.png"
+  },
+  {
+    "name": "b_socio_ar_studio_production_dashboard",
+    "title": "B Socio AR Studio - Dashboard",
+    "heading": "Active Deployments",
+    "group": "Dashboards & Operations",
+    "codePath": "b_socio_ar_studio_production_dashboard/code.html",
+    "previewPath": "b_socio_ar_studio_production_dashboard/screen.png"
+  },
+  {
+    "name": "desktop_command_center_dashboard",
+    "title": "B Socio AR Studio - Dashboard",
+    "heading": "B Socio AR",
+    "group": "Dashboards & Operations",
+    "codePath": "desktop_command_center_dashboard/code.html",
+    "previewPath": "desktop_command_center_dashboard/screen.png"
+  },
+  {
+    "name": "desktop_command_center_professional_edition",
+    "title": "B Socio AR Studio - Dashboard",
+    "heading": "B Socio AR",
+    "group": "Dashboards & Operations",
+    "codePath": "desktop_command_center_professional_edition/code.html",
+    "previewPath": "desktop_command_center_professional_edition/screen.png"
+  },
+  {
+    "name": "sales_deck_why_ar",
+    "title": "B Socio AR Studio - Deck",
+    "heading": "Why B Socio AR ?",
+    "group": "Client, Docs & Mobile",
+    "codePath": "sales_deck_why_ar/code.html",
+    "previewPath": "sales_deck_why_ar/screen.png"
+  },
+  {
+    "name": "developer_api_management",
+    "title": "B Socio AR Studio - Developer API Management",
+    "heading": "NEON_GENESIS",
+    "group": "Admin & Account",
+    "codePath": "developer_api_management/code.html",
+    "previewPath": "developer_api_management/screen.png"
+  },
+  {
+    "name": "ar_experience_editor_1",
+    "title": "B Socio AR Studio - Editor",
+    "heading": "B Socio AR Studio",
+    "group": "Creation Tools",
+    "codePath": "ar_experience_editor_1/code.html",
+    "previewPath": "ar_experience_editor_1/screen.png"
+  },
+  {
+    "name": "ar_studio_professional_editor_2",
+    "title": "B Socio AR Studio - Editor",
+    "heading": "AR STUDIO",
+    "group": "Creation Tools",
+    "codePath": "ar_studio_professional_editor_2/code.html",
+    "previewPath": "ar_studio_professional_editor_2/screen.png"
+  },
+  {
+    "name": "elite_ad_revenue_sharing",
+    "title": "B Socio AR Studio - Elite Revenue",
+    "heading": "Revenue Analytics",
+    "group": "Other Screens",
+    "codePath": "elite_ad_revenue_sharing/code.html",
+    "previewPath": "elite_ad_revenue_sharing/screen.png"
+  },
+  {
+    "name": "landing_page_b_socio_ar_studio_teal",
+    "title": "B Socio AR Studio - Empowering Digital Reality",
+    "heading": "Project Reality. No Code Required.",
+    "group": "Public & Marketing",
+    "codePath": "landing_page_b_socio_ar_studio_teal/code.html",
+    "previewPath": "landing_page_b_socio_ar_studio_teal/screen.png"
+  },
+  {
+    "name": "project_dashboard_teal",
+    "title": "B Socio AR Studio - Projects",
+    "heading": "Active Projects",
+    "group": "Dashboards & Operations",
+    "codePath": "project_dashboard_teal/code.html",
+    "previewPath": "project_dashboard_teal/screen.png"
+  },
+  {
+    "name": "sales_deck_cover_slide",
+    "title": "B Socio AR Studio - Sales Deck",
+    "heading": "The Future of Spatial Interaction.",
+    "group": "Client, Docs & Mobile",
+    "codePath": "sales_deck_cover_slide/code.html",
+    "previewPath": "sales_deck_cover_slide/screen.png"
+  },
+  {
+    "name": "sales_deck_premium_gated_access",
+    "title": "B Socio AR Studio - Sales Deck",
+    "heading": "The Future of Spatial Interaction.",
+    "group": "Client, Docs & Mobile",
+    "codePath": "sales_deck_premium_gated_access/code.html",
+    "previewPath": "sales_deck_premium_gated_access/screen.png"
+  },
+  {
+    "name": "3d_scene_interactivity_studio",
+    "title": "B Socio AR Studio - Scene Interactivity",
+    "heading": "Scene Interactivity",
+    "group": "Creation Tools",
+    "codePath": "3d_scene_interactivity_studio/code.html",
+    "previewPath": "3d_scene_interactivity_studio/screen.png"
+  },
+  {
+    "name": "subscription_billing_premium_features",
+    "title": "B Socio AR Studio - Subscription &amp; Billing",
+    "heading": "AetherAR",
+    "group": "Admin & Account",
+    "codePath": "subscription_billing_premium_features/code.html",
+    "previewPath": "subscription_billing_premium_features/screen.png"
+  },
+  {
+    "name": "desktop_command_center_admin_billing",
+    "title": "B Socio AR Studio - Subscription Management",
+    "heading": "B Socio AR",
+    "group": "Dashboards & Operations",
+    "codePath": "desktop_command_center_admin_billing/code.html",
+    "previewPath": "desktop_command_center_admin_billing/screen.png"
+  },
+  {
+    "name": "ar_template_library",
+    "title": "B Socio AR Studio - Template Library",
+    "heading": "B Socio AR Studio",
+    "group": "Creation Tools",
+    "codePath": "ar_template_library/code.html",
+    "previewPath": "ar_template_library/screen.png"
+  },
+  {
+    "name": "project_dashboard_professional_edition_1",
+    "title": "B Socio AR Studio Pro - Dashboard",
+    "heading": "Active Deployments",
+    "group": "Dashboards & Operations",
+    "codePath": "project_dashboard_professional_edition_1/code.html",
+    "previewPath": "project_dashboard_professional_edition_1/screen.png"
+  },
+  {
+    "name": "project_dashboard_professional_edition_2",
+    "title": "B Socio AR Studio Pro - Dashboard",
+    "heading": "Active Deployments",
+    "group": "Dashboards & Operations",
+    "codePath": "project_dashboard_professional_edition_2/code.html",
+    "previewPath": "project_dashboard_professional_edition_2/screen.png"
+  },
+  {
+    "name": "b_socio_ar_studio_pro_logo",
+    "title": "B Socio Ar Studio Pro Logo",
+    "heading": "B Socio Ar Studio Pro Logo",
+    "group": "Creation Tools",
+    "codePath": "b_socio_ar_studio_pro_logo/code.html",
+    "previewPath": "b_socio_ar_studio_pro_logo/screen.png"
+  },
+  {
+    "name": "backend_infrastructure_tiers",
+    "title": "Backend &amp; Infrastructure Settings",
+    "heading": "B SOCIO AR",
+    "group": "Other Screens",
+    "codePath": "backend_infrastructure_tiers/code.html",
+    "previewPath": "backend_infrastructure_tiers/screen.png"
+  },
+  {
+    "name": "batch_qr_generator_enterprise",
+    "title": "Batch QR Generator - B Socio AR Studio",
+    "heading": "B Socio AR",
+    "group": "Creation Tools",
+    "codePath": "batch_qr_generator_enterprise/code.html",
+    "previewPath": "batch_qr_generator_enterprise/screen.png"
+  },
+  {
+    "name": "enhanced_3d_asset_inspection_chat",
+    "title": "Collaboration Chat - B SOCIO AR",
+    "heading": "Neon Genesis Concept",
+    "group": "Creation Tools",
+    "codePath": "enhanced_3d_asset_inspection_chat/code.html",
+    "previewPath": "enhanced_3d_asset_inspection_chat/screen.png"
+  },
+  {
+    "name": "project_collaboration_chat",
+    "title": "Collaboration Chat - B SOCIO AR",
+    "heading": "Neon Genesis Concept",
+    "group": "Client, Docs & Mobile",
+    "codePath": "project_collaboration_chat/code.html",
+    "previewPath": "project_collaboration_chat/screen.png"
+  },
+  {
+    "name": "public_creator_profile",
+    "title": "Creator Profile - B SOCIO AR",
+    "heading": "Aura Design Lab",
+    "group": "Public & Marketing",
+    "codePath": "public_creator_profile/code.html",
+    "previewPath": "public_creator_profile/screen.png"
+  },
+  {
+    "name": "developer_api_management_console",
+    "title": "Developer Console - B SOCIO AR",
+    "heading": "B SOCIO AR",
+    "group": "Admin & Account",
+    "codePath": "developer_api_management_console/code.html",
+    "previewPath": "developer_api_management_console/screen.png"
+  },
+  {
+    "name": "developer_documentation_portal",
+    "title": "Developer Documentation Portal",
+    "heading": "Developer Docs",
+    "group": "Client, Docs & Mobile",
+    "codePath": "developer_documentation_portal/code.html",
+    "previewPath": "developer_documentation_portal/screen.png"
+  },
+  {
+    "name": "elite_ad_customization_studio",
+    "title": "Elite Ad Customization",
+    "heading": "Spatial Ad Customization",
+    "group": "Creation Tools",
+    "codePath": "elite_ad_customization_studio/code.html",
+    "previewPath": "elite_ad_customization_studio/screen.png"
+  },
+  {
+    "name": "secure_recovery_key_export",
+    "title": "Encrypted Recovery Key - B Socio AR Studio",
+    "heading": "Secure Your Recovery Key",
+    "group": "Admin & Account",
+    "codePath": "secure_recovery_key_export/code.html",
+    "previewPath": "secure_recovery_key_export/screen.png"
+  },
+  {
+    "name": "enterprise_asset_approval",
+    "title": "Enterprise Asset Approval",
+    "heading": "B SOCIO AR",
+    "group": "Creation Tools",
+    "codePath": "enterprise_asset_approval/code.html",
+    "previewPath": "enterprise_asset_approval/screen.png"
+  },
+  {
+    "name": "final_project_delivery_portal",
+    "title": "Final Project Delivery",
+    "heading": "Project Handover",
+    "group": "Client, Docs & Mobile",
+    "codePath": "final_project_delivery_portal/code.html",
+    "previewPath": "final_project_delivery_portal/screen.png"
+  },
+  {
+    "name": "global_search_system_health",
+    "title": "Global Search &amp; System Health",
+    "heading": "B SOCIO AR",
+    "group": "Dashboards & Operations",
+    "codePath": "global_search_system_health/code.html",
+    "previewPath": "global_search_system_health/screen.png"
+  },
+  {
+    "name": "global_user_management",
+    "title": "Global User Management - Super Admin",
+    "heading": "B SOCIO AR",
+    "group": "Dashboards & Operations",
+    "codePath": "global_user_management/code.html",
+    "previewPath": "global_user_management/screen.png"
+  },
+  {
+    "name": "enterprise_backup_recovery",
+    "title": "Local Backup &amp; Recovery | NEON_ARCADE",
+    "heading": "Local Backup &amp; Recovery",
+    "group": "Admin & Account",
+    "codePath": "enterprise_backup_recovery/code.html",
+    "previewPath": "enterprise_backup_recovery/screen.png"
+  },
+  {
+    "name": "marketing_launchpad",
+    "title": "Marketing Launchpad",
+    "heading": "Campaign Launchpad",
+    "group": "Public & Marketing",
+    "codePath": "marketing_launchpad/code.html",
+    "previewPath": "marketing_launchpad/screen.png"
+  },
+  {
+    "name": "refined_marketing_launchpad_local_storage",
+    "title": "Marketing Launchpad",
+    "heading": "Campaign Launchpad",
+    "group": "Public & Marketing",
+    "codePath": "refined_marketing_launchpad_local_storage/code.html",
+    "previewPath": "refined_marketing_launchpad_local_storage/screen.png"
+  },
+  {
+    "name": "mobile_ar_viewer_prototype",
+    "title": "Mobile AR Viewer - NEON_FORGE",
+    "heading": "Mobile Ar Viewer Prototype",
+    "group": "Client, Docs & Mobile",
+    "codePath": "mobile_ar_viewer_prototype/code.html",
+    "previewPath": "mobile_ar_viewer_prototype/screen.png"
+  },
+  {
+    "name": "3d_visual_effects_studio",
+    "title": "NEON_FORGE VFX Editor",
+    "heading": "3d Visual Effects Studio",
+    "group": "Creation Tools",
+    "codePath": "3d_visual_effects_studio/code.html",
+    "previewPath": "3d_visual_effects_studio/screen.png"
+  },
+  {
+    "name": "client_onboarding_welcome",
+    "title": "Onboarding - Create Project",
+    "heading": "Create Your First Project",
+    "group": "Client, Docs & Mobile",
+    "codePath": "client_onboarding_welcome/code.html",
+    "previewPath": "client_onboarding_welcome/screen.png"
+  },
+  {
+    "name": "payment_gateway_settings",
+    "title": "Payment Gateway Configuration",
+    "heading": "Payment Gateways",
+    "group": "Admin & Account",
+    "codePath": "payment_gateway_settings/code.html",
+    "previewPath": "payment_gateway_settings/screen.png"
+  },
+  {
+    "name": "super_admin_feature_access_management",
+    "title": "Platform Permissions - AetherAR Super Admin",
+    "heading": "AetherAR",
+    "group": "Admin & Account",
+    "codePath": "super_admin_feature_access_management/code.html",
+    "previewPath": "super_admin_feature_access_management/screen.png"
+  },
+  {
+    "name": "user_profile_settings_1",
+    "title": "Profile - B Socio AR Studio",
+    "heading": "Creator Profile",
+    "group": "Public & Marketing",
+    "codePath": "user_profile_settings_1/code.html",
+    "previewPath": "user_profile_settings_1/screen.png"
+  },
+  {
+    "name": "user_profile_settings_2",
+    "title": "Profile - B Socio AR Studio",
+    "heading": "Workspace Settings",
+    "group": "Public & Marketing",
+    "codePath": "user_profile_settings_2/code.html",
+    "previewPath": "user_profile_settings_2/screen.png"
+  },
+  {
+    "name": "qr_customization_studio",
+    "title": "QR Customization Studio",
+    "heading": "B SOCIO AR",
+    "group": "Creation Tools",
+    "codePath": "qr_customization_studio/code.html",
+    "previewPath": "qr_customization_studio/screen.png"
+  },
+  {
+    "name": "request_demo_trial_information",
+    "title": "Request Demo | B SOCIO AR",
+    "heading": "Try Before You Buy.",
+    "group": "Client, Docs & Mobile",
+    "codePath": "request_demo_trial_information/code.html",
+    "previewPath": "request_demo_trial_information/screen.png"
+  },
+  {
+    "name": "client_onboarding_final_review",
+    "title": "Review &amp; Launch - Axon Studio Onboarding",
+    "heading": "Review &amp; Launch",
+    "group": "Client, Docs & Mobile",
+    "codePath": "client_onboarding_final_review/code.html",
+    "previewPath": "client_onboarding_final_review/screen.png"
+  },
+  {
+    "name": "super_admin_login",
+    "title": "Super Admin Login | B Socio AR",
+    "heading": "Studio Command",
+    "group": "Admin & Account",
+    "codePath": "super_admin_login/code.html",
+    "previewPath": "super_admin_login/screen.png"
+  },
+  {
+    "name": "white_label_branding_settings",
+    "title": "White-Label Branding - AR Studio",
+    "heading": "Branding Studio",
+    "group": "Admin & Account",
+    "codePath": "white_label_branding_settings/code.html",
+    "previewPath": "white_label_branding_settings/screen.png"
+  }
+]
