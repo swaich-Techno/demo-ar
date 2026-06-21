@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>B Socio AR Studio - Dashboard</title>
+<script type='text/javascript' nonce='7/Ta5JkBLbxkDF69kunTLw==' src='https://contribution.usercontent.google.com/bqWeqd1tapaNx0G0mQc8JNXPVQgaEMDz3OIhBEBpGrmD0pHqZwsII4uTQz3EV586RwpDI-srb5wYGjLijZj34Y-6VKwU5YMjFY9wObkOAXFV3WNf45KioLIzY8-XTs_lLJsjh1gEInTQnzl_XhmZ93AR-TycGhf8cHTy1Lj8y5HzhMpHU0-nTDTSiTIMWMO3-bENUwMO1gfsIZhevdUgQjQXwhWPA3CA5_bfM65izd4dbGkjV3YI3lfQ7EgwJL86OrwU6-emYtYj-rT16104uk7nzYt35XdEWiH4ao-YzU2vGIImLJA3hJK-LyBPZDqp3BMYrrwIFVxf1c3QreZ99ZZBecoICH3AanSmb1Qvpn7WNA_UFxKkEsb_-2dz_rOyLdZMnYFxAoY_KWrEZW6uVtn4KVahsSuKRhtmw2u42VMjH_rEBRFLDrB43Y3SAnEOlr8eS40LgGagXDXlJ8Hw4lnsdzFqIwjyBBtZoyZmf9CgAtQrwCU3uyIKRFsVI3eC0veVvCSvCwVe2jhKdYcyvpsMzKgLuQK-oA_GTUJbf8gckVXTvp6FBUY2khiko0TUmILJEkQVjt-RMWoEELPf24iun4gPtcMyo1KtFIAbcHV2qS0_2GZrWIdohAxKA2pHbD0yiQQ_nQyf-Abq0YdeEOF9akrrsqWhyJOvAY5OB1u7Y98s4tzvSDI2X-vnVdIiUBXjwEVFuVwHNEfyvC-tE6PHK40ViS6bLGr8mwipJA-40ZLLDWzBP56tRF1dcsIcqUjz3i-dBj1R1hNo1ONzQI1lAcevIDr70Buhuw'></script><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=Geist:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-surface-variant": "#d4c0d7",
+                      "outline-variant": "#514255",
+                      "on-tertiary": "#610046",
+                      "on-background": "#e1e1ef",
+                      "primary-fixed-dim": "#ecb2ff",
+                      "surface-dim": "#11131c",
+                      "on-primary-fixed-variant": "#74009f",
+                      "on-primary-fixed": "#320047",
+                      "surface-tint": "#ecb2ff",
+                      "surface-container-high": "#282933",
+                      "secondary": "#d3fbff",
+                      "on-secondary": "#00363a",
+                      "on-tertiary-container": "#fffeff",
+                      "tertiary": "#ffaed9",
+                      "on-error": "#690005",
+                      "surface-container-highest": "#32343e",
+                      "inverse-primary": "#9900cf",
+                      "secondary-fixed": "#7df4ff",
+                      "on-tertiary-fixed": "#3c002a",
+                      "error-container": "#93000a",
+                      "on-surface": "#e1e1ef",
+                      "on-primary-container": "#ffffff",
+                      "tertiary-fixed-dim": "#ffaed9",
+                      "on-primary": "#520071",
+                      "tertiary-container": "#dd00a3",
+                      "on-tertiary-fixed-variant": "#890064",
+                      "error": "#ffb4ab",
+                      "surface-container": "#1d1f29",
+                      "background": "#11131c",
+                      "outline": "#9d8ba0",
+                      "surface-container-low": "#191b24",
+                      "surface-container-lowest": "#0c0e17",
+                      "secondary-fixed-dim": "#00dbe9",
+                      "surface": "#11131c",
+                      "secondary-container": "#00eefc",
+                      "on-secondary-fixed": "#002022",
+                      "on-secondary-container": "#00686f",
+                      "on-secondary-fixed-variant": "#004f54",
+                      "tertiary-fixed": "#ffd8ea",
+                      "on-error-container": "#ffdad6",
+                      "inverse-on-surface": "#2e303a",
+                      "primary-fixed": "#f8d8ff",
+                      "surface-variant": "#32343e",
+                      "primary-container": "#bd00ff",
+                      "surface-bright": "#373943",
+                      "primary": "#ecb2ff",
+                      "inverse-surface": "#e1e1ef"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "24px",
+                      "container-max": "1440px",
+                      "margin-mobile": "20px",
+                      "margin-desktop": "64px",
+                      "unit": "8px",
+                      "stack-xs": "4px",
+                      "stack-xl": "48px",
+                      "stack-md": "16px"
+              },
+              "fontFamily": {
+                      "headline-lg": [
+                              "Space Grotesk"
+                      ],
+                      "display-lg": [
+                              "Space Grotesk"
+                      ],
+                      "label-md": [
+                              "Geist"
+                      ],
+                      "headline-md": [
+                              "Space Grotesk"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-lg-mobile": [
+                              "Space Grotesk"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "label-sm": [
+                              "Geist"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "72px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        /* Glassmorphism Classes */
+        .glass-panel {
+            background-color: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .glass-panel:hover {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .neon-border-focus:focus-within {
+            border-color: #ecb2ff;
+            box-shadow: 0 0 10px rgba(236, 178, 255, 0.5);
+        }
+        
+        .cyber-chip-script {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .cyber-chip-script::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #00F0FF;
+            margin-right: 6px;
+        }
+
+        .cyber-chip-3d {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .cyber-chip-3d::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #BD00FF;
+            margin-right: 6px;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md antialiased min-h-screen flex bg-background text-on-background">
+<!-- SideNavBar (from JSON) -->
+<nav class="bg-white/3 backdrop-blur-[40px] dark:bg-white/3 h-screen w-64 fixed left-0 top-0 border-r border-white/10 shadow-xl flex flex-col py-gutter px-4 z-50">
+<!-- Header -->
+<div class="flex items-center gap-4 mb-stack-xl">
+<div class="w-10 h-10 rounded-md bg-surface-container-high border border-white/10 flex items-center justify-center overflow-hidden">
+<img alt="B Socio AR Studio Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLvJUPVzn4dvL2NB-YppgOSg_3REZTE3jjs0xwM7yURcjKkrNQhfnAiTBpHtXTo_q1PuP73u37ykppgF7eCmVpiZM5zIwkXXn9lmh9oW7jobEx9ETl2niIq5_xlU01dPEsopWPjkB8sAfKsAoudotuPM7EgxwxHO58xyHnQY9HryJ6MHagHUEHV1RxljBCMfxHwzIN5yeRwBbg221TXgctrWTz0S3EZcoQOu-Q4AlXbi5_YQJw1fJfAJpj4"/>
+</div>
+<div>
+<h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary tracking-tight">B Socio AR</h1>
+<p class="font-label-md text-label-md text-on-surface-variant">Creator Studio</p>
+</div>
+</div>
+<!-- CTA -->
+<button class="w-full mb-stack-md py-2 px-4 rounded-lg bg-primary/20 text-primary border border-primary/50 hover:bg-primary/30 transition-colors font-label-md text-label-md flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">add</span>
+            New Project
+        </button>
+<!-- Tabs -->
+<div class="flex flex-col gap-1 flex-grow">
+<!-- Analytics (Active semantic match for Dashboard) -->
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-primary font-bold border-r-2 border-primary bg-primary/10 transition-colors duration-150 transform scale-[0.98]" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 1;">leaderboard</span>
+<span class="font-label-md text-label-md">Analytics</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant font-medium hover:bg-white/5 hover:text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined">folder_copy</span>
+<span class="font-label-md text-label-md">Projects</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant font-medium hover:bg-white/5 hover:text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined">deployed_code</span>
+<span class="font-label-md text-label-md">Editor</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant font-medium hover:bg-white/5 hover:text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined">view_in_ar</span>
+<span class="font-label-md text-label-md">Assets</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant font-medium hover:bg-white/5 hover:text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-label-md text-label-md">Settings</span>
+</a>
+</div>
+<!-- Footer Tabs -->
+<div class="flex flex-col gap-1 mt-auto pt-stack-md border-t border-white/10">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant font-medium hover:bg-white/5 hover:text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined">help</span>
+<span class="font-label-md text-label-md">Help</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant font-medium hover:bg-white/5 hover:text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined">chat_bubble</span>
+<span class="font-label-md text-label-md">Feedback</span>
+</a>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<div class="flex-1 flex flex-col ml-64 min-h-screen">
+<!-- TopNavBar (from JSON) -->
+<header class="bg-white/3 backdrop-blur-[40px] dark:bg-white/3 fixed top-0 right-0 w-[calc(100%-16rem)] h-16 border-b border-white/10 shadow-sm flex justify-between items-center px-gutter z-40">
+<div class="flex items-center gap-8 h-full">
+<!-- Brand/Product Name (Fallback/Structural) -->
+<h2 class="font-headline-md text-headline-md font-black text-primary hidden lg:block">B Socio AR Studio</h2>
+<!-- Search Bar Placeholder -->
+<div class="relative hidden md:flex items-center w-64 neon-border-focus rounded-full bg-surface-container-high/50 border border-white/10 px-3 py-1.5 transition-all">
+<span class="material-symbols-outlined text-on-surface-variant mr-2 text-[18px]">search</span>
+<input class="bg-transparent border-none outline-none text-body-md text-on-surface w-full placeholder-on-surface-variant/50 focus:ring-0 p-0 h-full" placeholder="Search..." type="text"/>
+</div>
+</div>
+<!-- Navigation Links -->
+<div class="flex items-center h-full gap-6">
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-all h-full flex items-center" href="#">Shared</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-all h-full flex items-center" href="#">Team</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-all h-full flex items-center" href="#">Archive</a>
+</div>
+<!-- Trailing Actions -->
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2 border-r border-white/10 pr-4">
+<button class="text-on-surface-variant hover:text-primary transition-colors p-1 rounded-full hover:bg-white/5">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors p-1 rounded-full hover:bg-white/5">
+<span class="material-symbols-outlined">history</span>
+</button>
+</div>
+<button class="px-4 py-1.5 rounded-full border border-secondary text-secondary font-label-md text-label-md hover:bg-secondary/10 transition-colors">
+                    Preview
+                </button>
+<button class="px-4 py-1.5 rounded-full bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary/90 transition-colors shadow-[0_0_15px_rgba(211,251,255,0.3)]">
+                    Publish
+                </button>
+<div class="w-8 h-8 rounded-full border border-white/20 overflow-hidden ml-2 cursor-pointer">
+<img alt="Creator Profile" class="w-full h-full object-cover" data-alt="A professional profile image of a digital creator. The portrait is lit with subtle neon rim lights (cyan and purple) against a dark background, fitting the AR studio aesthetic perfectly." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9bDa_RGOufMv-91EqZsnJXNkhvCZUuFhFiI3IaoL4INrxKvPt6yVLhvv0XdpGdNE1LpbSKKBqnwDX2LOohKMYiyHup0O3BQonLsdphthKfcpXHz81vgn8fFzTXBc5MeEXlvkXn2mdj7XvSuRaD8aRQ3pllg5iZxEz_GaOgRkNOsXHgvSfsPtAQUjegJUYiU6cDtAmbVdF8Eyy3xaKQ8WlKOsF-D2WpsGp0zdCQKgvay-O5RAg2ljgejOhXgmd9A8rP5Mye7ELQtk"/>
+</div>
+</div>
+</header>
+<!-- Page Canvas -->
+<main class="flex-1 mt-16 p-gutter overflow-y-auto">
+<div class="max-w-container-max mx-auto space-y-stack-xl pt-stack-md">
+<!-- Page Header -->
+<div>
+<h2 class="font-display-lg text-display-lg text-on-surface mb-2">Dashboard</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Overview of your AR projects and engagement metrics.</p>
+</div>
+<!-- High-level Metrics (Bento Grid) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Metric Card 1 -->
+<div class="glass-panel rounded-xl p-6 relative overflow-hidden group">
+<!-- Decorative glow -->
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-primary/20 rounded-full blur-3xl opacity-50 group-hover:opacity-80 transition-opacity"></div>
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">deployed_code</span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Active Projects</span>
+</div>
+<div class="flex items-end gap-3">
+<span class="font-headline-lg text-headline-lg text-on-surface">12</span>
+<span class="font-label-md text-label-md text-secondary mb-1 flex items-center"><span class="material-symbols-outlined text-[16px]">trending_up</span> +2 this week</span>
+</div>
+</div>
+<!-- Metric Card 2 -->
+<div class="glass-panel rounded-xl p-6 relative overflow-hidden group">
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-secondary/20 rounded-full blur-3xl opacity-50 group-hover:opacity-80 transition-opacity"></div>
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-secondary bg-secondary/10 p-2 rounded-lg">visibility</span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Total Views</span>
+</div>
+<div class="flex items-end gap-3">
+<span class="font-headline-lg text-headline-lg text-on-surface">84.2K</span>
+<span class="font-label-md text-label-md text-secondary mb-1 flex items-center"><span class="material-symbols-outlined text-[16px]">trending_up</span> 14%</span>
+</div>
+</div>
+<!-- Metric Card 3 -->
+<div class="glass-panel rounded-xl p-6 relative overflow-hidden group">
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-tertiary/20 rounded-full blur-3xl opacity-50 group-hover:opacity-80 transition-opacity"></div>
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-tertiary bg-tertiary/10 p-2 rounded-lg">touch_app</span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Avg. Engagement</span>
+</div>
+<div class="flex items-end gap-3">
+<span class="font-headline-lg text-headline-lg text-on-surface">3m 45s</span>
+<span class="font-label-md text-label-md text-on-surface-variant mb-1 flex items-center"><span class="material-symbols-outlined text-[16px]">horizontal_rule</span> stable</span>
+</div>
+</div>
+</div>
+<!-- Recent Projects Section -->
+<div class="space-y-stack-md">
+<div class="flex justify-between items-end">
+<h3 class="font-headline-md text-headline-md text-on-surface">Recent Projects</h3>
+<a class="font-label-md text-label-md text-primary hover:text-primary-fixed transition-colors flex items-center gap-1" href="#">View All <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+</div>
+<!-- Glassmorphic Table -->
+<div class="glass-panel rounded-xl overflow-hidden">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-white/10 bg-white/5">
+<th class="py-4 px-6 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Project</th>
+<th class="py-4 px-6 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Status</th>
+<th class="py-4 px-6 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Last Modified</th>
+<th class="py-4 px-6 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md">
+<!-- Row 1 -->
+<tr class="border-b border-white/5 hover:bg-white/5 transition-colors group">
+<td class="py-4 px-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg overflow-hidden border border-white/10 shrink-0">
+<img alt="Project Thumbnail" class="w-full h-full object-cover" data-alt="A small preview thumbnail of an AR project showing a glowing, neon-cyan 3D sneaker floating above a dark, reflective surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5UO47RDqLZxw9ThTZzq5a6ewIEzbAbhV2ZyOW5lVUPFcIi3MaZHIi6dzxeEeaelX29-87Ws5dmdplioAwj_3jPOk6nLbKs03n7djt5rgATNswca6VlNj4BPnUwBiaHLStd5rxXV-1vCKQM1F9hWx-YZbvlHro0mMXlh-DROE9LrLWNoYgSjsxfPE9dhYMaUY7p9vO7v_FwdU0oRoPcbld5mSPDSXPOkyYkMYRUBA6DFJHC-qrYig62pSm36Wd7FDLxP1i1mgK14o"/>
+</div>
+<div>
+<div class="text-on-surface font-medium mb-1">Neon Kicks Promo</div>
+<div class="flex gap-2">
+<span class="font-label-sm text-label-sm cyber-chip-3d px-2 py-0.5 rounded text-on-surface-variant">Model</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center gap-1.5 font-label-sm text-label-sm text-secondary bg-secondary/10 border border-secondary/20 px-2.5 py-1 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Active
+                                        </span>
+</td>
+<td class="py-4 px-6 text-on-surface-variant">2 hours ago</td>
+<td class="py-4 px-6 text-right">
+<button class="text-on-surface-variant hover:text-primary transition-colors p-2 rounded-lg hover:bg-white/5 opacity-0 group-hover:opacity-100 focus:opacity-100">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors p-2 rounded-lg hover:bg-white/5 opacity-0 group-hover:opacity-100 focus:opacity-100">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="border-b border-white/5 hover:bg-white/5 transition-colors group">
+<td class="py-4 px-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg overflow-hidden border border-white/10 shrink-0">
+<img alt="Project Thumbnail" class="w-full h-full object-cover" data-alt="A small preview thumbnail of an AR project showing an abstract, purple data visualization floating in a dark, minimalist room." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5raneNPafGh1v13GB4PMjExjpEewF0yguCzFgWb7360wHkxhKw7VO8DlGfMtit-EWCEyU4S9J4Gyl_2dWb_RVtydwX3xbuYqDk9Z3Qy6Q6EzVltnx04gaksBqoI1PXFE84vT2XnB4409veJr_cCLOnB1NoW8IIVOXp5el0HFWsgsB2iNinua0-oupMPDZ0ECPbBUTO4rmrPGMvFr22lsOHf_50wQkiRNgdriPFW1nCe9VM2EcF6KIIK37Kouc3SxY25s5jVZcJZk"/>
+</div>
+<div>
+<div class="text-on-surface font-medium mb-1">DataViz Hologram</div>
+<div class="flex gap-2">
+<span class="font-label-sm text-label-sm cyber-chip-script px-2 py-0.5 rounded text-on-surface-variant">Script</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-on-surface-variant"></span> Draft
+                                        </span>
+</td>
+<td class="py-4 px-6 text-on-surface-variant">Yesterday</td>
+<td class="py-4 px-6 text-right">
+<button class="text-on-surface-variant hover:text-primary transition-colors p-2 rounded-lg hover:bg-white/5 opacity-0 group-hover:opacity-100 focus:opacity-100">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors p-2 rounded-lg hover:bg-white/5 opacity-0 group-hover:opacity-100 focus:opacity-100">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-white/5 transition-colors group">
+<td class="py-4 px-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg overflow-hidden border border-white/10 shrink-0 bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant">architecture</span>
+</div>
+<div>
+<div class="text-on-surface font-medium mb-1">Arch_Setup_v2</div>
+<div class="flex gap-2">
+<span class="font-label-sm text-label-sm cyber-chip-3d px-2 py-0.5 rounded text-on-surface-variant">Scene</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-on-surface-variant"></span> Draft
+                                        </span>
+</td>
+<td class="py-4 px-6 text-on-surface-variant">3 days ago</td>
+<td class="py-4 px-6 text-right">
+<button class="text-on-surface-variant hover:text-primary transition-colors p-2 rounded-lg hover:bg-white/5 opacity-0 group-hover:opacity-100 focus:opacity-100">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors p-2 rounded-lg hover:bg-white/5 opacity-0 group-hover:opacity-100 focus:opacity-100">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

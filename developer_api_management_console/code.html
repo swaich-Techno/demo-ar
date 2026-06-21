@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Developer Console - B SOCIO AR</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Inter:wght@100..900&amp;family=Space+Grotesk:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script type='text/javascript' nonce='EZDRxRaHRWT3BqAIy6Qe1w==' src='https://contribution.usercontent.google.com/nNh1Uymsk-z1DPHK7HO-uXFX4bfgSsx-qCe0TfSq5GgJkp8SfVyaMydbXmF22CohiCKsRs2_zV2jYOug1HYo61vQ-a3E1GN3GlDK9SwSYQQOzn6ZNMPKj3-YpCAG56nUHh-nAcu3qmS-DTseGgjQIXmkkFAa2nj6phTrvLm0mnNy87DP08LcILT-e6qjKxJuL5Ogg00H2rbDEh_eE2_IxIS6_PCJtoQZ_ujCzHukMYbxRsQCzrmPhLB99m_ZHz2_IWC1i8334OoCY0WIeGS8Lracqh5XEk9kWHri0fMxX_zszyk5IDdq2Oa8uEQd5f2L6YwYxi8FTw40YqaDIv0WzJSE1vjATYbIPor3wrBvAu0_atVB5C6Z3mPLbaPu_i98dVuyhEtfMhDQQnbtWyXcUSvs_mazSn2e-gulfs5-pNgkBFVJxq2OA1UW81mXP-sgKUSQpVB3kQEXLeutYF2ywLoFONPw0CGu4Wl8m33RCUPagg_VwzxbPnOe6dwv3sSaaFYcxdM60FpZWXbcVYHC3-lp_lAKqUYPu0vbfg7wQff0Epv7O9EVJiYxdZYAjl3KL4Qkyi4s4_79uyU_1zMVH4QsZ0heyII3ZvSA_5zhMTx2bS3lfEK0wijV-z2c9CAe26UgpItEVLxybswBMrRR55rGyeOrBJyZ4fOq791ZFARzOp-sriaxQ9z9HMunFfx1oy7r4t0J88QqjIJLxptxrTwLiqxRCOJpygwr-6gQVxwRWwO-0MbTlWQ-b9twwB4rqr6dz3U70WOhbPlLCkH4jPnbRoYnD_-M8QLB1w'></script><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#f8d8ff",
+                        "secondary-fixed-dim": "#00dbe9",
+                        "on-tertiary-fixed-variant": "#890064",
+                        "tertiary": "#ffaed9",
+                        "surface-bright": "#373943",
+                        "surface-tint": "#ecb2ff",
+                        "on-surface": "#e1e1ef",
+                        "on-tertiary": "#610046",
+                        "inverse-surface": "#e1e1ef",
+                        "surface-container-lowest": "#0c0e17",
+                        "secondary-fixed": "#7df4ff",
+                        "on-primary-fixed": "#320047",
+                        "background": "#11131c",
+                        "on-primary-container": "#ffffff",
+                        "tertiary-container": "#dd00a3",
+                        "secondary": "#d3fbff",
+                        "primary": "#ecb2ff",
+                        "on-background": "#e1e1ef",
+                        "error": "#ffb4ab",
+                        "surface-variant": "#32343e",
+                        "outline-variant": "#514255",
+                        "tertiary-fixed-dim": "#ffaed9",
+                        "tertiary-fixed": "#ffd8ea",
+                        "surface": "#11131c",
+                        "on-tertiary-fixed": "#3c002a",
+                        "inverse-on-surface": "#2e303a",
+                        "surface-dim": "#11131c",
+                        "on-secondary-container": "#00686f",
+                        "secondary-container": "#00eefc",
+                        "outline": "#9d8ba0",
+                        "on-tertiary-container": "#fffeff",
+                        "surface-container-highest": "#32343e",
+                        "on-surface-variant": "#d4c0d7",
+                        "on-secondary-fixed-variant": "#004f54",
+                        "on-secondary": "#00363a",
+                        "on-error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#74009f",
+                        "on-primary": "#520071",
+                        "surface-container-high": "#282933",
+                        "primary-container": "#bd00ff",
+                        "on-error": "#690005",
+                        "error-container": "#93000a",
+                        "inverse-primary": "#9900cf",
+                        "surface-container-low": "#191b24",
+                        "on-secondary-fixed": "#002022",
+                        "surface-container": "#1d1f29",
+                        "primary-fixed-dim": "#ecb2ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "stack-xl": "48px",
+                        "gutter": "24px",
+                        "container-max": "1440px",
+                        "margin-desktop": "64px",
+                        "unit": "8px",
+                        "stack-xs": "4px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Geist"],
+                        "headline-lg": ["Space Grotesk"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Space Grotesk"],
+                        "headline-md": ["Space Grotesk"],
+                        "label-md": ["Geist"],
+                        "headline-lg-mobile": ["Space Grotesk"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        /* Custom Glassmorphism Utilities */
+        .glass-panel {
+            background-color: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-panel-interactive:hover {
+            background-color: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 20px rgba(0, 238, 252, 0.15);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+        
+        /* Neon Highlights */
+        .neon-border-cyan {
+            border: 1px solid #00eefc;
+            box-shadow: inset 0 0 10px rgba(0, 238, 252, 0.2), 0 0 10px rgba(0, 238, 252, 0.2);
+        }
+        .neon-text-cyan {
+            color: #00eefc;
+            text-shadow: 0 0 8px rgba(0, 238, 252, 0.6);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen overflow-x-hidden selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar Shared Component -->
+<header class="bg-surface/30 backdrop-blur-xl fixed top-0 w-full border-b border-white/10 shadow-[0_0_15px_rgba(236,178,255,0.1)] flex justify-between items-center px-gutter h-16 w-full z-50 transition-all hover:bg-white/5">
+<div class="flex items-center gap-stack-md">
+<button class="text-primary hover:opacity-80 scale-95 transition-all p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-primary/50">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 0;">menu</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-bold text-primary tracking-tight">B SOCIO AR</h1>
+</div>
+<div class="flex items-center">
+<div class="h-8 w-8 rounded-full overflow-hidden border-2 border-primary/30">
+<img alt="User profile" class="w-full h-full object-cover" data-alt="A futuristic avatar portrait of a creator in a neon-lit, cyberpunk style studio, featuring sharp geometric facial lighting and deep obsidian background with cyan rim light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPI-j2Cd75pMLufR-wwaMTbKIj3o6MbRvw3kIDN65LNtlVt1uayLVNCKunCoTcm5QHbTtf8949S0YqJ0bViDh-2Bj2emwb0kYCOYem6iyHtNNXvesWDWSjbXBoXPwI1A926zAW_7Ks_DkV7Sbbptn00Nor051TKNrch5AvfkHSpovAGrk5a0alTb281RY6asNjI1VLKrdN5GbaKGTNJW4H86oSBXTUcU5hCamBGcJnv0Dbi-TnLdhPqiDftfCy1p7OZi36UmsDCl0"/>
+</div>
+</div>
+</header>
+<!-- NavigationDrawer Shared Component -->
+<nav class="bg-surface/60 backdrop-blur-2xl h-full w-72 border-r border-white/10 shadow-2xl fixed inset-y-0 left-0 z-[60] flex flex-col hidden md:flex Smooth slide-in transition with backdrop dimming">
+<!-- Header -->
+<div class="p-gutter border-b border-white/10 flex items-center gap-stack-md mt-16"> <!-- Added mt-16 to offset TopAppBar -->
+<div class="w-12 h-12 rounded-lg overflow-hidden border border-white/20">
+<img alt="Admin Avatar" class="w-full h-full object-cover" data-alt="Abstract 3D render of a glowing glass orb containing a neon digital cityscape, representing an enterprise creator studio avatar in a high-tech AR environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ4QCA5VjPNtq2v-mBNwBFQ4fX5JQZcuAxyPlwrMWe7TOwGxuNQLw7EDalpB1uzGhWnizwv1n9KdymN-swL8iVqFF8rb5CsMOjL-_zwKHWWwfiMZ8f6tIOvPfK5HTVZYSys2g9Pmh0Nwq-Lm6XNPKw4O10Q5P7oAEo7jzDORoRkktdl7OuPxekWIL2QqbqD-trQojorKSLTODXlpNEPNhOqK4x89CzrRjJjjBunJNipb3hrLT8rHeWd91WTb1KRSNNnhQpQpB1HC0"/>
+</div>
+<div class="flex flex-col left_align">
+<span class="font-headline-md text-headline-md text-primary">Creator Studio</span>
+<span class="font-label-md text-label-md text-secondary opacity-80">Enterprise Tier</span>
+</div>
+</div>
+<!-- Navigation Links -->
+<div class="flex flex-col py-stack-md px-unit gap-unit overflow-y-auto flex-1">
+<a class="flex items-center gap-stack-md px-stack-md py-3 rounded-lg text-on-surface-variant opacity-70 hover:bg-white/10 hover:text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined">view_in_ar</span>
+<span class="font-label-md text-label-md">Showcase</span>
+</a>
+<a class="flex items-center gap-stack-md px-stack-md py-3 rounded-lg text-on-surface-variant opacity-70 hover:bg-white/10 hover:text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined">approval_delegation</span>
+<span class="font-label-md text-label-md">Admin Queue</span>
+</a>
+<a class="flex items-center gap-stack-md px-stack-md py-3 rounded-lg text-on-surface-variant opacity-70 hover:bg-white/10 hover:text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined">database</span>
+<span class="font-label-md text-label-md">Asset Library</span>
+</a>
+<!-- Active State - Proxied for Developer Settings/Analytics -->
+<a class="flex items-center gap-stack-md px-stack-md py-3 rounded-lg bg-primary-container/20 text-primary border-l-4 border-primary transition-colors" href="#">
+<span class="material-symbols-outlined">insights</span>
+<span class="font-label-md text-label-md">Analytics</span>
+</a>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-1 ml-0 md:ml-72 pt-24 px-gutter pb-margin-desktop">
+<!-- Page Header -->
+<div class="mb-stack-xl flex flex-col md:flex-row md:items-end justify-between gap-stack-md">
+<div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-primary-container tracking-tight">Developer Console</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-2xl">Manage your API integrations, configure webhook endpoints, and monitor your infrastructure usage across the AR ecosystem.</p>
+</div>
+<div class="flex gap-unit">
+<button class="glass-panel px-6 py-2.5 rounded-lg font-label-md text-label-md text-on-surface flex items-center gap-2 hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-[18px]">description</span>
+                    Documentation
+                </button>
+</div>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 xl:grid-cols-3 gap-gutter">
+<!-- Left Column (Wider Content) -->
+<div class="xl:col-span-2 flex flex-col gap-gutter">
+<!-- API Keys Section -->
+<section class="glass-panel rounded-xl p-gutter relative overflow-hidden group">
+<!-- Subtle background glow -->
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-primary/10 rounded-full blur-[80px] pointer-events-none group-hover:bg-primary/20 transition-all duration-700"></div>
+<div class="flex justify-between items-center mb-stack-md relative z-10">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined neon-text-cyan">key</span>
+<h3 class="font-headline-md text-headline-md text-on-primary-container">Your API Keys</h3>
+</div>
+<button class="px-4 py-2 rounded-lg bg-transparent border border-secondary-container/30 text-secondary-container font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-2 hover:bg-secondary-container/10 hover:border-secondary-container transition-all">
+<span class="material-symbols-outlined text-[16px]">add</span>
+                            Generate New
+                        </button>
+</div>
+<div class="flex flex-col gap-3 relative z-10">
+<!-- Key Row 1 -->
+<div class="bg-surface-container-high/50 border border-white/5 rounded-lg p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 glass-panel-interactive">
+<div>
+<div class="flex items-center gap-3 mb-1">
+<span class="font-label-md text-label-md text-on-surface">Production Key</span>
+<span class="bg-secondary-container/20 text-secondary-container px-2 py-0.5 rounded text-[10px] uppercase font-bold tracking-widest border border-secondary-container/30">Live</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-mono flex items-center gap-2">
+                                    sk_live_••••••••••••••••••••••••
+                                </div>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 text-on-surface-variant hover:text-on-surface rounded-md hover:bg-white/5 transition-colors" title="Copy Key">
+<span class="material-symbols-outlined text-[20px]">content_copy</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-error rounded-md hover:bg-error/10 transition-colors" title="Revoke">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Key Row 2 -->
+<div class="bg-surface-container-high/50 border border-white/5 rounded-lg p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 glass-panel-interactive opacity-70 hover:opacity-100">
+<div>
+<div class="flex items-center gap-3 mb-1">
+<span class="font-label-md text-label-md text-on-surface">Development Key</span>
+<span class="bg-surface-variant text-on-surface-variant px-2 py-0.5 rounded text-[10px] uppercase font-bold tracking-widest border border-white/10">Test</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-mono flex items-center gap-2">
+                                    sk_test_••••••••••••••••••••••••
+                                </div>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 text-on-surface-variant hover:text-on-surface rounded-md hover:bg-white/5 transition-colors" title="Copy Key">
+<span class="material-symbols-outlined text-[20px]">content_copy</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-error rounded-md hover:bg-error/10 transition-colors" title="Revoke">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Webhook Subscriptions Section -->
+<section class="glass-panel rounded-xl p-gutter relative overflow-hidden group">
+<div class="absolute -bottom-24 -left-24 w-64 h-64 bg-tertiary-container/10 rounded-full blur-[80px] pointer-events-none group-hover:bg-tertiary-container/20 transition-all duration-700"></div>
+<div class="flex justify-between items-center mb-stack-md relative z-10">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary">webhook</span>
+<h3 class="font-headline-md text-headline-md text-on-primary-container">Webhook Subscriptions</h3>
+</div>
+<button class="px-4 py-2 rounded-lg bg-transparent border border-outline-variant text-on-surface font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-2 hover:bg-white/5 hover:border-white/30 transition-all">
+<span class="material-symbols-outlined text-[16px]">add_link</span>
+                            Add Endpoint
+                        </button>
+</div>
+<div class="flex flex-col gap-3 relative z-10">
+<!-- Webhook Row 1 -->
+<div class="bg-surface-container-high/50 border border-white/5 rounded-lg p-4 flex flex-col gap-3 glass-panel-interactive border-l-2 border-l-secondary-container">
+<div class="flex justify-between items-start">
+<div class="font-label-sm text-label-sm text-secondary font-mono truncate max-w-[250px] sm:max-w-md">
+                                    https://api.creatorstudio.app/v1/webhooks/ar-events
+                                </div>
+<span class="flex items-center gap-1 text-secondary-container font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse shadow-[0_0_8px_rgba(0,238,252,0.8)]"></span>
+                                    Active
+                                </span>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-variant/50 backdrop-blur-md rounded-full px-3 py-1 border border-outline-variant/30 font-label-sm text-label-sm flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                                    Asset Approved
+                                </span>
+<span class="bg-surface-variant/50 backdrop-blur-md rounded-full px-3 py-1 border border-outline-variant/30 font-label-sm text-label-sm flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-[#00F0FF]"></span>
+                                    Project Deployed
+                                </span>
+</div>
+</div>
+<!-- Webhook Row 2 -->
+<div class="bg-surface-container-high/50 border border-white/5 rounded-lg p-4 flex flex-col gap-3 glass-panel-interactive opacity-60">
+<div class="flex justify-between items-start">
+<div class="font-label-sm text-label-sm text-on-surface-variant font-mono truncate max-w-[250px] sm:max-w-md">
+                                    https://internal-tools.corp.com/analytics/ingest
+                                </div>
+<span class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+                                    Paused
+                                </span>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-variant/50 backdrop-blur-md rounded-full px-3 py-1 border border-outline-variant/30 font-label-sm text-label-sm flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                                    Quota Exceeded
+                                </span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column (Narrower Widget) -->
+<div class="flex flex-col gap-gutter">
+<!-- Usage Quota Section -->
+<section class="glass-panel rounded-xl p-gutter h-full min-h-[400px] flex flex-col relative overflow-hidden">
+<div class="absolute top-0 right-0 w-full h-full bg-gradient-to-b from-secondary-container/5 to-transparent pointer-events-none opacity-50"></div>
+<div class="flex items-center gap-3 mb-stack-xl relative z-10">
+<span class="material-symbols-outlined text-secondary-container">donut_large</span>
+<h3 class="font-headline-md text-headline-md text-on-primary-container">Usage Quota</h3>
+</div>
+<!-- Visualization -->
+<div class="flex-1 flex flex-col items-center justify-center relative z-10">
+<!-- Simulated Circular Progress -->
+<div class="relative w-48 h-48 flex items-center justify-center mb-6">
+<!-- Background Track -->
+<svg class="absolute inset-0 w-full h-full transform -rotate-90" viewbox="0 0 100 100">
+<circle cx="50" cy="50" fill="none" r="45" stroke="rgba(255,255,255,0.05)" stroke-width="6"></circle>
+<!-- Progress Track (84%) -->
+<circle class="drop-shadow-[0_0_8px_rgba(0,238,252,0.5)]" cx="50" cy="50" fill="none" r="45" stroke="url(#cyan-gradient)" stroke-dasharray="283" stroke-dashoffset="45" stroke-linecap="round" stroke-width="6"></circle>
+<defs>
+<lineargradient id="cyan-gradient" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#00eefc"></stop>
+<stop offset="100%" stop-color="#bd00ff"></stop>
+</lineargradient>
+</defs>
+</svg>
+<div class="text-center flex flex-col items-center">
+<span class="font-display-lg text-headline-lg font-bold text-on-primary-container">84<span class="text-secondary-container text-headline-md">%</span></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mt-1">API Requests</span>
+</div>
+</div>
+<!-- Stats Details -->
+<div class="w-full flex flex-col gap-4 mt-auto">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-end">
+<span class="font-label-md text-label-md text-on-surface">API Requests</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">8.4M / 10M</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-gradient-to-r from-secondary-container to-primary-container h-full w-[84%] rounded-full shadow-[0_0_10px_rgba(0,238,252,0.5)]"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-end">
+<span class="font-label-md text-label-md text-on-surface">Asset Storage</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">45GB / 100GB</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary/60 h-full w-[45%] rounded-full"></div>
+</div>
+</div>
+<button class="mt-4 w-full py-3 rounded-lg bg-surface-bright/50 border border-white/10 font-label-md text-label-md text-on-surface hover:bg-white/10 transition-colors flex justify-center items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">upgrade</span>
+                                Upgrade Plan
+                            </button>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+</body></html>

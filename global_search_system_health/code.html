@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Global Search &amp; System Health</title>
+<script type='text/javascript' nonce='00wluQCDSKYX7d/bQTaWvw==' src='https://contribution.usercontent.google.com/BubL7Pfi49ZsyyF6QvI2nQK14Phffg3VUzBYcFGPewxo4ya7Z-23zOp3B5Pz2YRSmEnSIYt3Vm3z9gxSnTmDAFrBzzndpgjjDxoFMMTzhaR2PhLxYJSrLQi6jqVe493h_wCht_9rVHR6wxagKyIWgGSHX19lPqXVJg_lnTU-0-uY3eAozMPFrK6OeboOatTJW77UwByCa17-VfwVlZ6Ov51m0We7MiwjTPQtIUytGBd5xznM3G2ASwCudieBcwxR5C84vW51rAFbQWirvBqm4f0KrufCMg-k3XkatBPlIA0EOSWQhIiOF1ErUWAMZ4DxJ5f98bawjv-uBCUysfvYSYN8p1s1FEKm7mwvUbqpyIksayTTEsObRGd2YFe-lwHxww-Iw-Jgxxy5J_2H8GYQAL_Zsm2VZ3gynLEM2gKr8anu6ur95KBf9Qye8WNCJeqUz8RFWws9-vhdUU6mpK0Hf0c2k0ucufFqdIvedkDFbCQT05ZjYKVh5mZlJwX23dkf-p5lGrsojYHmSGWHB6K187MSfNBSU4IRYASt6NopBgMx-gFUef8ysD33MygYHZbbcLirp1mVwJPilVRh9vdwwdTszHQ1F1CRTZz2c2HJvIj8cYibzU7AOmdH2KjqNOTHzdcHI65N752Gl0OlrzB3TjbQDGbw48x8nGxe1ilo6RVnwQWfTMr1oJq7bVVUZkG1Mb5NX26UFUhPqht9lGX5SCnzn-047r8fqAJFYyUr5XJURgCmAXvYfrYg7Pt6CpN4Uc6J5O0Odf9aOQj760q98bMup6n-SsqYHqwnZg'></script><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Geist:wght@500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#004f54",
+                        "on-error-container": "#ffdad6",
+                        "primary-fixed-dim": "#ecb2ff",
+                        "surface-container-low": "#191b24",
+                        "on-tertiary-fixed": "#3c002a",
+                        "on-primary-fixed-variant": "#74009f",
+                        "on-surface-variant": "#d4c0d7",
+                        "surface-container-highest": "#32343e",
+                        "surface": "#11131c",
+                        "secondary": "#d3fbff",
+                        "primary": "#ecb2ff",
+                        "background": "#11131c",
+                        "primary-container": "#bd00ff",
+                        "surface-tint": "#ecb2ff",
+                        "tertiary-container": "#dd00a3",
+                        "surface-dim": "#11131c",
+                        "surface-container": "#1d1f29",
+                        "secondary-fixed-dim": "#00dbe9",
+                        "on-error": "#690005",
+                        "secondary-fixed": "#7df4ff",
+                        "on-secondary": "#00363a",
+                        "inverse-surface": "#e1e1ef",
+                        "outline": "#9d8ba0",
+                        "on-secondary-container": "#00686f",
+                        "on-secondary-fixed": "#002022",
+                        "surface-container-lowest": "#0c0e17",
+                        "surface-container-high": "#282933",
+                        "secondary-container": "#00eefc",
+                        "inverse-primary": "#9900cf",
+                        "surface-variant": "#32343e",
+                        "surface-bright": "#373943",
+                        "on-primary": "#520071",
+                        "on-tertiary-container": "#fffeff",
+                        "on-tertiary": "#610046",
+                        "inverse-on-surface": "#2e303a",
+                        "error": "#ffb4ab",
+                        "on-tertiary-fixed-variant": "#890064",
+                        "on-primary-fixed": "#320047",
+                        "outline-variant": "#514255",
+                        "tertiary": "#ffaed9",
+                        "on-surface": "#e1e1ef",
+                        "tertiary-fixed": "#ffd8ea",
+                        "on-background": "#e1e1ef",
+                        "tertiary-fixed-dim": "#ffaed9",
+                        "error-container": "#93000a",
+                        "primary-fixed": "#f8d8ff",
+                        "on-primary-container": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-xs": "4px",
+                        "stack-xl": "48px",
+                        "stack-md": "16px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "container-max": "1440px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "label-md": ["Geist"],
+                        "headline-lg-mobile": ["Space Grotesk"],
+                        "headline-lg": ["Space Grotesk"],
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Space Grotesk"],
+                        "headline-md": ["Space Grotesk"],
+                        "label-sm": ["Geist"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #05060A; /* Level 0 Base */
+            color: #e1e1ef;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-panel-interactive:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 15px rgba(0, 238, 252, 0.1);
+        }
+        .neon-input:focus-within {
+            border-bottom-color: #00eefc;
+            box-shadow: 0 1px 10px rgba(0, 238, 252, 0.3);
+        }
+        .status-dot-online {
+            box-shadow: 0 0 8px #00eefc;
+            background-color: #00eefc;
+        }
+        .status-dot-operational {
+            box-shadow: 0 0 8px #bd00ff;
+            background-color: #bd00ff;
+        }
+        .status-dot-optimized {
+            box-shadow: 0 0 8px #ecb2ff;
+            background-color: #ecb2ff;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-body-md antialiased pb-24 md:pb-0">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full backdrop-blur-xl bg-white/5 border-b border-white/10 shadow-[0_0_15px_rgba(0,238,252,0.1)] z-50">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16 w-full">
+<div class="flex items-center gap-4">
+<img class="w-8 h-8 rounded-full object-cover border border-white/20" data-alt="A futuristic circular avatar featuring an abstract glowing geometric profile silhouette against a deep obsidian background, stylized with neon cyan edges and high contrast lighting, exuding a professional tech vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMDbOJ5Hr3kfsD0ZW4mUNeiLhayhqeidczTu3lMyK4hRyrNH3541C0PjRSt8z8O7lPejYylz1tmuSQ6RSPG38x8xbJeV2vvDIHLhzW0g-ow2wfkyMtCP2o84OzyPaYagIrULmskjX984InImRvYQlkkX9EQa9g2xe0LQ7QM0zH3LfU8Jofkl-c54DTtRakGNc8Bwxc7q4Nf74BwrlAAr0YS6KFZxLrKsWOTPhy1TmgEMtZAAzoy3nVNmM3YPUwXazZJbXgBofNpVg"/>
+<h1 class="font-headline-md text-headline-md font-bold text-secondary-container tracking-tighter">B SOCIO AR</h1>
+</div>
+<button class="text-secondary-fixed-dim hover:bg-white/10 transition-all scale-95 active:scale-90 p-2 rounded-full">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto min-h-screen flex flex-col gap-gutter">
+<!-- Search Section -->
+<section class="flex flex-col gap-unit">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-stack-xs">Global Search</h2>
+<div class="glass-panel rounded-xl p-1 flex items-center transition-all duration-300 neon-input">
+<span class="material-symbols-outlined text-outline ml-4">search</span>
+<input class="w-full bg-transparent border-none text-on-surface focus:ring-0 placeholder:text-outline font-body-lg text-body-lg px-4 py-3" placeholder="Search projects, assets, users..." type="text"/>
+<div class="flex gap-2 mr-4">
+<span class="px-2 py-1 bg-white/5 rounded text-outline font-label-sm text-label-sm border border-white/10">⌘</span>
+<span class="px-2 py-1 bg-white/5 rounded text-outline font-label-sm text-label-sm border border-white/10">K</span>
+</div>
+</div>
+<!-- Quick Filters (Chips) -->
+<div class="flex gap-stack-xs mt-stack-xs overflow-x-auto pb-2 scrollbar-hide">
+<button class="glass-panel px-4 py-2 rounded-full font-label-md text-label-md text-secondary-container flex items-center gap-2 flex-shrink-0">
+<div class="w-2 h-2 rounded-full bg-secondary-container"></div>
+                    All Results
+                </button>
+<button class="glass-panel px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant flex items-center gap-2 flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity">
+<div class="w-2 h-2 rounded-full bg-primary-container"></div>
+                    Projects
+                </button>
+<button class="glass-panel px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant flex items-center gap-2 flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity">
+<div class="w-2 h-2 rounded-full bg-tertiary-container"></div>
+                    Assets
+                </button>
+<button class="glass-panel px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant flex items-center gap-2 flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity">
+<div class="w-2 h-2 rounded-full bg-outline"></div>
+                    Users
+                </button>
+</div>
+</section>
+<!-- System Health Section -->
+<section class="mt-stack-md flex flex-col gap-unit">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-stack-xs flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container">monitor_heart</span>
+                System Health
+            </h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Node 1 -->
+<div class="glass-panel glass-panel-interactive rounded-xl p-stack-md flex flex-col gap-unit transition-all duration-300 group cursor-default">
+<div class="flex justify-between items-start">
+<div class="p-2 bg-white/5 rounded-lg border border-white/10">
+<span class="material-symbols-outlined text-secondary-container">view_in_ar</span>
+</div>
+<div class="flex items-center gap-2 bg-secondary-container/10 px-3 py-1 rounded-full border border-secondary-container/30">
+<div class="w-2 h-2 rounded-full status-dot-online"></div>
+<span class="font-label-sm text-label-sm text-secondary-container uppercase tracking-widest">Online</span>
+</div>
+</div>
+<div class="mt-auto pt-stack-xs">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold">3D Render Engine</h3>
+<p class="font-body-md text-body-md text-outline">Latency: 12ms</p>
+</div>
+</div>
+<!-- Node 2 -->
+<div class="glass-panel glass-panel-interactive rounded-xl p-stack-md flex flex-col gap-unit transition-all duration-300 group cursor-default">
+<div class="flex justify-between items-start">
+<div class="p-2 bg-white/5 rounded-lg border border-white/10">
+<span class="material-symbols-outlined text-primary-container">router</span>
+</div>
+<div class="flex items-center gap-2 bg-primary-container/10 px-3 py-1 rounded-full border border-primary-container/30">
+<div class="w-2 h-2 rounded-full status-dot-operational"></div>
+<span class="font-label-sm text-label-sm text-primary-container uppercase tracking-widest">Operational</span>
+</div>
+</div>
+<div class="mt-auto pt-stack-xs">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold">API Gateway</h3>
+<p class="font-body-md text-body-md text-outline">Requests: 4.2k/s</p>
+</div>
+</div>
+<!-- Node 3 -->
+<div class="glass-panel glass-panel-interactive rounded-xl p-stack-md flex flex-col gap-unit transition-all duration-300 group cursor-default">
+<div class="flex justify-between items-start">
+<div class="p-2 bg-white/5 rounded-lg border border-white/10">
+<span class="material-symbols-outlined text-primary">cloud_sync</span>
+</div>
+<div class="flex items-center gap-2 bg-primary/10 px-3 py-1 rounded-full border border-primary/30">
+<div class="w-2 h-2 rounded-full status-dot-optimized"></div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Optimized</span>
+</div>
+</div>
+<div class="mt-auto pt-stack-xs">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold">Edge CDN</h3>
+<p class="font-body-md text-body-md text-outline">Hit Rate: 99.8%</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center pt-2 pb-safe px-4 backdrop-blur-2xl bg-surface-container-low/80 border-t border-white/10 shadow-[0_-4px_20px_rgba(0,0,0,0.5)] rounded-t-xl h-[80px]">
+<button class="flex flex-col items-center justify-center text-outline opacity-60 hover:text-secondary-fixed-dim transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined mb-1">layers</span>
+<span class="font-label-sm text-label-sm">Projects</span>
+</button>
+<button class="flex flex-col items-center justify-center text-outline opacity-60 hover:text-secondary-fixed-dim transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined mb-1">deployed_code</span>
+<span class="font-label-sm text-label-sm">Editor</span>
+</button>
+<button class="flex flex-col items-center justify-center text-secondary-container font-bold drop-shadow-[0_0_8px_rgba(0,238,252,0.6)] active:scale-95 duration-200">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: &#39;FILL&#39; 1;">dashboard_customize</span>
+<span class="font-label-sm text-label-sm">Templates</span>
+</button>
+<button class="flex flex-col items-center justify-center text-outline opacity-60 hover:text-secondary-fixed-dim transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined mb-1">monitoring</span>
+<span class="font-label-sm text-label-sm">Analytics</span>
+</button>
+<button class="flex flex-col items-center justify-center text-outline opacity-60 hover:text-secondary-fixed-dim transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined mb-1">account_circle</span>
+<span class="font-label-sm text-label-sm">Profile</span>
+</button>
+</nav>
+</body></html>

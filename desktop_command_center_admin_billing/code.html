@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>B Socio AR Studio - Subscription Management</title>
+<script type='text/javascript' nonce='feyopHXKciiJ4l2P7JaULA==' src='https://contribution.usercontent.google.com/lmnTjF8ALLiipoLg9lZt_NnKsEhvT6RKJi3JEruNYAKi1ozgdrg3e-MJTKnO2Hulf5pZwuwagDLajZGwnf5pfjzc2UdYcQFvT-icX6rABs3odDMPg2HmbLiflLq9EfQV5sIJHhFZfK8sbfPR24koA6G7kMOIny9tdXK2j-v0WlX7KM0cCOS9wC0FesfKgGmoyw347-3ZS7IhRlZlypGGBmjaNRdNsGp2_kiUsb_ATY0aq9UrV7XKDxK1az9-sV4e8E3XQiwSzKrLh_NO0XERVfetJUdoU7K6o0nn60-WyU6RS1fETHEeAATTimyZgTsyzpuZDT4OgpOV8de3DIixiMYK8OHM-HWm_sAHV0NN3jX0JtGzGCLBtoOw-qEyxH-F5G7o976zu-FLjkkSgIk30Emq3UBQv9rQQWCVJ-8wPMG3mOw6dsHuvvs7wx1lALRB7I5pQUsha7il_s64jRoBrMQ5jOcZkqQvb4lmmlMdkPXCB3QAAlJsVoH3xciaaYsbf1gehHjBSQKEakkW5rlwnUHqIQCCS83hKtfn-gc8nnThh6LC0HIl5kYR2G0nofKAUBgGBq9wg3qK4QqF1W2MyENOG96ab7a48ySAttj60KenjvQaafkfHdpqZeQG0fGO34eyIDj2G2kQ6oh8pehe8WMM8FPEjsM5G1zIMczJL-6w7NhRk74TsS7wBZ80HJChwhvN3CHktiUKutrsgYtRT7TFgfLGAuiu9BVi9OeXmnJPCjaGnIKytGFVFmknQAHob0-KY83xLp9AzziNvoJG4viOYUWfbuepWsJmWA'></script><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Geist:wght@500;600&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-surface-variant": "#d4c0d7",
+                        "outline-variant": "#514255",
+                        "on-tertiary": "#610046",
+                        "on-background": "#e1e1ef",
+                        "primary-fixed-dim": "#ecb2ff",
+                        "surface-dim": "#11131c",
+                        "on-primary-fixed-variant": "#74009f",
+                        "on-primary-fixed": "#320047",
+                        "surface-tint": "#ecb2ff",
+                        "surface-container-high": "#282933",
+                        "secondary": "#d3fbff",
+                        "on-secondary": "#00363a",
+                        "on-tertiary-container": "#fffeff",
+                        "tertiary": "#ffaed9",
+                        "on-error": "#690005",
+                        "surface-container-highest": "#32343e",
+                        "inverse-primary": "#9900cf",
+                        "secondary-fixed": "#7df4ff",
+                        "on-tertiary-fixed": "#3c002a",
+                        "error-container": "#93000a",
+                        "on-surface": "#e1e1ef",
+                        "on-primary-container": "#ffffff",
+                        "tertiary-fixed-dim": "#ffaed9",
+                        "on-primary": "#520071",
+                        "tertiary-container": "#dd00a3",
+                        "on-tertiary-fixed-variant": "#890064",
+                        "error": "#ffb4ab",
+                        "surface-container": "#1d1f29",
+                        "background": "#11131c",
+                        "outline": "#9d8ba0",
+                        "surface-container-low": "#191b24",
+                        "surface-container-lowest": "#0c0e17",
+                        "secondary-fixed-dim": "#00dbe9",
+                        "surface": "#11131c",
+                        "secondary-container": "#00eefc",
+                        "on-secondary-fixed": "#002022",
+                        "on-secondary-container": "#00686f",
+                        "on-secondary-fixed-variant": "#004f54",
+                        "tertiary-fixed": "#ffd8ea",
+                        "on-error-container": "#ffdad6",
+                        "inverse-on-surface": "#2e303a",
+                        "primary-fixed": "#f8d8ff",
+                        "surface-variant": "#32343e",
+                        "primary-container": "#bd00ff",
+                        "surface-bright": "#373943",
+                        "primary": "#ecb2ff",
+                        "inverse-surface": "#e1e1ef"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "0.75rem",
+                        full: "9999px"
+                    },
+                    spacing: {
+                        gutter: "24px",
+                        "container-max": "1440px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        unit: "8px",
+                        "stack-xs": "4px",
+                        "stack-xl": "48px",
+                        "stack-md": "16px"
+                    },
+                    fontFamily: {
+                        "headline-lg": ["Space Grotesk"],
+                        "display-lg": ["Space Grotesk"],
+                        "label-md": ["Geist"],
+                        "headline-md": ["Space Grotesk"],
+                        "body-md": ["Inter"],
+                        "headline-lg-mobile": ["Space Grotesk"],
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Geist"]
+                    },
+                    fontSize: {
+                        "headline-lg": ["40px", { lineHeight: "1.2", fontWeight: "600" }],
+                        "display-lg": ["72px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "label-md": ["14px", { lineHeight: "1.2", letterSpacing: "0.05em", fontWeight: "500" }],
+                        "headline-md": ["24px", { lineHeight: "1.3", fontWeight: "500" }],
+                        "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+                        "headline-lg-mobile": ["32px", { lineHeight: "1.2", fontWeight: "600" }],
+                        "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+                        "label-sm": ["12px", { lineHeight: "1.2", fontWeight: "600" }]
+                    }
+                }
+            }
+        };
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .neon-border {
+            border: 1px solid #bd00ff;
+            box-shadow: inset 0 0 10px rgba(189, 0, 255, 0.2);
+        }
+        .neon-text {
+            text-shadow: 0 0 10px rgba(189, 0, 255, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- SideNavBar -->
+<nav class="bg-white/3 backdrop-blur-[40px] dark:bg-white/3 h-screen w-64 fixed left-0 top-0 border-r border-white/10 shadow-xl flex flex-col h-full py-gutter px-4 z-50">
+<div class="mb-8">
+<h1 class="font-headline-md text-headline-md font-bold text-primary tracking-tight">B Socio AR</h1>
+<p class="font-label-md text-label-md text-on-surface-variant">Creator Studio</p>
+</div>
+<button class="w-full mb-8 py-3 rounded-lg neon-border bg-primary/10 text-primary font-label-md text-label-md font-bold hover:bg-primary/20 transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 1;">add</span>
+            New Project
+        </button>
+<div class="flex-1 space-y-2">
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant font-medium hover:bg-white/5 hover:text-on-surface transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined">folder_copy</span>
+                Projects
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant font-medium hover:bg-white/5 hover:text-on-surface transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined">deployed_code</span>
+                Editor
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant font-medium hover:bg-white/5 hover:text-on-surface transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined">leaderboard</span>
+                Analytics
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant font-medium hover:bg-white/5 hover:text-on-surface transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined">view_in_ar</span>
+                Assets
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-primary font-bold border-r-2 border-primary bg-primary/10 font-label-md text-label-md transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 1;">settings</span>
+                Settings
+            </a>
+</div>
+<div class="mt-auto space-y-2 pt-4 border-t border-white/10">
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-on-surface-variant font-medium hover:bg-white/5 hover:text-on-surface transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined">help</span>
+                Help
+            </a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-on-surface-variant font-medium hover:bg-white/5 hover:text-on-surface transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined">chat_bubble</span>
+                Feedback
+            </a>
+</div>
+</nav>
+<!-- TopNavBar -->
+<header class="bg-white/3 backdrop-blur-[40px] dark:bg-white/3 fixed top-0 right-0 w-[calc(100%-16rem)] h-16 border-b border-white/10 shadow-sm flex justify-between items-center px-gutter ml-64 z-40">
+<div class="flex items-center gap-6">
+<h2 class="font-headline-md text-headline-md font-black text-primary">B Socio AR Studio</h2>
+<div class="hidden md:flex gap-4 ml-8">
+<a class="text-on-surface-variant hover:text-primary transition-all font-body-md text-body-md py-5" href="#">Shared</a>
+<a class="text-on-surface-variant hover:text-primary transition-all font-body-md text-body-md py-5" href="#">Team</a>
+<a class="text-on-surface-variant hover:text-primary transition-all font-body-md text-body-md py-5" href="#">Archive</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">history</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors relative">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-0 right-0 w-2 h-2 bg-primary-container rounded-full"></span>
+</button>
+<button class="px-4 py-1.5 rounded-lg border border-white/20 text-on-surface hover:bg-white/5 transition-colors font-label-md text-label-md">Preview</button>
+<button class="px-4 py-1.5 rounded-lg bg-secondary/10 text-secondary border border-secondary/30 hover:bg-secondary/20 transition-colors font-label-md text-label-md">Publish</button>
+<div class="w-8 h-8 rounded-full bg-surface-variant overflow-hidden border border-white/20 ml-2">
+<img alt="Creator Profile" class="w-full h-full object-cover" data-alt="A futuristic avatar profile picture showing a glowing, holographic face in deep purple and cyan neon tones, set against an obsidian background. The style is sharp, clean, and highly detailed, reflecting a cutting-edge AR studio environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0-R5LNYtR1hPcOTYOmIRNBbBmpKUKRSwQxpSh0bvsnJtHDLu3uc7GArXH1PsRzzJ1TEicl6fG_1wO6R2n2NnlEqqYvH7YANkbiKYWQOLMFNjzaawllnFCqG0C6Unn8mt526WF2_jOY7xzvJW-xN3cn-7E5OnH1SVRqvC83-TA14moN-rgo-vmUI_hz94M9PQFtyCBJZK_aW4vDVlybGdzuHYlF2XGSQVQLeDeLVwHZQnVzMDHtDEP63enPK5ELCVHQq2xVlBJiEk"/>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="ml-64 pt-24 px-margin-desktop pb-margin-desktop min-h-screen">
+<div class="flex items-center justify-between mb-8">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">Subscription &amp; Admin Management</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Manage enterprise billing, plan overrides, and active subscriptions.</p>
+</div>
+<button class="neon-border bg-primary-container/20 text-primary-container hover:bg-primary-container/30 px-6 py-2 rounded-lg font-label-md text-label-md transition-all flex items-center gap-2">
+<span class="material-symbols-outlined">download</span>
+                Export Report
+            </button>
+</div>
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter">
+<!-- Left Column: Metrics & Breakdowns (8 cols) -->
+<div class="xl:col-span-8 space-y-gutter">
+<!-- KPI Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="glass-panel rounded-xl p-6 flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-3xl -mr-10 -mt-10 transition-all group-hover:bg-primary/20"></div>
+<div class="flex items-center justify-between mb-4 relative z-10">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Total MRR</span>
+<span class="material-symbols-outlined text-primary">account_balance_wallet</span>
+</div>
+<div class="relative z-10">
+<span class="font-headline-lg text-headline-lg text-on-surface neon-text">$245.8K</span>
+<p class="font-label-sm text-label-sm text-secondary mt-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +12.4% vs last month
+                            </p>
+</div>
+</div>
+<div class="glass-panel rounded-xl p-6 flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Active Orgs</span>
+<span class="material-symbols-outlined text-secondary-container">corporate_fare</span>
+</div>
+<div>
+<span class="font-headline-lg text-headline-lg text-on-surface">1,492</span>
+<p class="font-label-sm text-label-sm text-secondary mt-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +34 new this month
+                            </p>
+</div>
+</div>
+<div class="glass-panel rounded-xl p-6 flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Churn Rate</span>
+<span class="material-symbols-outlined text-error">trending_down</span>
+</div>
+<div>
+<span class="font-headline-lg text-headline-lg text-on-surface">1.2%</span>
+<p class="font-label-sm text-label-sm text-error mt-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span> -0.4% vs last month
+                            </p>
+</div>
+</div>
+</div>
+<!-- Subscription Queue Table -->
+<div class="glass-panel rounded-xl overflow-hidden">
+<div class="p-6 border-b border-white/10 flex justify-between items-center bg-surface-container/50">
+<h3 class="font-headline-md text-headline-md text-on-surface">Subscription Queue</h3>
+<div class="flex gap-2">
+<button class="px-3 py-1 rounded bg-white/5 border border-white/10 text-label-sm font-label-sm hover:bg-white/10 text-on-surface">All</button>
+<button class="px-3 py-1 rounded bg-primary/20 border border-primary/30 text-primary text-label-sm font-label-sm">Pending</button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-white/10 bg-black/20 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="p-4 font-semibold">Organization</th>
+<th class="p-4 font-semibold">Plan Tier</th>
+<th class="p-4 font-semibold">Status</th>
+<th class="p-4 font-semibold">MRR</th>
+<th class="p-4 font-semibold text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md">
+<tr class="border-b border-white/5 hover:bg-white/5 transition-colors group">
+<td class="p-4 flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-on-primary font-bold">N</div>
+<div>
+<div class="text-on-surface font-medium">Nexus AR Corp</div>
+<div class="text-label-sm text-on-surface-variant">ID: org_9283</div>
+</div>
+</td>
+<td class="p-4">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-primary/10 text-primary border border-primary/20">Enterprise</span>
+</td>
+<td class="p-4">
+<span class="inline-flex items-center gap-1.5 text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shadow-[0_0_5px_#00dbe9]"></span> Active
+                                        </span>
+</td>
+<td class="p-4 text-on-surface">$4,500</td>
+<td class="p-4 text-right">
+<button class="text-on-surface-variant hover:text-primary transition-colors opacity-0 group-hover:opacity-100"><span class="material-symbols-outlined">more_vert</span></button>
+</td>
+</tr>
+<tr class="border-b border-white/5 hover:bg-white/5 transition-colors group bg-error/5">
+<td class="p-4 flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-surface-variant flex items-center justify-center text-on-surface font-bold">V</div>
+<div>
+<div class="text-on-surface font-medium">Vanguard Virtual</div>
+<div class="text-label-sm text-on-surface-variant">ID: org_4412</div>
+</div>
+</td>
+<td class="p-4">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-white/10 text-on-surface border border-white/20">Pro</span>
+</td>
+<td class="p-4">
+<span class="inline-flex items-center gap-1.5 text-error">
+<span class="w-1.5 h-1.5 rounded-full bg-error shadow-[0_0_5px_#ffb4ab]"></span> Past Due
+                                        </span>
+</td>
+<td class="p-4 text-on-surface">$900</td>
+<td class="p-4 text-right">
+<button class="text-on-surface-variant hover:text-primary transition-colors opacity-0 group-hover:opacity-100"><span class="material-symbols-outlined">more_vert</span></button>
+</td>
+</tr>
+<tr class="border-b border-white/5 hover:bg-white/5 transition-colors group">
+<td class="p-4 flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-gradient-to-tr from-secondary to-tertiary flex items-center justify-center text-on-secondary font-bold">O</div>
+<div>
+<div class="text-on-surface font-medium">Omni Spatial</div>
+<div class="text-label-sm text-on-surface-variant">ID: org_7731</div>
+</div>
+</td>
+<td class="p-4">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-tertiary/10 text-tertiary border border-tertiary/20">Custom</span>
+</td>
+<td class="p-4">
+<span class="inline-flex items-center gap-1.5 text-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-variant"></span> Pending Approval
+                                        </span>
+</td>
+<td class="p-4 text-on-surface">$12,000</td>
+<td class="p-4 text-right">
+<button class="px-2 py-1 rounded bg-primary/20 text-primary hover:bg-primary/30 text-xs font-label-md border border-primary/30 mr-2">Review</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors opacity-0 group-hover:opacity-100 align-middle"><span class="material-symbols-outlined">more_vert</span></button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Right Column: Management Panel (4 cols) -->
+<div class="xl:col-span-4 space-y-gutter">
+<div class="glass-panel rounded-xl p-6 border-t-2 border-t-primary">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">admin_panel_settings</span>
+                        Plan Override
+                    </h3>
+<form class="space-y-5">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-2">Target Organization ID</label>
+<input class="w-full bg-surface-container-lowest border-b border-white/20 focus:border-primary focus:ring-0 px-3 py-2 text-on-surface font-body-md transition-colors outline-none" placeholder="e.g. org_12345" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-2">Override Tier</label>
+<div class="grid grid-cols-2 gap-3">
+<button class="border border-white/10 rounded-lg p-3 text-center hover:border-primary/50 hover:bg-primary/5 transition-colors text-on-surface font-label-md" type="button">Pro</button>
+<button class="border-2 border-primary rounded-lg p-3 text-center bg-primary/10 text-primary font-label-md relative overflow-hidden" type="button">
+                                    Enterprise
+                                    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] hover:translate-x-[100%] transition-transform duration-700"></div>
+</button>
+<button class="border border-white/10 rounded-lg p-3 text-center hover:border-primary/50 hover:bg-primary/5 transition-colors text-on-surface font-label-md col-span-2" type="button">Custom Pricing Model</button>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-2">Adjust Render Quota (Hours/mo)</label>
+<div class="flex items-center gap-4">
+<input class="w-full h-1 bg-surface-variant rounded-lg appearance-none cursor-pointer accent-primary" max="5000" min="100" type="range" value="1000"/>
+<span class="text-on-surface font-label-md w-12 text-right">1000</span>
+</div>
+</div>
+<div class="pt-4 mt-2 border-t border-white/10">
+<button class="w-full py-3 rounded-lg bg-primary hover:bg-primary-fixed-dim text-on-primary font-label-md text-label-md font-bold transition-all shadow-[0_0_15px_rgba(189,0,255,0.4)]" type="button">
+                                Apply Override
+                            </button>
+</div>
+</form>
+</div>
+<div class="glass-panel rounded-xl p-6">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Billing Alerts</h3>
+<ul class="space-y-4">
+<li class="flex gap-3 items-start border-l-2 border-error pl-3">
+<span class="material-symbols-outlined text-error text-lg mt-0.5">credit_card_off</span>
+<div>
+<p class="text-on-surface font-label-md">Payment Failed: Vanguard Virtual</p>
+<p class="text-on-surface-variant text-label-sm mt-1">Invoice #INV-8821 for $900.00 failed processing.</p>
+</div>
+</li>
+<li class="flex gap-3 items-start border-l-2 border-secondary pl-3">
+<span class="material-symbols-outlined text-secondary text-lg mt-0.5">upgrade</span>
+<div>
+<p class="text-on-surface font-label-md">Quota Exceeded: Polyform Studios</p>
+<p class="text-on-surface-variant text-label-sm mt-1">Render limits reached 95%. Automated upsell triggered.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</main>
+</body></html>

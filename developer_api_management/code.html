@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>B Socio AR Studio - Developer API Management</title>
+<script type='text/javascript' nonce='Sx5ImFLwxn3HYTbBEe6InA==' src='https://contribution.usercontent.google.com/P5XpFQI-mxdWvRpCJ4QVNoHYJwJi0tEIdxVes-NkPJ1vYxlc6p5h4wYSx71faeQUTB4cgB5Toy3Y5OhtAuDOEvfoXv43JGXoRzU0bHwkffiTfinmLBksp1VSv6N_a1QPz_N1OW0xsgn_HaFXxoDpGutp--Hhl8mZTcx5w44PtgttgYNWlJnGTsVXwCD9VN-BCsdyJ4dGMcSgSA2q8f3r6roKZOWoE2sJ92Dtgs0VOfcrWoUtDt9diued7WZsOkzAh2uoQd3UT6MLK8m2av2GRNbCMg5hJi7ejIyWnmzSer-CXSWJ8SW82BBzJ5YKKW7IDR2JU8yjIkyxp79ppF4g_tMbWD_56hiy-Lcghvg2wvBOb_53-pNxxk_oXmo0edfHiASvQDzIB1OQedtn3OyI9H8BOmbJiJoufHd_WzQZl2tK7e_rH8dOtl5jPUvcivnSiDPrMkQeSD63TUEJmMmSfhELKcs6fkXm_7VF2oojgzi-JhHrTtzNI_H_YY2a_sFHvtU28QO1L54Z1oHKGHVWXLzK-FHMXtFsZXCihwp7UDILQ6VQ-PjaOagYe26KIGwiHuHnOi0faxNRZfRfSR012x2v5ZXIPhczMt543OJz85YELlVLZmgSXhB9VkQdtQKr0FR-VCosb0oz-ROAXAdZqEv4jkXCezAw4DXXCeM3eoEL6gQeaTxMcsJ3fcPQNXXVMhug6yFn8MC3ciRhmD81LyEmZePyviO_Xkrbtx1KO3y3e-zwZknwb6edh7bUjonyWaIJbb4pE26PQlBIh3AGGSkU2tTzGXV1hMSKFg'></script><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;family=Geist:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-tint": "#ecb2ff",
+                      "primary-fixed": "#f8d8ff",
+                      "surface-container-low": "#191b24",
+                      "error-container": "#93000a",
+                      "surface-variant": "#32343e",
+                      "primary": "#ecb2ff",
+                      "inverse-primary": "#9900cf",
+                      "tertiary-fixed": "#ffd8ea",
+                      "surface-dim": "#11131c",
+                      "tertiary": "#ffaed9",
+                      "surface-container-highest": "#32343e",
+                      "on-tertiary": "#610046",
+                      "surface-container-high": "#282933",
+                      "on-secondary-container": "#00686f",
+                      "secondary-fixed-dim": "#00dbe9",
+                      "on-primary-container": "#ffffff",
+                      "background": "#11131c",
+                      "on-surface": "#e1e1ef",
+                      "on-primary": "#520071",
+                      "primary-fixed-dim": "#ecb2ff",
+                      "on-secondary": "#00363a",
+                      "surface": "#11131c",
+                      "on-surface-variant": "#d4c0d7",
+                      "primary-container": "#bd00ff",
+                      "on-primary-fixed-variant": "#74009f",
+                      "on-error-container": "#ffdad6",
+                      "on-background": "#e1e1ef",
+                      "on-tertiary-container": "#fffeff",
+                      "error": "#ffb4ab",
+                      "on-primary-fixed": "#320047",
+                      "on-error": "#690005",
+                      "inverse-on-surface": "#2e303a",
+                      "on-secondary-fixed-variant": "#004f54",
+                      "secondary-fixed": "#7df4ff",
+                      "on-secondary-fixed": "#002022",
+                      "surface-container-lowest": "#0c0e17",
+                      "surface-bright": "#373943",
+                      "on-tertiary-fixed": "#3c002a",
+                      "secondary": "#d3fbff",
+                      "tertiary-fixed-dim": "#ffaed9",
+                      "surface-container": "#1d1f29",
+                      "secondary-container": "#00eefc",
+                      "inverse-surface": "#e1e1ef",
+                      "tertiary-container": "#dd00a3",
+                      "outline": "#9d8ba0",
+                      "on-tertiary-fixed-variant": "#890064",
+                      "outline-variant": "#514255"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "unit": "8px",
+                      "stack-md": "16px",
+                      "container-max": "1440px",
+                      "stack-xs": "4px",
+                      "gutter": "24px",
+                      "margin-desktop": "64px",
+                      "stack-xl": "48px",
+                      "margin-mobile": "20px"
+              },
+              "fontFamily": {
+                      "headline-lg": [
+                              "Space Grotesk"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Space Grotesk"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "label-md": [
+                              "Geist"
+                      ],
+                      "headline-lg-mobile": [
+                              "Space Grotesk"
+                      ],
+                      "display-lg": [
+                              "Space Grotesk"
+                      ],
+                      "label-sm": [
+                              "Geist"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "72px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+            },
+          }
+        }
+    </script>
+<style>
+        body {
+            background-color: #05060A; /* Level 0 Base */
+            color: theme('colors.on-background');
+        }
+        
+        /* Glassmorphism Classes */
+        .glass-panel {
+            background-color: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .glass-modal {
+            background-color: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .neon-glow-cyan {
+            box-shadow: 0 0 15px rgba(0, 240, 255, 0.1);
+        }
+        
+        .neon-glow-purple {
+            box-shadow: 0 0 15px rgba(189, 0, 255, 0.15);
+        }
+
+        .hover-lift {
+            transition: all 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-2px);
+            border-color: rgba(255, 255, 255, 0.3);
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        /* Minimal Input */
+        .minimal-input {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid theme('colors.outline');
+            color: theme('colors.on-surface');
+            transition: all 0.3s ease;
+        }
+        .minimal-input:focus {
+            outline: none;
+            border-bottom-color: theme('colors.primary');
+            box-shadow: 0 1px 0 0 theme('colors.primary');
+        }
+
+        /* Primary Button */
+        .btn-primary {
+            background-color: rgba(189, 0, 255, 0.1);
+            border: 1px solid theme('colors.primary-container');
+            color: theme('colors.primary');
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: rgba(189, 0, 255, 0.3);
+            box-shadow: inset 0 0 10px rgba(189, 0, 255, 0.5);
+        }
+        
+        /* Outline Button */
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid theme('colors.outline');
+            color: theme('colors.on-surface');
+            transition: all 0.3s ease;
+        }
+        .btn-outline:hover {
+            border-color: theme('colors.primary');
+            color: theme('colors.primary');
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="antialiased min-h-screen flex flex-col pt-[72px] pb-[92px] md:pb-0 overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/5 dark:bg-white/5 backdrop-blur-[40px] border-b border-white/10 shadow-[0_0_20px_rgba(189,0,255,0.15)] flex justify-between items-center px-gutter py-4 w-full">
+<div class="flex items-center gap-2 text-primary dark:text-primary active:scale-95 cursor-pointer">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 0;">blur_on</span>
+</div>
+<h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary tracking-tight">NEON_GENESIS</h1>
+<div class="flex items-center justify-center w-8 h-8 rounded-full bg-surface-container border border-outline overflow-hidden active:scale-95 cursor-pointer">
+<span class="material-symbols-outlined text-on-surface" style="font-variation-settings: &#39;FILL&#39; 1;">account_circle</span>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 px-margin-mobile py-stack-md flex flex-col gap-stack-md w-full max-w-container-max mx-auto md:hidden">
+<!-- Page Title -->
+<div class="mb-2">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Developer API</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Manage spatial engine access and webhooks.</p>
+</div>
+<!-- API Keys Section -->
+<section class="glass-panel rounded-xl p-4 neon-glow-purple flex flex-col gap-4">
+<div class="flex justify-between items-center border-b border-white/10 pb-2">
+<h3 class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: &#39;FILL&#39; 0;">key</span>
+                    API Keys
+                </h3>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase">Key ID</label>
+<div class="font-label-md text-label-md text-on-surface font-mono bg-surface-container-low p-2 rounded-lg border border-white/5">
+                        dev_ak_98x1f2...
+                    </div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase">Secret Key</label>
+<div class="flex items-center justify-between bg-surface-container-low p-2 rounded-lg border border-white/5 group">
+<div class="font-label-md text-label-md text-on-surface font-mono tracking-widest">
+                            ••••••••••••••••••••••••
+                        </div>
+<button aria-label="Copy Secret Key" class="text-on-surface-variant hover:text-primary transition-colors p-1">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &#39;FILL&#39; 0;">content_copy</span>
+</button>
+</div>
+</div>
+<button class="btn-primary font-label-md text-label-md py-2 rounded-lg w-full mt-2 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &#39;FILL&#39; 0;">refresh</span>
+                    Regenerate Key
+                </button>
+</div>
+</section>
+<!-- Webhook Configuration Section -->
+<section class="glass-panel rounded-xl p-4 neon-glow-cyan flex flex-col gap-4">
+<div class="flex justify-between items-center border-b border-white/10 pb-2">
+<h3 class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container" style="font-variation-settings: &#39;FILL&#39; 0;">webhook</span>
+                    Webhooks
+                </h3>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase">Endpoint URL</label>
+<input class="minimal-input font-body-md text-body-md py-2 w-full" placeholder="https://..." type="url" value="https://api.myapp.com/webhooks/spatial"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase">Subscribed Events</label>
+<div class="flex flex-wrap gap-2">
+<span class="font-label-md text-label-md bg-secondary-container/10 border border-secondary-container/30 text-secondary-container px-3 py-1 rounded-full flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span> Session.Start
+                        </span>
+<span class="font-label-md text-label-md bg-primary/10 border border-primary/30 text-primary px-3 py-1 rounded-full flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary"></span> Asset.Load
+                        </span>
+<button class="font-label-md text-label-md border border-dashed border-outline text-outline px-3 py-1 rounded-full hover:border-primary hover:text-primary transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: &#39;FILL&#39; 0;">add</span> Add Event
+                        </button>
+</div>
+</div>
+<button class="btn-outline font-label-md text-label-md py-2 rounded-lg w-full mt-1">
+                    Save Configuration
+                </button>
+</div>
+</section>
+<!-- Usage Metrics Section -->
+<section class="glass-panel rounded-xl p-4 flex flex-col gap-4">
+<div class="flex justify-between items-center border-b border-white/10 pb-2">
+<h3 class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-outline" style="font-variation-settings: &#39;FILL&#39; 0;">monitoring</span>
+                    Usage Metrics
+                </h3>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-low p-3 rounded-lg border border-white/5">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase mb-1">24h Calls</div>
+<div class="font-headline-md text-headline-md text-on-surface">12,450</div>
+<div class="font-label-sm text-label-sm text-secondary-container mt-1">+5.2%</div>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg border border-white/5">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase mb-1">Avg Latency</div>
+<div class="font-headline-md text-headline-md text-on-surface">42ms</div>
+<div class="font-label-sm text-label-sm text-primary mt-1">-2ms</div>
+</div>
+</div>
+<!-- Pseudo Chart -->
+<div class="h-24 w-full bg-surface-container-low rounded-lg border border-white/5 relative overflow-hidden flex items-end px-2 pt-4 pb-2 gap-1">
+<!-- Bars representing data -->
+<div class="w-full bg-primary/20 h-[30%] rounded-t-sm hover:bg-primary/40 transition-colors"></div>
+<div class="w-full bg-primary/30 h-[50%] rounded-t-sm hover:bg-primary/50 transition-colors"></div>
+<div class="w-full bg-primary/50 h-[80%] rounded-t-sm hover:bg-primary/70 transition-colors"></div>
+<div class="w-full bg-primary/40 h-[60%] rounded-t-sm hover:bg-primary/60 transition-colors"></div>
+<div class="w-full bg-primary/20 h-[40%] rounded-t-sm hover:bg-primary/40 transition-colors"></div>
+<div class="w-full bg-primary/60 h-[90%] rounded-t-sm hover:bg-primary/80 transition-colors border-t-2 border-primary"></div>
+<div class="w-full bg-primary/30 h-[45%] rounded-t-sm hover:bg-primary/50 transition-colors"></div>
+</div>
+</section>
+<!-- Quick Links Section -->
+<section class="glass-panel rounded-xl p-4 flex flex-col gap-3">
+<div class="flex justify-between items-center border-b border-white/10 pb-2 mb-1">
+<h3 class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-outline" style="font-variation-settings: &#39;FILL&#39; 0;">menu_book</span>
+                    Resources
+                </h3>
+</div>
+<a class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low border border-white/5 hover:border-primary/50 transition-colors group" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors" style="font-variation-settings: &#39;FILL&#39; 0;">code</span>
+<span class="font-body-md text-body-md text-on-surface">API Reference</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors" style="font-variation-settings: &#39;FILL&#39; 0;">arrow_forward</span>
+</a>
+<a class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low border border-white/5 hover:border-secondary-container/50 transition-colors group" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline group-hover:text-secondary-container transition-colors" style="font-variation-settings: &#39;FILL&#39; 0;">bolt</span>
+<span class="font-body-md text-body-md text-on-surface">Quickstart Guide</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary-container transition-colors" style="font-variation-settings: &#39;FILL&#39; 0;">arrow_forward</span>
+</a>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-xl bg-white/5 dark:bg-white/5 backdrop-blur-[40px] border-t border-white/10 shadow-[0_-5px_25px_rgba(0,240,255,0.1)] flex justify-around items-center h-[72px] px-margin-mobile md:hidden">
+<a class="flex flex-col items-center justify-center text-outline opacity-60 px-4 py-1 hover:opacity-100 hover:text-primary transition-opacity active:translate-y-[-2px] transition-transform" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 0;">layers</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest mt-1">Projects</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline opacity-60 px-4 py-1 hover:opacity-100 hover:text-primary transition-opacity active:translate-y-[-2px] transition-transform" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 0;">draw</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest mt-1">Editor</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline opacity-60 px-4 py-1 hover:opacity-100 hover:text-primary transition-opacity active:translate-y-[-2px] transition-transform" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 0;">dashboard_customize</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest mt-1">Templates</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline opacity-60 px-4 py-1 hover:opacity-100 hover:text-primary transition-opacity active:translate-y-[-2px] transition-transform" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 0;">query_stats</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest mt-1">Data</span>
+</a>
+<a class="flex flex-col items-center justify-center text-secondary-container dark:text-secondary-container bg-white/10 rounded-xl px-4 py-1 border border-secondary-container/30 hover:opacity-100 transition-opacity active:translate-y-[-2px] transition-transform" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 1;">account_circle</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest mt-1">Profile</span>
+</a>
+</nav>
+</body></html>

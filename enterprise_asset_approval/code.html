@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Enterprise Asset Approval</title>
+<script type='text/javascript' nonce='yxvwHZ1jEUJBvNi+Av4uIQ==' src='https://contribution.usercontent.google.com/JMKb0Gk9p5CeMJruu7ai4-bBfP1goZQh1lidAACcXd6D6u8DPaAG-rBYPA04aHR8lfoKbra2WpWMD1i5aIJcHjwTymxItL7O_T2q8WYyMu3GZlRxLUta0szmWQE7LNaZfQ1PkPD8SHdzSiaymu7G4T0AdNQOwqVEIB07Bxkv2YlYAO_Ux9vgp5pUyQpispjB5sLtxdR6TB3sBO5BrVId4YoD9z_WnXxwBnypWCBjqN-MP-_bDSHS_SbvMqvTBKytYiODl1ytgDLuHLGNXBeaCqRKAim4WWitSxPRn3z3GCrRtnvx1YQaY_sgEX6DRlSdL8cltRWTpLHMoxad4CNDFwtVsExRJ1IJzSekn_uzmw9PWANapcp-Ohl3f_wf_rC9O_d0hYlt86GZB-xIoRoHZVskuWd-mY4WzsGElfGR52OY_AiTtFfrBwmEe5eZtV_GoWdTZuJSFLpv9YvkD3HZTccL27V6bm9Je3gQugDIeklEAhdjyefobgKUJC6UKokd7cZyEjK2hycY_ek6zRBlN5ZlRT_vkNXoJ6FIw_tNOCFtqXUUtqrX0C1K4YXoZdIJYPsgoOpKKfrc6Ukz1itY3oAOtLKc4TIBI3OCsnt5E5FQS0YLfrnBQFJjRzcA79H9GdKAZH2dWDPt4dS-2Ml_th83zK_F6TuGDrHh3YlTaZ9WTZB8LnFQj6boVfzYFmPx20PAAYBczYk-OqDADpJ4jBZYxeEmwBNlhnMvp9ncpg6X8exNbAlBH51fyNeVqEby77vuMOFCUCh2RhShwt-IHNZi-R9RFqela1d5_Q'></script><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Geist:wght@500;600&amp;family=Inter:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined[data-weight="fill"] {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#e1e1ef",
+                        "on-error": "#690005",
+                        "primary": "#ecb2ff",
+                        "on-primary": "#520071",
+                        "surface-tint": "#ecb2ff",
+                        "primary-container": "#bd00ff",
+                        "on-primary-fixed": "#320047",
+                        "surface-container-highest": "#32343e",
+                        "error": "#ffb4ab",
+                        "on-secondary": "#00363a",
+                        "on-primary-fixed-variant": "#74009f",
+                        "secondary-fixed-dim": "#00dbe9",
+                        "on-tertiary-fixed-variant": "#890064",
+                        "on-secondary-fixed": "#002022",
+                        "tertiary-fixed-dim": "#ffaed9",
+                        "primary-fixed": "#f8d8ff",
+                        "inverse-on-surface": "#2e303a",
+                        "primary-fixed-dim": "#ecb2ff",
+                        "surface": "#11131c",
+                        "surface-container": "#1d1f29",
+                        "surface-container-low": "#191b24",
+                        "tertiary-fixed": "#ffd8ea",
+                        "surface-container-lowest": "#0c0e17",
+                        "on-tertiary-container": "#fffeff",
+                        "on-secondary-container": "#00686f",
+                        "on-surface-variant": "#d4c0d7",
+                        "surface-dim": "#11131c",
+                        "surface-variant": "#32343e",
+                        "outline-variant": "#514255",
+                        "tertiary": "#ffaed9",
+                        "surface-bright": "#373943",
+                        "on-tertiary-fixed": "#3c002a",
+                        "inverse-surface": "#e1e1ef",
+                        "on-secondary-fixed-variant": "#004f54",
+                        "on-primary-container": "#ffffff",
+                        "on-error-container": "#ffdad6",
+                        "on-background": "#e1e1ef",
+                        "error-container": "#93000a",
+                        "background": "#11131c",
+                        "secondary-fixed": "#7df4ff",
+                        "secondary": "#d3fbff",
+                        "outline": "#9d8ba0",
+                        "on-tertiary": "#610046",
+                        "surface-container-high": "#282933",
+                        "tertiary-container": "#dd00a3",
+                        "secondary-container": "#00eefc",
+                        "inverse-primary": "#9900cf"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "container-max": "1440px",
+                        "stack-xs": "4px",
+                        "unit": "8px",
+                        "stack-xl": "48px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Space Grotesk"],
+                        "headline-lg": ["Space Grotesk"],
+                        "display-lg": ["Space Grotesk"],
+                        "label-sm": ["Geist"],
+                        "label-md": ["Geist"],
+                        "body-lg": ["Inter"],
+                        "headline-lg-mobile": ["Space Grotesk"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen font-body-md overflow-x-hidden selection:bg-secondary-container selection:text-on-secondary-container flex">
+<!-- TopAppBar (Mobile & Desktop Header) -->
+<header class="fixed top-0 w-full bg-surface/30 backdrop-blur-xl border-b border-white/10 shadow-[0_0_15px_rgba(236,178,255,0.1)] flex justify-between items-center px-gutter h-16 z-50 md:hidden">
+<div class="flex items-center gap-4">
+<button class="text-on-surface-variant hover:bg-white/5 transition-colors p-2 rounded-full">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-bold text-primary tracking-tight">B SOCIO AR</h1>
+</div>
+<div class="flex items-center">
+<div class="w-8 h-8 rounded-full bg-surface-container-high overflow-hidden border border-white/10">
+<span class="material-symbols-outlined text-on-surface-variant flex items-center justify-center w-full h-full text-sm">person</span>
+</div>
+</div>
+</header>
+<!-- NavigationDrawer (Desktop) -->
+<nav class="hidden md:flex flex-col h-screen w-72 bg-surface/60 backdrop-blur-2xl border-r border-white/10 shadow-2xl fixed inset-y-0 left-0 z-[60] pt-16 md:pt-0">
+<div class="p-6 border-b border-white/10 flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-high overflow-hidden border border-white/10 shrink-0">
+<span class="material-symbols-outlined text-on-surface-variant flex items-center justify-center w-full h-full text-xl">person</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-primary">Creator Studio</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant opacity-70">Enterprise Tier</p>
+</div>
+</div>
+<div class="flex-1 overflow-y-auto py-4">
+<ul class="space-y-1">
+<li>
+<a class="flex items-center gap-4 px-6 py-3 text-on-surface-variant opacity-70 hover:bg-white/10 hover:text-on-surface font-label-md text-label-md transition-all" href="#">
+<span class="material-symbols-outlined">view_in_ar</span>
+                        Showcase
+                    </a>
+</li>
+<li>
+<a class="flex items-center gap-4 px-6 py-3 bg-primary-container/20 text-primary border-l-4 border-primary font-label-md text-label-md transition-all" href="#">
+<span class="material-symbols-outlined" data-weight="fill">approval_delegation</span>
+                        Admin Queue
+                    </a>
+</li>
+<li>
+<a class="flex items-center gap-4 px-6 py-3 text-on-surface-variant opacity-70 hover:bg-white/10 hover:text-on-surface font-label-md text-label-md transition-all" href="#">
+<span class="material-symbols-outlined">database</span>
+                        Asset Library
+                    </a>
+</li>
+<li>
+<a class="flex items-center gap-4 px-6 py-3 text-on-surface-variant opacity-70 hover:bg-white/10 hover:text-on-surface font-label-md text-label-md transition-all" href="#">
+<span class="material-symbols-outlined">insights</span>
+                        Analytics
+                    </a>
+</li>
+</ul>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="flex-1 pt-20 md:pt-8 px-gutter md:ml-72 pb-24 md:pb-8 max-w-[1200px] mx-auto w-full">
+<!-- Header Section -->
+<div class="mb-8 md:mb-12">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-2">Enterprise Asset Approval</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Review and validate incoming 3D assets for the main AR repository.</p>
+</div>
+<!-- Sub Navigation -->
+<div class="flex gap-4 mb-8 border-b border-white/10 pb-4 overflow-x-auto no-scrollbar">
+<button class="font-label-md text-label-md px-4 py-2 bg-secondary-container/10 text-secondary-container border border-secondary-container/30 rounded-full whitespace-nowrap">Pending Queue (12)</button>
+<button class="font-label-md text-label-md px-4 py-2 text-on-surface-variant hover:bg-white/5 hover:text-on-surface border border-transparent rounded-full transition-colors whitespace-nowrap">Approved</button>
+<button class="font-label-md text-label-md px-4 py-2 text-on-surface-variant hover:bg-white/5 hover:text-on-surface border border-transparent rounded-full transition-colors whitespace-nowrap">Rejected</button>
+</div>
+<!-- Asset List -->
+<div class="space-y-6">
+<!-- Asset Card 1 -->
+<div class="bg-surface-container bg-opacity-30 backdrop-blur-[40px] border border-white/10 rounded-xl p-6 flex flex-col xl:flex-row gap-6 hover:bg-white/[0.05] hover:border-white/20 transition-all duration-300 relative overflow-hidden group">
+<!-- Subtle glow effect -->
+<div class="absolute inset-0 bg-gradient-to-r from-secondary-container/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+<!-- Thumbnail -->
+<div class="w-full xl:w-48 h-48 xl:h-auto rounded-lg overflow-hidden border border-white/10 shrink-0 relative bg-black/50">
+<img class="w-full h-full object-cover opacity-80 mix-blend-luminosity group-hover:mix-blend-normal transition-all duration-500" data-alt="A highly detailed 3D rendering of a futuristic diamond ring, viewed in an industrial AR workshop setting. The scene features deep obsidian dark tones with striking cyan and magenta neon light accents illuminating the facets of the diamond. The metallic band reflects the high-tech, glassmorphic environment, creating a sophisticated, cutting-edge aesthetic perfect for professional AR asset review." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDncfRT1cnSv6QeNAj4aSQnZyDwQ58ir3FLzgzZFro2tVXHKMs-2ia2_LPawixZBfO5GMnM4bThw6mvq9leMORSVoBSyVS0Cy0AFdl66Ffh6DXUOQN2m6kV7CTJqVEy5fM1A8OPVDwzE0cmL7aAl3lMqEHMYP3VdYDtvJPj6kmf-fk4zJYhkuLfxBA8FBXYS2ZpxgXsI8KWLSPdvcEE-WEyy5Jql4xFKxkISYDf1mWEXNRofinQEyuQyFiXPZdJ0xVrYg2uOpALUao"/>
+<div class="absolute top-2 right-2 bg-black/60 backdrop-blur-md px-2 py-1 rounded font-label-sm text-label-sm text-secondary-container border border-white/10">.glb</div>
+</div>
+<!-- Asset Info -->
+<div class="flex-1 flex flex-col justify-center">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Diamond_Ring_v4.glb</h3>
+<p class="font-label-md text-label-md text-on-surface-variant mt-1">Creator: <span class="text-primary-fixed">Studio_Aethel</span></p>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-bright px-2 py-1 rounded border border-white/10 text-on-surface-variant">ID: #4928A</span>
+</div>
+<!-- Tech Specs -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+<div class="bg-black/20 p-3 rounded-lg border border-white/5">
+<span class="block font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider">Poly Count</span>
+<span class="font-body-md text-body-md text-on-surface">124,500</span>
+</div>
+<div class="bg-black/20 p-3 rounded-lg border border-white/5">
+<span class="block font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider">File Size</span>
+<span class="font-body-md text-body-md text-on-surface">4.2 MB</span>
+</div>
+<div class="bg-black/20 p-3 rounded-lg border border-white/5">
+<span class="block font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider">Material</span>
+<span class="font-body-md text-body-md text-on-surface">PBR Standard</span>
+</div>
+<div class="bg-black/20 p-3 rounded-lg border border-white/5">
+<span class="block font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider">Animation</span>
+<span class="font-body-md text-body-md text-on-surface">None</span>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex xl:flex-col gap-3 justify-center xl:w-40 shrink-0 border-t xl:border-t-0 xl:border-l border-white/10 pt-4 xl:pt-0 xl:pl-6 mt-4 xl:mt-0">
+<button class="flex-1 xl:flex-none flex items-center justify-center gap-2 bg-secondary-container/20 text-secondary-container border border-secondary-container/50 hover:bg-secondary-container hover:text-on-secondary-container px-4 py-3 rounded-lg font-label-md text-label-md transition-all shadow-[0_0_10px_rgba(0,238,252,0.1)] hover:shadow-[0_0_20px_rgba(0,238,252,0.4)]">
+<span class="material-symbols-outlined text-sm" data-weight="fill">check_circle</span>
+                        Approve
+                    </button>
+<button class="flex-1 xl:flex-none flex items-center justify-center gap-2 bg-transparent text-error border border-error/50 hover:bg-error/10 px-4 py-3 rounded-lg font-label-md text-label-md transition-all">
+<span class="material-symbols-outlined text-sm">cancel</span>
+                        Reject
+                    </button>
+<button class="flex-1 xl:flex-none flex items-center justify-center gap-2 bg-white/5 text-on-surface-variant border border-white/10 hover:bg-white/10 px-4 py-3 rounded-lg font-label-md text-label-md transition-all mt-auto">
+<span class="material-symbols-outlined text-sm">3d_rotation</span>
+                        Inspect
+                    </button>
+</div>
+</div>
+<!-- Asset Card 2 -->
+<div class="bg-surface-container bg-opacity-30 backdrop-blur-[40px] border border-white/10 rounded-xl p-6 flex flex-col xl:flex-row gap-6 hover:bg-white/[0.05] hover:border-white/20 transition-all duration-300 relative overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-r from-secondary-container/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+<!-- Thumbnail -->
+<div class="w-full xl:w-48 h-48 xl:h-auto rounded-lg overflow-hidden border border-white/10 shrink-0 relative bg-black/50">
+<img class="w-full h-full object-cover opacity-80 mix-blend-luminosity group-hover:mix-blend-normal transition-all duration-500" data-alt="A sleek, futuristic drone model displayed in a minimalist AR digital showcase. The background is a profound void of deep blacks, intersected by sharp, luminous purple and cyan geometric grid lines. The drone itself has a glassmorphic canopy reflecting the ambient neon lighting, conveying a highly technical and advanced enterprise design language." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkqkisL2YoqGeeVdmNqtS8MpCTwMnRW6LdkWhZqvoqMyVNa7lkV2LZwJajdyth6SeAwWrXK1zurxBvk5GGBtE73ZTrSVfLoune6UqBzcKXDNBhdwpJUkAZNlGEpu8ZDilxA2EBAWdfuzUrlkQA_Aday14AQw4Mi9VWxuD5G0b_WKnj5ukXonmeJmAZRwz117Zf2RDGLGwnQy8BTN11JKRySC9KMVyfWXqzCW8vVXw_6z3xrDNKdhOdBMjGoENpK6IluYAGkY9ymFs"/>
+<div class="absolute top-2 right-2 bg-black/60 backdrop-blur-md px-2 py-1 rounded font-label-sm text-label-sm text-secondary-container border border-white/10">.obj</div>
+</div>
+<!-- Asset Info -->
+<div class="flex-1 flex flex-col justify-center">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Surveillance_Drone_MkV.obj</h3>
+<p class="font-label-md text-label-md text-on-surface-variant mt-1">Creator: <span class="text-primary-fixed">TechOps_Dev</span></p>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-bright px-2 py-1 rounded border border-white/10 text-on-surface-variant">ID: #4928B</span>
+</div>
+<!-- Tech Specs -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+<div class="bg-black/20 p-3 rounded-lg border border-error/30 relative">
+<div class="absolute -top-1 -right-1 w-2 h-2 bg-error rounded-full shadow-[0_0_5px_rgba(255,180,171,1)] animate-pulse"></div>
+<span class="block font-label-sm text-label-sm text-error mb-1 uppercase tracking-wider">Poly Count</span>
+<span class="font-body-md text-body-md text-on-surface">850,000 <span class="text-xs text-error ml-1">(High)</span></span>
+</div>
+<div class="bg-black/20 p-3 rounded-lg border border-white/5">
+<span class="block font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider">File Size</span>
+<span class="font-body-md text-body-md text-on-surface">18.5 MB</span>
+</div>
+<div class="bg-black/20 p-3 rounded-lg border border-white/5">
+<span class="block font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider">Material</span>
+<span class="font-body-md text-body-md text-on-surface">Custom Shader</span>
+</div>
+<div class="bg-black/20 p-3 rounded-lg border border-white/5">
+<span class="block font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider">Animation</span>
+<span class="font-body-md text-body-md text-on-surface">Rigged (4 clips)</span>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex xl:flex-col gap-3 justify-center xl:w-40 shrink-0 border-t xl:border-t-0 xl:border-l border-white/10 pt-4 xl:pt-0 xl:pl-6 mt-4 xl:mt-0">
+<button class="flex-1 xl:flex-none flex items-center justify-center gap-2 bg-secondary-container/20 text-secondary-container border border-secondary-container/50 hover:bg-secondary-container hover:text-on-secondary-container px-4 py-3 rounded-lg font-label-md text-label-md transition-all shadow-[0_0_10px_rgba(0,238,252,0.1)] hover:shadow-[0_0_20px_rgba(0,238,252,0.4)]">
+<span class="material-symbols-outlined text-sm" data-weight="fill">check_circle</span>
+                        Approve
+                    </button>
+<button class="flex-1 xl:flex-none flex items-center justify-center gap-2 bg-transparent text-error border border-error/50 hover:bg-error/10 px-4 py-3 rounded-lg font-label-md text-label-md transition-all">
+<span class="material-symbols-outlined text-sm">cancel</span>
+                        Reject
+                    </button>
+<button class="flex-1 xl:flex-none flex items-center justify-center gap-2 bg-white/5 text-on-surface-variant border border-white/10 hover:bg-white/10 px-4 py-3 rounded-lg font-label-md text-label-md transition-all mt-auto">
+<span class="material-symbols-outlined text-sm">3d_rotation</span>
+                        Inspect
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center py-stack-md px-gutter md:hidden bg-surface/40 backdrop-blur-xl border-t border-white/10 shadow-[0_-5px_20px_rgba(0,238,252,0.1)] rounded-t-xl">
+<button class="flex flex-col items-center text-on-surface-variant/60 hover:text-on-surface transition-all">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-label-sm text-label-sm mt-1">Explore</span>
+</button>
+<button class="flex flex-col items-center text-secondary-container drop-shadow-[0_0_8px_rgba(0,238,252,0.5)] transition-all scale-110">
+<span class="material-symbols-outlined" data-weight="fill">rule</span>
+<span class="font-label-sm text-label-sm mt-1">Pending</span>
+</button>
+<button class="flex flex-col items-center text-on-surface-variant/60 hover:text-on-surface transition-all">
+<span class="material-symbols-outlined">inventory_2</span>
+<span class="font-label-sm text-label-sm mt-1">Library</span>
+</button>
+<button class="flex flex-col items-center text-on-surface-variant/60 hover:text-on-surface transition-all">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-label-sm text-label-sm mt-1">Settings</span>
+</button>
+</nav>
+</body></html>

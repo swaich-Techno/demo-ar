@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>B SOCIO AR - User Access Logs</title>
+<script type='text/javascript' nonce='/22qcU16PLOnX+aJ017opA==' src='https://contribution.usercontent.google.com/fWv-qJAGq2NAy9BiUg84p4qRo0oAFek5y8v4klCsQc3ZRpRdY9VdgHUiG_oV1iinVvu2qba73Vl_Udtgk3_OKVHTSlBBjmqw3MVy0N-acPfdn2clRZPuTsznAfmI5r0VDBRXezgx4C6BXWH-OOU-wTygV3-p6AMTWnUs7QasdWDRoRerKXiBrE1MqX1wFGYSG13xyg6YGu6S9aJ7hNBHh3BpLp8ByJYqgyFwpUiS0oE1iApl7jChseGi5w6mD8N-IndFCG9bx0hwc_93LpMPr-JqThGG6T6vrZplP-KsgLTzIgJoIYekH8rSjfKyNeft9huYVMW7lbRj8saIVhzQK9tL5HzzO0q1IqEUUmbSZcrJfO-shug4Rf5ZDdL6eChFJxjAWbgDI0ukMSq8bdTcY8wxtfTngAnc-XlN_4W2ev0Pdg4p6ba5AKsoytg7gTVmE0nCrHQaRCiiED-XBAOv1KOEW0Ym1bVP6bheLwnfcsKuHUzj-oII4xXNkdEwvQnqYAl8JLVoRwWVT8yiFr09jX81XyAPITYjSqyOPFjnlDnY-yIA4EDKI-efOoTUwGX-ro_0Srcpkn1G_6qpN6pVI7gt3WXVXFZVzFS-1trr4U5osFyxp9kIe8-EQ-Az6lxMNhsq9Td4vpU1r1JOTIszB12NBFfMz7aqyYKPyvSZ07lf_TKnvC5B4ER2r9tDmPDMIlaPfwr8m3v11cdnJGGAkINaBueyIhEIeKtR-J1fFY1IOJjPrZMp3nPr4Zk46-gy0HV505zPvaXSvqzVUdXZD0AgqvcHCLXCmHuxQA'></script><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;family=Geist:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-low": "#191b24",
+                      "inverse-primary": "#9900cf",
+                      "on-primary-container": "#ffffff",
+                      "tertiary-fixed": "#ffd8ea",
+                      "surface-variant": "#32343e",
+                      "on-tertiary-fixed": "#3c002a",
+                      "on-secondary": "#00363a",
+                      "on-secondary-fixed": "#002022",
+                      "on-error": "#690005",
+                      "surface": "#11131c",
+                      "primary-container": "#bd00ff",
+                      "outline-variant": "#514255",
+                      "tertiary-fixed-dim": "#ffaed9",
+                      "primary-fixed-dim": "#ecb2ff",
+                      "on-primary": "#520071",
+                      "error": "#ffb4ab",
+                      "secondary-fixed-dim": "#00dbe9",
+                      "primary-fixed": "#f8d8ff",
+                      "surface-container": "#1d1f29",
+                      "on-primary-fixed-variant": "#74009f",
+                      "inverse-on-surface": "#2e303a",
+                      "surface-container-lowest": "#0c0e17",
+                      "surface-bright": "#373943",
+                      "error-container": "#93000a",
+                      "secondary-container": "#00eefc",
+                      "surface-container-high": "#282933",
+                      "secondary": "#d3fbff",
+                      "secondary-fixed": "#7df4ff",
+                      "on-surface": "#e1e1ef",
+                      "on-secondary-container": "#00686f",
+                      "background": "#11131c",
+                      "primary": "#ecb2ff",
+                      "outline": "#9d8ba0",
+                      "on-tertiary-container": "#fffeff",
+                      "on-secondary-fixed-variant": "#004f54",
+                      "tertiary": "#ffaed9",
+                      "surface-dim": "#11131c",
+                      "on-tertiary": "#610046",
+                      "tertiary-container": "#dd00a3",
+                      "on-surface-variant": "#d4c0d7",
+                      "inverse-surface": "#e1e1ef",
+                      "surface-container-highest": "#32343e",
+                      "surface-tint": "#ecb2ff",
+                      "on-tertiary-fixed-variant": "#890064",
+                      "on-error-container": "#ffdad6",
+                      "on-primary-fixed": "#320047",
+                      "on-background": "#e1e1ef"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "20px",
+                      "container-max": "1440px",
+                      "stack-xs": "4px",
+                      "margin-desktop": "64px",
+                      "gutter": "24px",
+                      "unit": "8px",
+                      "stack-md": "16px",
+                      "stack-xl": "48px"
+              },
+              "fontFamily": {
+                      "headline-lg": [
+                              "Space Grotesk"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "label-sm": [
+                              "Geist"
+                      ],
+                      "label-md": [
+                              "Geist"
+                      ],
+                      "display-lg": [
+                              "Space Grotesk"
+                      ],
+                      "headline-lg-mobile": [
+                              "Space Grotesk"
+                      ],
+                      "headline-md": [
+                              "Space Grotesk"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg": [
+                              "72px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+            }
+          }
+        }
+      </script>
+<style>
+        body {
+            background-color: #05060A; /* Level 0 Base */
+            color: theme('colors.on-background');
+        }
+        
+        /* Glassmorphism Classes */
+        .glass-panel {
+            background-color: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .glass-modal {
+            background-color: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hover-lift:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        /* Custom Scrollbar for dark theme */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.02);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen flex flex-col font-body-md text-body-md overflow-x-hidden selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<header class="bg-transparent fixed top-0 w-full backdrop-blur-xl bg-white/5 shadow-[0_0_15px_rgba(0,238,252,0.1)] flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16 z-50">
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full overflow-hidden border border-white/20">
+<img alt="user profile picture" class="w-full h-full object-cover" data-alt="A macro shot of a sleek, futuristic avatar icon rendered in a dark metallic finish with neon cyan highlights, conveying a sense of advanced digital identity within a cutting-edge augmented reality command center." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArAGqSRoHYoUS8wsVTJVm86skMAsEwFQguwkP_udWwLakoiFsHuQkS843B-UTzVoMudM1AChdjPgFhsN3X1CMRX1nznJtWpuZNgSaQWPnuk4HNHIVs4mz5IchhSe3-rINZlLRW2lYiq_ki6pK4C3Eu0StWuRJeMDaf-Z8ORjzvoqRuN1XDUaLDQqQMA7YQEk6UG3ksoqXR5YdNo02yHHFLkTBhIFL45nlxW4aCH5aveOQnK-cW-s687yn3Ddjw2zrWHgBtd2b8tgc"/>
+</div>
+<h1 class="font-headline-md text-headline-md font-bold text-secondary-container tracking-tighter">B SOCIO AR</h1>
+</div>
+<button class="text-secondary-fixed-dim hover:bg-white/10 transition-all scale-95 active:scale-90 p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 0;">settings</span>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-24 pb-32 md:pb-12 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full flex flex-col gap-stack-xl relative z-10">
+<!-- Header Section -->
+<section class="flex flex-col md:flex-row justify-between items-start md:items-end gap-stack-md w-full">
+<div>
+<h2 class="font-display-lg text-display-lg text-on-surface mb-stack-xs hidden md:block">Access Logs</h2>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-stack-xs md:hidden">Access Logs</h2>
+<p class="text-on-surface-variant font-body-md text-body-md max-w-2xl">Monitor system events, user activities, and security anomalies across the AR creation environment in real-time.</p>
+</div>
+<div class="flex items-center gap-4 w-full md:w-auto">
+<!-- Live Toggle -->
+<div class="glass-panel px-4 py-2 rounded-lg flex items-center gap-2">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary-container"></span>
+</span>
+<span class="font-label-md text-label-md text-secondary-container uppercase tracking-wider">Live Stream</span>
+</div>
+</div>
+</section>
+<!-- Controls Toolbar -->
+<section class="glass-panel rounded-xl p-4 flex flex-col lg:flex-row gap-4 items-center justify-between w-full shadow-[0_4px_30px_rgba(0,0,0,0.5)]">
+<!-- Search -->
+<div class="relative w-full lg:w-96">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant" style="font-variation-settings: &#39;FILL&#39; 0;">search</span>
+<input class="w-full bg-black/40 border border-white/10 rounded-lg py-2 pl-10 pr-4 text-on-surface focus:outline-none focus:border-secondary-container focus:ring-1 focus:ring-secondary-container transition-all font-body-md text-body-md placeholder:text-on-surface-variant/50" placeholder="Search IP, User, or Event ID..." type="text"/>
+</div>
+<!-- Filters -->
+<div class="flex flex-wrap items-center gap-2 w-full lg:w-auto overflow-x-auto pb-2 lg:pb-0 scrollbar-hide">
+<button class="px-4 py-1.5 rounded-full border border-secondary-container/50 bg-secondary-container/10 text-secondary-container font-label-md text-label-md whitespace-nowrap hover:bg-secondary-container/20 transition-colors">
+                    All Events
+                </button>
+<button class="px-4 py-1.5 rounded-full border border-white/10 text-on-surface-variant font-label-md text-label-md whitespace-nowrap hover:border-white/30 transition-colors flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_#34d399]"></span> Success
+                </button>
+<button class="px-4 py-1.5 rounded-full border border-white/10 text-on-surface-variant font-label-md text-label-md whitespace-nowrap hover:border-white/30 transition-colors flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-amber-400 shadow-[0_0_8px_#fbbf24]"></span> Warning
+                </button>
+<button class="px-4 py-1.5 rounded-full border border-white/10 text-on-surface-variant font-label-md text-label-md whitespace-nowrap hover:border-white/30 transition-colors flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-rose-500 shadow-[0_0_8px_#f43f5e]"></span> Critical
+                </button>
+<div class="w-px h-6 bg-white/10 mx-2 hidden sm:block"></div>
+<button class="p-1.5 rounded-lg border border-white/10 text-on-surface-variant hover:text-white hover:border-white/30 transition-colors hidden sm:flex">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 0;">filter_list</span>
+</button>
+<button class="p-1.5 rounded-lg border border-white/10 text-on-surface-variant hover:text-white hover:border-white/30 transition-colors hidden sm:flex">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 0;">download</span>
+</button>
+</div>
+</section>
+<!-- Logs Table Canvas -->
+<section class="glass-panel rounded-xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.6)] flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-white/10 bg-black/20 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="p-4 font-semibold w-16 text-center">Status</th>
+<th class="p-4 font-semibold">Timestamp</th>
+<th class="p-4 font-semibold">User / Subject</th>
+<th class="p-4 font-semibold">Event Type</th>
+<th class="p-4 font-semibold">IP Address &amp; Device</th>
+<th class="p-4 font-semibold text-right">Details</th>
+</tr>
+</thead>
+<tbody class="font-label-md text-label-md divide-y divide-white/5">
+<!-- Log Row 1: Success -->
+<tr class="hover-lift transition-all duration-200 group">
+<td class="p-4 text-center">
+<div class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-emerald-400/10 border border-emerald-400/30">
+<span class="material-symbols-outlined text-emerald-400 text-[18px]" style="font-variation-settings: &#39;FILL&#39; 0;">check</span>
+</div>
+</td>
+<td class="p-4 text-on-surface-variant whitespace-nowrap">
+<div class="flex flex-col">
+<span>Today, 14:32:01</span>
+<span class="text-[10px] text-on-surface-variant/50 uppercase">UTC-5</span>
+</div>
+</td>
+<td class="p-4">
+<div class="flex items-center gap-3">
+<img alt="User Avatar" class="w-8 h-8 rounded-full border border-white/20 object-cover" data-alt="A small, circular avatar portrait of a digital creator with striking blue hair, illuminated by soft neon studio lights against a deep obsidian background, representing an active user in an augmented reality platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArazAH-5PMaYbFAst6m7Kluo_TiNwldOxBQQaXSvjHQZFGKgN9eBbGHzE3XvH8TBAs6oN3JGedgOUP-E0tdbCQQVtfYOXTevQ-cFLCHSbaKyGa03zvo2geB5CFy-EWApt0ZmueUZuf98yY5EIWuEFOjamQANzmYZPLdtpZanvPPgAfQATiFrBLp6JU_jZSHN0s4vxSzrkBYyiv5cw99WtNCAiIsoUci7boMhl3bVHzCWKa8MY2PnW34CZoReT2Skc4F_mH3nSeJCA"/>
+<div class="flex flex-col">
+<span class="text-on-surface font-semibold">Elena Rostova</span>
+<span class="text-on-surface-variant/70 text-xs">elena.r@studio.ar</span>
+</div>
+</div>
+</td>
+<td class="p-4">
+<div class="flex flex-col gap-1 items-start">
+<span class="bg-primary-container/20 border border-primary-container/30 text-primary-fixed px-2 py-0.5 rounded text-[11px] uppercase tracking-wider">Asset Upload</span>
+<span class="text-on-surface-variant text-xs">Uploaded 'Neon_City_Skybox.hdr' (24MB)</span>
+</div>
+</td>
+<td class="p-4">
+<div class="flex flex-col">
+<span class="text-on-surface font-mono text-sm">192.168.1.45</span>
+<span class="text-on-surface-variant/70 text-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: &#39;FILL&#39; 0;">desktop_windows</span>
+                                        macOS • Chrome 114
+                                    </span>
+</div>
+</td>
+<td class="p-4 text-right">
+<button class="text-secondary-fixed-dim hover:text-white transition-colors opacity-0 group-hover:opacity-100">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 0;">open_in_new</span>
+</button>
+</td>
+</tr>
+<!-- Log Row 2: Warning -->
+<tr class="hover-lift transition-all duration-200 group bg-amber-400/5">
+<td class="p-4 text-center">
+<div class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-amber-400/10 border border-amber-400/30">
+<span class="material-symbols-outlined text-amber-400 text-[18px]" style="font-variation-settings: &#39;FILL&#39; 0;">warning</span>
+</div>
+</td>
+<td class="p-4 text-on-surface-variant whitespace-nowrap">
+<div class="flex flex-col">
+<span>Today, 14:15:44</span>
+<span class="text-[10px] text-on-surface-variant/50 uppercase">UTC-5</span>
+</div>
+</td>
+<td class="p-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full border border-white/20 bg-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant text-sm" style="font-variation-settings: &#39;FILL&#39; 0;">api</span>
+</div>
+<div class="flex flex-col">
+<span class="text-on-surface font-semibold">System API</span>
+<span class="text-on-surface-variant/70 text-xs">Service Account</span>
+</div>
+</div>
+</td>
+<td class="p-4">
+<div class="flex flex-col gap-1 items-start">
+<span class="bg-amber-400/20 border border-amber-400/30 text-amber-300 px-2 py-0.5 rounded text-[11px] uppercase tracking-wider">Rate Limit</span>
+<span class="text-on-surface-variant text-xs">Endpoint /v1/models throttled</span>
+</div>
+</td>
+<td class="p-4">
+<div class="flex flex-col">
+<span class="text-on-surface font-mono text-sm">10.0.0.214</span>
+<span class="text-on-surface-variant/70 text-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: &#39;FILL&#39; 0;">dns</span>
+                                        Internal Node Server
+                                    </span>
+</div>
+</td>
+<td class="p-4 text-right">
+<button class="text-secondary-fixed-dim hover:text-white transition-colors opacity-0 group-hover:opacity-100">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 0;">open_in_new</span>
+</button>
+</td>
+</tr>
+<!-- Log Row 3: Critical -->
+<tr class="hover-lift transition-all duration-200 group bg-rose-500/5">
+<td class="p-4 text-center">
+<div class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-rose-500/10 border border-rose-500/30">
+<span class="material-symbols-outlined text-rose-500 text-[18px]" style="font-variation-settings: &#39;FILL&#39; 0;">error</span>
+</div>
+</td>
+<td class="p-4 text-on-surface-variant whitespace-nowrap">
+<div class="flex flex-col">
+<span>Today, 13:05:12</span>
+<span class="text-[10px] text-on-surface-variant/50 uppercase">UTC-5</span>
+</div>
+</td>
+<td class="p-4">
+<div class="flex items-center gap-3">
+<img alt="User Avatar" class="w-8 h-8 rounded-full border border-white/20 object-cover" data-alt="A generic placeholder avatar showing a stylized silhouette of a person rendered in glowing wireframe against a dark background, fitting the cyber-refraction theme." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPfqEA2H6N2DX_JMtw8EpufAJwpFqkxPTm9i5oVlKm5NvUq-8oOE6HPg43TzdzdVEm8OMxpn8nEHBwjuIO3ND77sklJtbH_WHZ4ejvVMRGKqRM7jcDgsJ3Z6foocuzUTvDpUW2yKsyBRKiiKtgefebhVnK9m3ckx7OJj69kwdmrJRbW6JHsJW7j5xAU_JLDDImUeLf-JlfkzN9QbzOJ-GgpmvyStBHs7VKXO9uBNXfoT0yIU42PqjpFTk_m8bXn_FCtK41utuJ-JE"/>
+<div class="flex flex-col">
+<span class="text-on-surface font-semibold">Unknown User</span>
+<span class="text-on-surface-variant/70 text-xs">Unauthenticated</span>
+</div>
+</div>
+</td>
+<td class="p-4">
+<div class="flex flex-col gap-1 items-start">
+<span class="bg-rose-500/20 border border-rose-500/30 text-rose-300 px-2 py-0.5 rounded text-[11px] uppercase tracking-wider">Auth Failure</span>
+<span class="text-on-surface-variant text-xs">Failed admin login attempt (5x)</span>
+</div>
+</td>
+<td class="p-4">
+<div class="flex flex-col">
+<span class="text-on-surface font-mono text-sm">45.22.109.8</span>
+<span class="text-on-surface-variant/70 text-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: &#39;FILL&#39; 0;">public</span>
+                                        Unknown Device • RU
+                                    </span>
+</div>
+</td>
+<td class="p-4 text-right">
+<button class="text-secondary-fixed-dim hover:text-white transition-colors opacity-0 group-hover:opacity-100">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 0;">open_in_new</span>
+</button>
+</td>
+</tr>
+<!-- Log Row 4: Info -->
+<tr class="hover-lift transition-all duration-200 group">
+<td class="p-4 text-center">
+<div class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/5 border border-white/20">
+<span class="material-symbols-outlined text-white/70 text-[18px]" style="font-variation-settings: &#39;FILL&#39; 0;">info</span>
+</div>
+</td>
+<td class="p-4 text-on-surface-variant whitespace-nowrap">
+<div class="flex flex-col">
+<span>Today, 11:20:00</span>
+<span class="text-[10px] text-on-surface-variant/50 uppercase">UTC-5</span>
+</div>
+</td>
+<td class="p-4">
+<div class="flex items-center gap-3">
+<img alt="User Avatar" class="w-8 h-8 rounded-full border border-white/20 object-cover" data-alt="A sleek corporate avatar icon featuring a stylized &#39;M&#39; logo in neon purple, set against a dark glass-like texture, representing a verified brand account within the AR studio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2eai-w7Vk2URmcwFTZkQdlEQJFsg6K_phial-gRNMWP-g4b_8YOwCfSQ6UqisfM06JfiQ1rq6DjHKnbRceM2OPgYuhU_hm1jQ30N0ic9om_eX-SqSHLHq6swV3DfItX_vTH-ndpv-Xeg_8dXp8m49OD61CDsYGU8DJtKRHOQE5zTdmUB8W0NbkLppt1Yxi09A6QS3462Vfu8yDntzSX1geAdVpwMLWvD_PpKC75ZrtJLxkYb02wItuqP79fJiTKHk8gwg6MMtNhI"/>
+<div class="flex flex-col">
+<span class="text-on-surface font-semibold">MegaCorp Inc.</span>
+<span class="text-on-surface-variant/70 text-xs">Enterprise Org</span>
+</div>
+</div>
+</td>
+<td class="p-4">
+<div class="flex flex-col gap-1 items-start">
+<span class="bg-secondary-container/20 border border-secondary-container/30 text-secondary-fixed px-2 py-0.5 rounded text-[11px] uppercase tracking-wider">Sub Change</span>
+<span class="text-on-surface-variant text-xs">Upgraded to 'AR Pro Tier'</span>
+</div>
+</td>
+<td class="p-4">
+<div class="flex flex-col">
+<span class="text-on-surface font-mono text-sm">203.0.113.42</span>
+<span class="text-on-surface-variant/70 text-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: &#39;FILL&#39; 0;">work</span>
+                                        Enterprise Gateway
+                                    </span>
+</div>
+</td>
+<td class="p-4 text-right">
+<button class="text-secondary-fixed-dim hover:text-white transition-colors opacity-0 group-hover:opacity-100">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 0;">open_in_new</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination Footer -->
+<div class="border-t border-white/10 p-4 flex items-center justify-between bg-black/20">
+<span class="text-on-surface-variant text-sm font-label-md">Showing 1-4 of 2,401 events</span>
+<div class="flex gap-2">
+<button class="p-1.5 rounded border border-white/10 text-on-surface-variant hover:text-white hover:border-white/30 transition-colors disabled:opacity-50" disabled="">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 0;">chevron_left</span>
+</button>
+<button class="p-1.5 rounded border border-white/10 text-on-surface-variant hover:text-white hover:border-white/30 transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 0;">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center pt-2 pb-safe px-4 bg-transparent backdrop-blur-2xl bg-surface-container-low/80 border-t border-white/10 shadow-[0_-4px_20px_rgba(0,0,0,0.5)] rounded-t-xl h-20">
+<!-- Not actively on a nav tab based on the provided list, suppressing active styles for these items -->
+<button class="flex flex-col items-center justify-center text-outline opacity-60 hover:text-secondary-fixed-dim transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: &#39;FILL&#39; 0;">layers</span>
+<span class="font-label-sm text-[10px]">Projects</span>
+</button>
+<button class="flex flex-col items-center justify-center text-outline opacity-60 hover:text-secondary-fixed-dim transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: &#39;FILL&#39; 0;">deployed_code</span>
+<span class="font-label-sm text-[10px]">Editor</span>
+</button>
+<button class="flex flex-col items-center justify-center text-outline opacity-60 hover:text-secondary-fixed-dim transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: &#39;FILL&#39; 0;">dashboard_customize</span>
+<span class="font-label-sm text-[10px]">Templates</span>
+</button>
+<!-- Mapping Admin Logs loosely to Analytics for mobile nav context -->
+<button class="flex flex-col items-center justify-center text-secondary-container font-bold drop-shadow-[0_0_8px_rgba(0,238,252,0.6)] active:scale-95 duration-200">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: &#39;FILL&#39; 1;">monitoring</span>
+<span class="font-label-sm text-[10px]">Analytics</span>
+</button>
+<button class="flex flex-col items-center justify-center text-outline opacity-60 hover:text-secondary-fixed-dim transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: &#39;FILL&#39; 0;">account_circle</span>
+<span class="font-label-sm text-[10px]">Profile</span>
+</button>
+</nav>
+</body></html>

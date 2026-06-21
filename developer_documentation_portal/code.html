@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Developer Documentation Portal</title>
+<script type='text/javascript' nonce='LWJ1WRr6GA6Jgl96hrnEYw==' src='https://contribution.usercontent.google.com/ZESQ555QNStnEc3SxtiLfq74rLORqjFlRbRYXbIkoO8AW5a8i57btkhJVD7MPcyodGREdKFcoTjoX3qB7QKOLFbpvZxQKm3TFrD6Vd2kppYbj1RcFTT2Ge_aRr9-q6a60i2g-6uzCw4vnbHiXn9vxFmRPvZ40ahMMJl8-NJeJpA-8KmHUDaCjlSMF-xmg7MKt3HNEOs-GktNbNVjlFJgBB0CoaqaKTDsR66w0dKhzCinB9LrgOyWwJKCDQuwT4Er5Q8R1kuMhi17haWgEeEwzV0LPzU8FiSBHBSy-NZkGP_zEfHei2QQHlXDdk8yLZaMfzxWvM-rW8-pG9zPoNjov2lZV-sdzQ4w9P0Bp6KWCpNt12FmT9kBfMOTdDEwV8qOspPpkh8FSCLdfeXBh5buBEjIfyQBxv0RhJFTEJR9r89Hic1Tsg2LF2F72E1KQRfIxyHf_nEcrEZjzAgm6Iu02LCmkJkKCaNZQtRMKV0u95QIMlkBx-om33glmpUrZFtJGSy9tCmzwDBwDE9SbvtkYIjZltSD2tf1SR1UizteeGPysX7C65MfCDsXuwIW1zgnwkU7X5uPjqsJifVBdcfLJN6tsspLqJNn6bZWCsqS73H3oP-pZZKF2RrHS5Bk_DhsuWEqqPsYDq4Yu0nYAcnGcrbMhGuANM_NwEQRWXjLvoMcA8b832C3nlajjYlbo7g2KVVQqvamSA_uJ6UBmt4B2gHuOxVg0O8sNw5jbhDj3-nA9DKYYi3mnVL-zmI5SpilOMfOos6btFDwjoxg6xDtrLDHrM96Eqg4pxm7aQ'></script><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;family=Geist:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#fffeff",
+                    "secondary-container": "#00eefc",
+                    "on-error": "#690005",
+                    "surface-container-lowest": "#0c0e17",
+                    "surface-bright": "#373943",
+                    "on-error-container": "#ffdad6",
+                    "on-secondary": "#00363a",
+                    "on-primary-container": "#ffffff",
+                    "background": "#11131c",
+                    "inverse-on-surface": "#2e303a",
+                    "secondary": "#d3fbff",
+                    "error-container": "#93000a",
+                    "secondary-fixed-dim": "#00dbe9",
+                    "on-surface-variant": "#d4c0d7",
+                    "inverse-surface": "#e1e1ef",
+                    "on-surface": "#e1e1ef",
+                    "error": "#ffb4ab",
+                    "tertiary-fixed": "#ffd8ea",
+                    "primary-container": "#bd00ff",
+                    "on-primary": "#520071",
+                    "tertiary-container": "#dd00a3",
+                    "primary": "#ecb2ff",
+                    "outline": "#9d8ba0",
+                    "outline-variant": "#514255",
+                    "surface-container-low": "#191b24",
+                    "primary-fixed": "#f8d8ff",
+                    "on-tertiary-fixed-variant": "#890064",
+                    "on-primary-fixed": "#320047",
+                    "inverse-primary": "#9900cf",
+                    "on-tertiary": "#610046",
+                    "surface-variant": "#32343e",
+                    "surface-container-high": "#282933",
+                    "on-background": "#e1e1ef",
+                    "surface-container": "#1d1f29",
+                    "on-primary-fixed-variant": "#74009f",
+                    "surface": "#11131c",
+                    "on-secondary-container": "#00686f",
+                    "surface-tint": "#ecb2ff",
+                    "secondary-fixed": "#7df4ff",
+                    "primary-fixed-dim": "#ecb2ff",
+                    "on-tertiary-fixed": "#3c002a",
+                    "tertiary": "#ffaed9",
+                    "surface-container-highest": "#32343e",
+                    "tertiary-fixed-dim": "#ffaed9",
+                    "on-secondary-fixed-variant": "#004f54",
+                    "surface-dim": "#11131c",
+                    "on-secondary-fixed": "#002022"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-xs": "4px",
+                    "margin-desktop": "64px",
+                    "unit": "8px",
+                    "stack-xl": "48px",
+                    "stack-md": "16px",
+                    "margin-mobile": "20px",
+                    "gutter": "24px",
+                    "container-max": "1440px"
+            },
+            "fontFamily": {
+                    "body-lg": [
+                            "Inter"
+                    ],
+                    "headline-md": [
+                            "Space Grotesk"
+                    ],
+                    "headline-lg": [
+                            "Space Grotesk"
+                    ],
+                    "label-md": [
+                            "Geist"
+                    ],
+                    "display-lg": [
+                            "Space Grotesk"
+                    ],
+                    "body-md": [
+                            "Inter"
+                    ],
+                    "label-sm": [
+                            "Geist"
+                    ],
+                    "headline-lg-mobile": [
+                            "Space Grotesk"
+                    ]
+            },
+            "fontSize": {
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "headline-lg": [
+                            "40px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "label-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "display-lg": [
+                            "72px",
+                            {
+                                    "lineHeight": "1.1",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-sm": [
+                            "12px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-lg-mobile": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "600"
+                            }
+                    ]
+            }
+        },
+        },
+      }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-modal {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 20px rgba(189, 0, 255, 0.15);
+        }
+        .neon-border-focus:focus-within {
+            border-color: #ecb2ff;
+            box-shadow: 0 0 10px rgba(236, 178, 255, 0.3);
+        }
+        .code-block {
+            font-family: 'Geist', monospace;
+        }
+        
+        /* Syntax Highlighting Colors */
+        .token.property { color: #00eefc; }
+        .token.string { color: #ecb2ff; }
+        .token.number { color: #ffb4ab; }
+        .token.punctuation { color: #9d8ba0; }
+        .token.boolean { color: #dd00a3; }
+        
+        .drawer-open {
+            transform: translateX(0%);
+        }
+        .drawer-closed {
+            transform: translateX(-100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[#05060A] text-on-surface min-h-screen font-body-md relative overflow-x-hidden pt-20 pb-24">
+<!-- TopAppBar -->
+<header class="bg-white/5 dark:bg-white/5 backdrop-blur-[40px] fixed top-0 w-full z-50 border-b border-white/10 shadow-[0_0_20px_rgba(189,0,255,0.15)] flex justify-between items-center px-gutter py-4 w-full h-[72px]">
+<button class="text-primary dark:text-primary hover:bg-white/10 transition-all duration-300 active:scale-95 p-2 rounded-full flex items-center justify-center" id="menu-btn">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 0;">menu</span>
+</button>
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary tracking-tight">
+            NEON_GENESIS
+        </div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high border border-outline/30 flex items-center justify-center overflow-hidden">
+<span class="material-symbols-outlined text-outline">account_circle</span>
+</div>
+</header>
+<!-- Navigation Drawer -->
+<div class="fixed inset-y-0 left-0 w-3/4 max-w-sm glass-modal z-[60] drawer-closed transition-transform duration-300 ease-in-out flex flex-col pt-20 pb-8 px-6" id="nav-drawer">
+<button class="absolute top-4 right-4 text-on-surface-variant p-2 rounded-full hover:bg-white/10 active:scale-95" id="close-menu-btn">
+<span class="material-symbols-outlined">close</span>
+</button>
+<div class="flex-1 overflow-y-auto">
+<h3 class="font-label-md text-label-md text-outline uppercase tracking-widest mb-4 mt-4">API Documentation</h3>
+<ul class="space-y-2">
+<li>
+<a class="block px-4 py-3 rounded-lg bg-white/10 text-primary font-bold border border-primary/20" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px]">api</span>
+                            Introduction
+                        </div>
+</a>
+</li>
+<li>
+<a class="block px-4 py-3 rounded-lg text-on-surface-variant hover:bg-white/5 transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px]">key</span>
+                            Authentication
+                        </div>
+</a>
+</li>
+<li>
+<a class="block px-4 py-3 rounded-lg text-on-surface-variant hover:bg-white/5 transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px]">list_alt</span>
+                            Endpoints
+                        </div>
+</a>
+</li>
+<li>
+<a class="block px-4 py-3 rounded-lg text-on-surface-variant hover:bg-white/5 transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+                            Errors
+                        </div>
+</a>
+</li>
+</ul>
+<h3 class="font-label-md text-label-md text-outline uppercase tracking-widest mb-4 mt-8">SDKs &amp; Tools</h3>
+<ul class="space-y-2">
+<li>
+<a class="block px-4 py-3 rounded-lg text-on-surface-variant hover:bg-white/5 transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px]">javascript</span>
+                            Node.js
+                        </div>
+</a>
+</li>
+<li>
+<a class="block px-4 py-3 rounded-lg text-on-surface-variant hover:bg-white/5 transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+                            Python
+                        </div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<!-- Drawer Overlay -->
+<div class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[55] hidden opacity-0 transition-opacity duration-300" id="drawer-overlay"></div>
+<!-- Main Content -->
+<main class="px-margin-mobile max-w-container-max mx-auto space-y-stack-xl">
+<!-- Search Section -->
+<section class="pt-stack-md">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-primary-container mb-stack-md">Developer Docs</h1>
+<div class="glass-panel rounded-full p-1 flex items-center px-4 neon-border-focus transition-all duration-300 h-14">
+<span class="material-symbols-outlined text-outline-variant mr-3">search</span>
+<input class="w-full bg-transparent border-none outline-none focus:ring-0 text-on-surface font-body-lg placeholder:text-outline-variant" placeholder="Search documentation, endpoints, guides..." type="text"/>
+<div class="hidden sm:flex items-center gap-1 font-label-sm text-label-sm text-outline-variant bg-surface-container px-2 py-1 rounded">
+<span>⌘</span><span>K</span>
+</div>
+</div>
+</section>
+<!-- Quick Links Bento Grid -->
+<section>
+<div class="grid grid-cols-2 gap-stack-md">
+<!-- Quick Start -->
+<a class="glass-panel rounded-xl p-5 hover:bg-white/5 transition-all duration-300 group flex flex-col items-start border border-white/10 hover:border-secondary-container/50" href="#">
+<div class="w-10 h-10 rounded-lg bg-secondary-container/10 flex items-center justify-center mb-4 text-secondary-container">
+<span class="material-symbols-outlined">rocket_launch</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-primary-container mb-1">Quick Start</h3>
+<p class="font-label-sm text-label-sm text-outline group-hover:text-on-surface-variant transition-colors line-clamp-2">Get up and running in under 5 minutes.</p>
+</a>
+<!-- API Reference -->
+<a class="glass-panel rounded-xl p-5 hover:bg-white/5 transition-all duration-300 group flex flex-col items-start border border-white/10 hover:border-primary-container/50" href="#">
+<div class="w-10 h-10 rounded-lg bg-primary-container/10 flex items-center justify-center mb-4 text-primary">
+<span class="material-symbols-outlined">api</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-primary-container mb-1">API Reference</h3>
+<p class="font-label-sm text-label-sm text-outline group-hover:text-on-surface-variant transition-colors line-clamp-2">Complete endpoint specifications.</p>
+</a>
+<!-- SDK Downloads -->
+<a class="glass-panel rounded-xl p-5 hover:bg-white/5 transition-all duration-300 group flex flex-col items-start border border-white/10 hover:border-tertiary-container/50" href="#">
+<div class="w-10 h-10 rounded-lg bg-tertiary-container/10 flex items-center justify-center mb-4 text-tertiary">
+<span class="material-symbols-outlined">download</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-primary-container mb-1">SDK Downloads</h3>
+<p class="font-label-sm text-label-sm text-outline group-hover:text-on-surface-variant transition-colors line-clamp-2">Libraries for your favorite languages.</p>
+</a>
+<!-- Webhooks -->
+<a class="glass-panel rounded-xl p-5 hover:bg-white/5 transition-all duration-300 group flex flex-col items-start border border-white/10 hover:border-error/50" href="#">
+<div class="w-10 h-10 rounded-lg bg-error/10 flex items-center justify-center mb-4 text-error">
+<span class="material-symbols-outlined">webhook</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-primary-container mb-1">Webhooks</h3>
+<p class="font-label-sm text-label-sm text-outline group-hover:text-on-surface-variant transition-colors line-clamp-2">Real-time event notifications.</p>
+</a>
+</div>
+</section>
+<!-- Sample Code Block Section -->
+<section class="glass-modal rounded-xl overflow-hidden border border-white/10 relative">
+<!-- Glow effect -->
+<div class="absolute -inset-1 bg-gradient-to-r from-primary-container via-secondary-container to-primary-container opacity-20 blur-xl z-0 pointer-events-none"></div>
+<div class="relative z-10 bg-surface-container-lowest/80 backdrop-blur-xl h-full flex flex-col">
+<div class="flex items-center justify-between px-4 py-3 border-b border-white/10 bg-white/5">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-[#ff5f56]"></span>
+<span class="w-3 h-3 rounded-full bg-[#ffbd2e]"></span>
+<span class="w-3 h-3 rounded-full bg-[#27c93f]"></span>
+<span class="font-label-sm text-label-sm text-outline ml-2 font-mono">POST /v1/ar-assets/create</span>
+</div>
+<button class="text-outline hover:text-primary transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span class="font-label-sm text-label-sm hidden sm:inline">Copy</span>
+</button>
+</div>
+<div class="p-4 overflow-x-auto code-block font-label-md text-label-md text-on-surface whitespace-pre">
+<span class="token punctuation">{</span>
+<span class="token property">"asset_id"</span><span class="token punctuation">:</span> <span class="token string">"neo_cube_001"</span><span class="token punctuation">,</span>
+<span class="token property">"type"</span><span class="token punctuation">:</span> <span class="token string">"3D_MODEL"</span><span class="token punctuation">,</span>
+<span class="token property">"properties"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+<span class="token property">"material"</span><span class="token punctuation">:</span> <span class="token string">"glassmorphic"</span><span class="token punctuation">,</span>
+<span class="token property">"opacity"</span><span class="token punctuation">:</span> <span class="token number">0.85</span><span class="token punctuation">,</span>
+<span class="token property">"emissive"</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+<span class="token property">"color"</span><span class="token punctuation">:</span> <span class="token string">"#00eefc"</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token property">"physics"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+<span class="token property">"mass"</span><span class="token punctuation">:</span> <span class="token number">1.2</span><span class="token punctuation">,</span>
+<span class="token property">"gravity_scale"</span><span class="token punctuation">:</span> <span class="token number">0.5</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span></div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="bg-white/5 dark:bg-white/5 backdrop-blur-[40px] fixed bottom-0 w-full z-50 rounded-t-xl border-t border-white/10 shadow-[0_-5px_25px_rgba(0,240,255,0.1)] flex justify-around items-center h-[72px] px-margin-mobile">
+<a class="flex flex-col items-center justify-center text-outline opacity-60 px-4 py-1 hover:opacity-100 hover:text-primary transition-opacity active:translate-y-[-2px] transition-transform" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 0;">layers</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest mt-1">Projects</span>
+</a>
+<a class="flex flex-col items-center justify-center text-secondary-container dark:text-secondary-container bg-white/10 rounded-xl px-4 py-1 border border-secondary-container/30 hover:opacity-100 hover:text-primary transition-opacity active:translate-y-[-2px] transition-transform" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 1;">draw</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest mt-1">Editor</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline opacity-60 px-4 py-1 hover:opacity-100 hover:text-primary transition-opacity active:translate-y-[-2px] transition-transform" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 0;">dashboard_customize</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest mt-1">Templates</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline opacity-60 px-4 py-1 hover:opacity-100 hover:text-primary transition-opacity active:translate-y-[-2px] transition-transform" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 0;">query_stats</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest mt-1">Data</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline opacity-60 px-4 py-1 hover:opacity-100 hover:text-primary transition-opacity active:translate-y-[-2px] transition-transform" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 0;">account_circle</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest mt-1">Profile</span>
+</a>
+</nav>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.getElementById('menu-btn');
+            const closeMenuBtn = document.getElementById('close-menu-btn');
+            const drawer = document.getElementById('nav-drawer');
+            const overlay = document.getElementById('drawer-overlay');
+
+            function openDrawer() {
+                drawer.classList.remove('drawer-closed');
+                drawer.classList.add('drawer-open');
+                overlay.classList.remove('hidden');
+                // Small delay to allow display block to apply before opacity transition
+                setTimeout(() => {
+                    overlay.classList.remove('opacity-0');
+                    overlay.classList.add('opacity-100');
+                }, 10);
+            }
+
+            function closeDrawer() {
+                drawer.classList.remove('drawer-open');
+                drawer.classList.add('drawer-closed');
+                overlay.classList.remove('opacity-100');
+                overlay.classList.add('opacity-0');
+                
+                // Wait for transition to finish before hiding
+                setTimeout(() => {
+                    overlay.classList.add('hidden');
+                }, 300);
+            }
+
+            menuBtn.addEventListener('click', openDrawer);
+            closeMenuBtn.addEventListener('click', closeDrawer);
+            overlay.addEventListener('click', closeDrawer);
+        });
+    </script>
+</body></html>

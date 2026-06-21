@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Analytics - B Socio AR Studio</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Inter:wght@100..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script type='text/javascript' nonce='NUH0WGsKTIkRa1ZVgaaHaw==' src='https://contribution.usercontent.google.com/wVwhH76TKXCkFB8ofGykfa5DvkvYvUEZbsbwVnpmUUwdRtYuC03Ruun4KfoAIDoZqN1L_yAxsRfgru_fX3-e6QORhgc7ra0OF7bqQ5pJa4Yqep4MP1JuGqETLmsLEjx4S5cPnYp4YUytWXdwcrniYWZ8cfMB8NMQQdMnWKXqjQnG_9s_Nolx_LCgt-cu3dSfko2EWZNwMUd7nwOR434lf7mj0o_NfLqL__TVQZuhhEhjGh2vL13b7rl9SmAqCXSH-iN_x-FukxuNV3BpyNZl-cc861ezkMJhiEBtxBQSu4nCplzKThRXymygIlqyphCQOcg_XkmjTFPs58nCsBV1mAlkLfSJTaTc8oM4NdMJcC8jRayi0q7Gi_G9vdrUQrs50cX90PW-L_wBjxvOZejH5Z2uSANyWJZvns5_OsDvGwtE8H3fg0Iklfk23d5kh58UMZoTpq30cfiOEfHCeIX10v9HM13SmbX-YXgxC1f4ffkqs3WmUD-ckXH4inAOGaSg-XeBX5G_iH2HyKJ50-c_YYf7A8AhIT0kkZS9DssmIUsNyl0aAlkfmtDztTNCMEh_USSIJ-qiXQzZtzJ7JZgGpNE4YusNi2OjoyiQzov1pcGagpNdTuvZ-cEMkCb8RQxgBDmSwcMCXgNbPhaiYrb-CTSyUUr83DUbOIvBNWf6kOWIezrfO4nwRlodmaN5x6VXxsyegQbEF04ccHyiKMmQJS0L2l0ustRIvlIQViEh0vQeWoP6jQ05ArqZ56rXYHZ50Lw9bMIFt07BwYWLX0LoU5GNjltJ93sPbD07NQ'></script><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error": "#690005",
+                        "surface-dim": "#11131c",
+                        "inverse-surface": "#e1e1ef",
+                        "on-primary-fixed-variant": "#74009f",
+                        "surface": "#11131c",
+                        "on-secondary-fixed": "#002022",
+                        "secondary-fixed-dim": "#00dbe9",
+                        "error": "#ffb4ab",
+                        "on-secondary": "#00363a",
+                        "background": "#11131c",
+                        "secondary-fixed": "#7df4ff",
+                        "on-primary": "#520071",
+                        "tertiary-container": "#dd00a3",
+                        "outline": "#9d8ba0",
+                        "surface-container-high": "#282933",
+                        "primary": "#ecb2ff",
+                        "on-tertiary-container": "#fffeff",
+                        "on-tertiary-fixed": "#3c002a",
+                        "on-background": "#e1e1ef",
+                        "secondary-container": "#00eefc",
+                        "on-tertiary-fixed-variant": "#890064",
+                        "error-container": "#93000a",
+                        "secondary": "#d3fbff",
+                        "surface-bright": "#373943",
+                        "tertiary": "#ffaed9",
+                        "primary-fixed-dim": "#ecb2ff",
+                        "on-secondary-container": "#00686f",
+                        "on-primary-container": "#ffffff",
+                        "on-tertiary": "#610046",
+                        "on-primary-fixed": "#320047",
+                        "surface-container-lowest": "#0c0e17",
+                        "on-secondary-fixed-variant": "#004f54",
+                        "primary-container": "#bd00ff",
+                        "surface-container-low": "#191b24",
+                        "outline-variant": "#514255",
+                        "inverse-on-surface": "#2e303a",
+                        "inverse-primary": "#9900cf",
+                        "surface-container-highest": "#32343e",
+                        "surface-variant": "#32343e",
+                        "surface-container": "#1d1f29",
+                        "tertiary-fixed": "#ffd8ea",
+                        "on-error-container": "#ffdad6",
+                        "surface-tint": "#ecb2ff",
+                        "tertiary-fixed-dim": "#ffaed9",
+                        "on-surface": "#e1e1ef",
+                        "primary-fixed": "#f8d8ff",
+                        "on-surface-variant": "#d4c0d7"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "container-max": "1440px",
+                        "margin-desktop": "64px",
+                        "stack-xs": "4px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "stack-xl": "48px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "headline-lg-mobile": ["Space Grotesk"],
+                        "display-lg": ["Space Grotesk"],
+                        "label-md": ["Geist"],
+                        "headline-md": ["Space Grotesk"],
+                        "label-sm": ["Geist"],
+                        "headline-lg": ["Space Grotesk"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        /* Cyber-Refraction Custom Utilities */
+        .glass-panel {
+            background-color: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(40px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-panel-interactive:hover {
+            background-color: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .glow-text-primary {
+            text-shadow: 0 0 10px rgba(236, 178, 255, 0.5);
+        }
+        .glow-text-cyan {
+            text-shadow: 0 0 10px rgba(0, 238, 252, 0.5);
+        }
+        
+        /* Progress Bar Animation */
+        @keyframes fillProgress {
+            from { width: 0; }
+        }
+        .animate-progress {
+            animation: fillProgress 1.5s ease-out forwards;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen relative overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-desktop h-20 bg-white/5 dark:bg-white/5 backdrop-blur-3xl border-b border-white/10 shadow-[0_0_20px_rgba(236,178,255,0.15)] duration-300 ease-out transition-all">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary dark:text-primary text-3xl">blur_on</span>
+<span class="font-headline-md text-headline-md text-primary tracking-tighter">B Socio AR Studio</span>
+</div>
+<!-- Desktop Nav Cluster -->
+<nav class="hidden md:flex items-center gap-8 font-label-md text-label-md">
+<a class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-xl">deployed_code</span> Projects
+            </a>
+<a class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-xl">campaign</span> Marketing
+            </a>
+<a class="text-primary border-b-2 border-primary py-1 flex items-center gap-2 glow-text-primary" href="#">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: &#39;FILL&#39; 1;">insights</span> Analytics
+            </a>
+<a class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-xl">settings</span> Settings
+            </a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-variant border border-white/20 overflow-hidden flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface">person</span>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-28 pb-32 md:pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex flex-col gap-gutter">
+<!-- Page Header -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-stack-md">
+<div>
+<h1 class="font-headline-lg text-headline-lg md:font-display-lg md:text-display-lg text-on-background">Campaign Performance</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Real-time telemetry and engagement metrics for active AR experiences.</p>
+</div>
+<!-- Date Picker -->
+<button class="glass-panel glass-panel-interactive rounded-lg px-4 py-2 flex items-center gap-2 font-label-md text-label-md text-on-surface transition-all">
+<span class="material-symbols-outlined text-secondary-container">calendar_month</span>
+                Last 30 Days
+                <span class="material-symbols-outlined text-sm">expand_more</span>
+</button>
+</div>
+<!-- Key Metrics Bento Grid -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Metric 1 -->
+<div class="glass-panel rounded-xl p-6 relative overflow-hidden group">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-primary-container/10 rounded-full blur-2xl group-hover:bg-primary-container/20 transition-all"></div>
+<div class="flex justify-between items-start mb-4">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Total Scans</span>
+<span class="material-symbols-outlined text-primary">qr_code_scanner</span>
+</div>
+<div class="font-headline-lg text-headline-lg text-primary glow-text-primary">124,592</div>
+<div class="flex items-center gap-1 mt-2 font-label-sm text-label-sm text-secondary-container">
+<span class="material-symbols-outlined text-sm">trending_up</span> +14.2% vs last period
+                </div>
+</div>
+<!-- Metric 2 -->
+<div class="glass-panel rounded-xl p-6 relative overflow-hidden group">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-secondary-container/10 rounded-full blur-2xl group-hover:bg-secondary-container/20 transition-all"></div>
+<div class="flex justify-between items-start mb-4">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Avg. Session</span>
+<span class="material-symbols-outlined text-secondary-container">timer</span>
+</div>
+<div class="font-headline-lg text-headline-lg text-secondary-container glow-text-cyan">03:42</div>
+<div class="flex items-center gap-1 mt-2 font-label-sm text-label-sm text-secondary-container">
+<span class="material-symbols-outlined text-sm">trending_up</span> +0:18s vs last period
+                </div>
+</div>
+<!-- Metric 3 -->
+<div class="glass-panel rounded-xl p-6 relative overflow-hidden group">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-tertiary-container/10 rounded-full blur-2xl group-hover:bg-tertiary-container/20 transition-all"></div>
+<div class="flex justify-between items-start mb-4">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Conversion %</span>
+<span class="material-symbols-outlined text-tertiary-container">shopping_cart_checkout</span>
+</div>
+<div class="font-headline-lg text-headline-lg text-tertiary">8.4%</div>
+<div class="flex items-center gap-1 mt-2 font-label-sm text-label-sm text-error">
+<span class="material-symbols-outlined text-sm">trending_down</span> -1.2% vs last period
+                </div>
+</div>
+<!-- Metric 4 -->
+<div class="glass-panel rounded-xl p-6 relative overflow-hidden group">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-primary/10 rounded-full blur-2xl group-hover:bg-primary/20 transition-all"></div>
+<div class="flex justify-between items-start mb-4">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Active Hotspots</span>
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<div class="font-headline-lg text-headline-lg text-on-background">42</div>
+<div class="flex items-center gap-1 mt-2 font-label-sm text-label-sm text-on-surface-variant">
+                    Across 12 global regions
+                </div>
+</div>
+</section>
+<!-- Main Chart Area -->
+<section class="glass-panel rounded-xl p-6 w-full h-[400px] flex flex-col">
+<div class="flex justify-between items-center mb-6">
+<h2 class="font-headline-md text-headline-md text-on-background">Scan Distribution Over Time</h2>
+<div class="flex gap-2">
+<span class="px-2 py-1 bg-primary/20 text-primary border border-primary/30 rounded font-label-sm text-label-sm uppercase">Global</span>
+<span class="px-2 py-1 glass-panel text-on-surface-variant rounded font-label-sm text-label-sm uppercase hover:text-on-surface cursor-pointer">Local</span>
+</div>
+</div>
+<!-- Chart Placeholder (Stylized using borders and gradients) -->
+<div class="flex-grow relative border-l border-b border-white/10 flex items-end px-4 gap-2">
+<!-- Grid lines -->
+<div class="absolute w-full h-px bg-white/5 bottom-1/4"></div>
+<div class="absolute w-full h-px bg-white/5 bottom-2/4"></div>
+<div class="absolute w-full h-px bg-white/5 bottom-3/4"></div>
+<!-- Mock Bars -->
+<div class="w-full bg-gradient-to-t from-primary/10 to-primary/50 h-[30%] rounded-t-sm border-t border-primary/50 hover:from-primary/20 hover:to-primary/70 transition-all cursor-pointer"></div>
+<div class="w-full bg-gradient-to-t from-primary/10 to-primary/50 h-[45%] rounded-t-sm border-t border-primary/50 hover:from-primary/20 hover:to-primary/70 transition-all cursor-pointer"></div>
+<div class="w-full bg-gradient-to-t from-secondary-container/10 to-secondary-container/50 h-[80%] rounded-t-sm border-t border-secondary-container/50 hover:from-secondary-container/20 hover:to-secondary-container/70 transition-all cursor-pointer relative group">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-surface-container-high px-2 py-1 rounded border border-white/10 font-label-sm text-label-sm opacity-0 group-hover:opacity-100 transition-opacity">Peak</div>
+</div>
+<div class="w-full bg-gradient-to-t from-primary/10 to-primary/50 h-[60%] rounded-t-sm border-t border-primary/50 hover:from-primary/20 hover:to-primary/70 transition-all cursor-pointer"></div>
+<div class="w-full bg-gradient-to-t from-primary/10 to-primary/50 h-[50%] rounded-t-sm border-t border-primary/50 hover:from-primary/20 hover:to-primary/70 transition-all cursor-pointer"></div>
+<div class="w-full bg-gradient-to-t from-primary/10 to-primary/50 h-[70%] rounded-t-sm border-t border-primary/50 hover:from-primary/20 hover:to-primary/70 transition-all cursor-pointer"></div>
+<div class="w-full bg-gradient-to-t from-primary/10 to-primary/50 h-[40%] rounded-t-sm border-t border-primary/50 hover:from-primary/20 hover:to-primary/70 transition-all cursor-pointer"></div>
+</div>
+<div class="flex justify-between mt-2 font-label-sm text-label-sm text-on-surface-variant px-4">
+<span>Week 1</span>
+<span>Week 2</span>
+<span>Week 3</span>
+<span>Week 4</span>
+</div>
+</section>
+<!-- Lower Grid: Batches & Regions -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
+<!-- Batch Campaign List -->
+<div class="glass-panel rounded-xl p-6 flex flex-col gap-4">
+<div class="flex justify-between items-center border-b border-white/10 pb-4">
+<h2 class="font-headline-md text-headline-md text-on-background">Active Batch Campaigns</h2>
+<button class="font-label-sm text-label-sm text-secondary-container hover:text-secondary transition-colors">View All</button>
+</div>
+<div class="flex flex-col gap-4 overflow-y-auto max-h-[300px] pr-2 custom-scrollbar">
+<!-- Item 1 -->
+<div class="bg-surface-container/50 rounded-lg p-4 border border-white/5 hover:border-white/10 transition-colors">
+<div class="flex justify-between items-center mb-2">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary-container shadow-[0_0_8px_rgba(0,238,252,0.8)]"></span>
+<span class="font-label-md text-label-md text-on-background">Cyber-Sneaker Launch Q3</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ID: #882A</span>
+</div>
+<div class="mt-3">
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface-variant">Scan Quota</span>
+<span class="text-primary">85%</span>
+</div>
+<div class="w-full bg-surface-variant h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full animate-progress shadow-[0_0_10px_rgba(236,178,255,0.8)]" style="width: 85%"></div>
+</div>
+</div>
+<div class="mt-3">
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface-variant">Engagement Depth</span>
+<span class="text-secondary-container">62%</span>
+</div>
+<div class="w-full bg-surface-variant h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full animate-progress shadow-[0_0_10px_rgba(0,238,252,0.8)]" style="width: 62%"></div>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-container/50 rounded-lg p-4 border border-white/5 hover:border-white/10 transition-colors">
+<div class="flex justify-between items-center mb-2">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary-container shadow-[0_0_8px_rgba(221,0,163,0.8)]"></span>
+<span class="font-label-md text-label-md text-on-background">Holo-Billboards NYC</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ID: #91XF</span>
+</div>
+<div class="mt-3">
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface-variant">Scan Quota</span>
+<span class="text-primary">42%</span>
+</div>
+<div class="w-full bg-surface-variant h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full animate-progress" style="width: 42%"></div>
+</div>
+</div>
+<div class="mt-3">
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface-variant">Engagement Depth</span>
+<span class="text-secondary-container">88%</span>
+</div>
+<div class="w-full bg-surface-variant h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full animate-progress shadow-[0_0_10px_rgba(0,238,252,0.8)]" style="width: 88%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Global Hotspot Insights -->
+<div class="glass-panel rounded-xl p-6 flex flex-col gap-4">
+<div class="flex justify-between items-center border-b border-white/10 pb-4">
+<h2 class="font-headline-md text-headline-md text-on-background">Global Hotspot Insights</h2>
+<span class="material-symbols-outlined text-on-surface-variant">public</span>
+</div>
+<div class="relative w-full h-48 rounded-lg overflow-hidden border border-white/10 mb-2">
+<div class="absolute inset-0 bg-surface-container flex items-center justify-center overflow-hidden">
+<!-- Simulated Cyber Map Background -->
+<div class="w-[150%] h-[150%] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-container/20 via-background to-background opacity-50"></div>
+<div class="absolute w-full h-full" style="background-image: radial-gradient(rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 20px 20px;"></div>
+<!-- Map Image with Alt text requirements -->
+<img class="absolute inset-0 w-full h-full object-cover mix-blend-screen opacity-60" data-alt="A stylized, high-contrast digital map of the world visualized as a glowing wireframe grid on a deep black background. The map features intense neon cyan and bright purple glowing dots indicating high-activity hotspots, emitting a soft bloom effect. The aesthetic is futuristic, cybernetic, and highly technical, resembling a high-end AR command center display." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBQENi_YtKyHwyUo0HFHfe0wz65XKsfugfjk6cF9GJPz9ZLNdL8_oRKm8MyWS8CKVJ9LQmCiCC_cEAbhigph7Sl_Oq2qIo-TWVofKbunAtKRB3MA6fn8QusOQpo2VZEA1Y_2oX5C03HyvH90wSSrJWL5juOP265gnQ3TYCpw_DCIEiuRjPKIJ__kpJkD57PRnhY0qyr9KdhSCv1Ju6NM47YEPsKnxAAneL7_RtTXp3hDZn--w1xTFsfXkGvl5yJnW1tUpkYdPPgEw"/>
+<!-- Hotspot markers -->
+<div class="absolute top-1/4 left-1/4 w-3 h-3 bg-secondary-container rounded-full shadow-[0_0_15px_rgba(0,238,252,1)] animate-pulse"></div>
+<div class="absolute top-1/2 left-2/3 w-4 h-4 bg-primary rounded-full shadow-[0_0_20px_rgba(236,178,255,1)] animate-pulse" style="animation-delay: 0.5s;"></div>
+<div class="absolute bottom-1/3 left-1/2 w-2 h-2 bg-tertiary-container rounded-full shadow-[0_0_10px_rgba(221,0,163,1)] animate-pulse" style="animation-delay: 1s;"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center p-2 rounded hover:bg-white/5 transition-colors">
+<div class="flex items-center gap-3">
+<span class="font-label-md text-label-md text-on-surface-variant w-6 text-center">1</span>
+<span class="font-body-md text-body-md text-on-background">Tokyo, JP</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-primary">32.4K</span>
+<span class="material-symbols-outlined text-sm text-secondary-container">arrow_upward</span>
+</div>
+</div>
+<div class="flex justify-between items-center p-2 rounded hover:bg-white/5 transition-colors">
+<div class="flex items-center gap-3">
+<span class="font-label-md text-label-md text-on-surface-variant w-6 text-center">2</span>
+<span class="font-body-md text-body-md text-on-background">New York, US</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-primary">28.1K</span>
+<span class="material-symbols-outlined text-sm text-secondary-container">arrow_upward</span>
+</div>
+</div>
+<div class="flex justify-between items-center p-2 rounded hover:bg-white/5 transition-colors">
+<div class="flex items-center gap-3">
+<span class="font-label-md text-label-md text-on-surface-variant w-6 text-center">3</span>
+<span class="font-body-md text-body-md text-on-background">London, UK</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-primary">19.8K</span>
+<span class="material-symbols-outlined text-sm text-error">arrow_downward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only based on layout rules) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-margin-mobile py-4 bg-white/5 dark:bg-white/5 backdrop-blur-3xl border-t border-white/10 shadow-[0_-5px_25px_rgba(0,238,252,0.1)] rounded-t-xl">
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:opacity-100 hover:scale-105 transition-transform active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined">deployed_code</span>
+<span class="font-label-md text-label-md mt-1 text-[10px]">Projects</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:opacity-100 hover:scale-105 transition-transform active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined">campaign</span>
+<span class="font-label-md text-label-md mt-1 text-[10px]">Marketing</span>
+</a>
+<!-- Active State -->
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-4 py-1 shadow-[0_0_15px_rgba(189,0,255,0.4)] active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 1;">insights</span>
+<span class="font-label-md text-label-md mt-1 text-[10px]">Analytics</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:opacity-100 hover:scale-105 transition-transform active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-label-md text-label-md mt-1 text-[10px]">Settings</span>
+</a>
+</nav>
+<style>
+        /* Custom scrollbar for inner lists to match cyber aesthetic */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05); 
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: rgba(236, 178, 255, 0.3); 
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: rgba(236, 178, 255, 0.6); 
+        }
+    </style>
+</body></html>
