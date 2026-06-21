@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Mobile AR Viewer - NEON_FORGE</title>
+<script type='text/javascript' nonce='sI1Noil2tdr7MrORFKXuUw==' src='https://contribution.usercontent.google.com/EpCM6JrRmM96dzb4AgOQ4yieAxC4ISHDvYWsreDVBDG4aaEmhcWP0y4Q27XuYpzwGPLvZFNYFnAYvmrRoz-R8JBydRIvNUces4Ybk2mbNaG7Xkfhoq7I-sgvseoCsZgCKC2tyLFwnCtFZFbda6rmaZL5Ay6dSpxc5EnxuBXaBsP4dmDyb1gVBoz9Yly52LJ2ptH8VQD-9Xsp9zRpq1pb10knj5ftdZHprRzCzpArIFSk58_HrLS4xS3WVhnQzBdtzlK2Yod859r8-guj40Ru5EVSCMqXv9tkGQh3KzWkVHDqPBxdb_Eh1bQq8YlE6W6Klt82AQgiYkbps6hgb7sSti9vYtZgUcEi8_gVsqEEJl6YGmp6kQsPjIvBZlF_rRnEqVh8aderBahWmFBO9EQiMw4oYqJjLDHfijrt7z6T2IODyhuALExdRDoHMMUYj1BGSvY3fV4V8__9JB2CQlux-lpVExbx9hW3msH_RimdfEOQw_S7qYubQe_vKaZIrYVo57TqDpEp1LtxIKg4Hq2d-yuATpVU2e7-gRu4xVuS41VnnWTmIS-_78bDPZ8tcOF1UM4cqvLF_Y-qrtsUJ4UD5fcED334q6Zfi1iWEkw4t7KucRX3UaxGLAwb-d2twH35GqLVPmx-S0q7LsUICJl_iwky46DFQq8oovKFia292CnxCsO5b3Ritu3EAL7-UD3Bguif15BorCLnN-7oUmsNIaP3V9tdILe8Csssf_GdPYOF4WBobqa1-YiScBBwtFfkR3vGSLRFbJNmP8A9i6WjTTYH4fR4mgR69yc-1w'></script><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Geist:wght@500;600&amp;family=Inter:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#610046",
+                        "secondary-container": "#00eefc",
+                        "surface-container-highest": "#32343e",
+                        "primary-fixed": "#f8d8ff",
+                        "primary": "#ecb2ff",
+                        "tertiary-container": "#dd00a3",
+                        "outline-variant": "#514255",
+                        "surface-bright": "#373943",
+                        "inverse-primary": "#9900cf",
+                        "on-primary": "#520071",
+                        "secondary": "#d3fbff",
+                        "surface-dim": "#11131c",
+                        "surface": "#11131c",
+                        "on-secondary-fixed-variant": "#004f54",
+                        "error": "#ffb4ab",
+                        "surface-container": "#1d1f29",
+                        "surface-container-lowest": "#0c0e17",
+                        "on-error": "#690005",
+                        "primary-fixed-dim": "#ecb2ff",
+                        "inverse-on-surface": "#2e303a",
+                        "on-error-container": "#ffdad6",
+                        "on-background": "#e1e1ef",
+                        "on-primary-fixed-variant": "#74009f",
+                        "tertiary": "#ffaed9",
+                        "surface-variant": "#32343e",
+                        "outline": "#9d8ba0",
+                        "on-surface-variant": "#d4c0d7",
+                        "on-primary-fixed": "#320047",
+                        "tertiary-fixed-dim": "#ffaed9",
+                        "on-tertiary-container": "#fffeff",
+                        "secondary-fixed-dim": "#00dbe9",
+                        "on-tertiary-fixed": "#3c002a",
+                        "on-surface": "#e1e1ef",
+                        "on-secondary": "#00363a",
+                        "surface-tint": "#ecb2ff",
+                        "on-tertiary-fixed-variant": "#890064",
+                        "surface-container-high": "#282933",
+                        "surface-container-low": "#191b24",
+                        "secondary-fixed": "#7df4ff",
+                        "on-secondary-container": "#00686f",
+                        "primary-container": "#bd00ff",
+                        "background": "#11131c",
+                        "tertiary-fixed": "#ffd8ea",
+                        "on-primary-container": "#ffffff",
+                        "inverse-surface": "#e1e1ef",
+                        "on-secondary-fixed": "#002022",
+                        "error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "container-max": "1440px",
+                        "margin-desktop": "64px",
+                        "stack-xl": "48px",
+                        "stack-xs": "4px",
+                        "margin-mobile": "20px",
+                        "stack-md": "16px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Geist"],
+                        "headline-lg-mobile": ["Space Grotesk"],
+                        "headline-md": ["Space Grotesk"],
+                        "display-lg": ["Space Grotesk"],
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Space Grotesk"],
+                        "label-sm": ["Geist"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        /* Custom Glassmorphism Utilities */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-modal {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 30px rgba(0, 238, 252, 0.1); /* Cyan glow */
+        }
+        .glass-btn {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(0, 238, 252, 0.5); /* Neon cyan border */
+            box-shadow: inset 0 0 10px rgba(0, 238, 252, 0.1);
+            transition: all 0.3s ease;
+        }
+        .glass-btn:hover {
+            background: linear-gradient(135deg, rgba(0, 238, 252, 0.2), rgba(189, 0, 255, 0.2));
+            box-shadow: 0 0 15px rgba(0, 238, 252, 0.4), inset 0 0 15px rgba(0, 238, 252, 0.3);
+            transform: translateY(-2px);
+        }
+        .glass-btn-primary {
+             background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(189, 0, 255, 0.8); /* Neon purple border */
+            box-shadow: inset 0 0 15px rgba(189, 0, 255, 0.2), 0 0 15px rgba(189, 0, 255, 0.3);
+        }
+        .glass-btn-primary:hover {
+             background: linear-gradient(135deg, rgba(189, 0, 255, 0.4), rgba(0, 238, 252, 0.3));
+             box-shadow: 0 0 25px rgba(189, 0, 255, 0.5), inset 0 0 20px rgba(189, 0, 255, 0.4);
+        }
+
+        /* AR Reticle Animation */
+        @keyframes pulse-reticle {
+            0% { transform: scale(0.95) translate(-50%, -50%); opacity: 0.5; }
+            50% { transform: scale(1.05) translate(-50%, -50%); opacity: 1; box-shadow: 0 0 20px rgba(0, 238, 252, 0.6); }
+            100% { transform: scale(0.95) translate(-50%, -50%); opacity: 0.5; }
+        }
+        .ar-reticle {
+            transform-origin: top left; /* Center of absolute positioning */
+            animation: pulse-reticle 2s infinite ease-in-out;
+        }
+
+        /* Distance Marker Line */
+        .ar-line {
+            background: linear-gradient(to right, transparent, rgba(0, 238, 252, 0.8), transparent);
+            height: 1px;
+            box-shadow: 0 0 8px rgba(0, 238, 252, 0.5);
+        }
+
+        /* Hide scrollbar for a cleaner AR view */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background h-screen w-screen overflow-hidden flex flex-col relative font-body-md select-none">
+<!-- AR Camera Feed Canvas (Simulated with Background Image) -->
+<div class="absolute inset-0 z-0 bg-cover bg-center" data-alt="A high-end, minimalist architectural living room bathed in soft, natural daylight. The space features polished concrete floors, expansive glass windows, and clean geometric lines. In the center, a luxurious, avant-garde 3D rendered lounge chair is seamlessly integrated into the space, casting realistic shadows. The overall aesthetic is hyper-realistic, modern, and clean, fitting for a premium AR visualization tool. Cyber-Refraction style elements like subtle cyan light refractions exist faintly in the atmosphere." style="background-image: url(&#39;https://lh3.googleusercontent.com/aida-public/AB6AXuD3Fr4UgF49Qon82YwF0cADSqUy9-iMJ5i8KzaJ0FKO3nG4y3G-lwOVED1I-cqp4y9UW70olZBhceRwCn_pCRIWxGQCFt65vVur3MqTvI3Lch-aJhgnoxlWcDgKcoGI4kcjsLu4fXyYe_ovsXY7CYXr6ro7EfDrMzqUg9OyB6iAeOeiUu4pBfc0aHdvHykaeikce-EVwEwKg-2DeAmolcL8rpgzR8MhvqbmIx6cB7PQXOzRcWID6C9P8Lrk1D5W1iqO7D-iejdpd24&#39;)">
+<!-- Subtle Vignette / Overlay for readability -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-surface-container-lowest/40 pointer-events-none"></div>
+<!-- AR Reticle (Placement Guide) -->
+<div class="absolute top-1/2 left-1/2 w-32 h-32 border-2 border-dashed border-secondary-container rounded-full ar-reticle pointer-events-none z-10 flex items-center justify-center">
+<div class="w-2 h-2 bg-secondary-container rounded-full shadow-[0_0_10px_#00eefc]"></div>
+<!-- Ground plane grid indicator -->
+<svg class="absolute inset-0 w-full h-full opacity-30" style="transform: rotateX(60deg);" viewbox="0 0 100 100">
+<g stroke="#00eefc" stroke-width="0.5">
+<line x1="0" x2="100" y1="20" y2="20"></line>
+<line x1="0" x2="100" y1="40" y2="40"></line>
+<line x1="0" x2="100" y1="60" y2="60"></line>
+<line x1="0" x2="100" y1="80" y2="80"></line>
+<line x1="20" x2="20" y1="0" y2="100"></line>
+<line x1="40" x2="40" y1="0" y2="100"></line>
+<line x1="60" x2="60" y1="0" y2="100"></line>
+<line x1="80" x2="80" y1="0" y2="100"></line>
+</g>
+</svg>
+</div>
+<!-- AR Distance Marker -->
+<div class="absolute top-[60%] left-1/2 transform -translate-x-1/2 flex flex-col items-center pointer-events-none z-10">
+<span class="font-label-sm text-label-sm text-secondary-container bg-surface-container-lowest/60 px-2 py-1 rounded backdrop-blur-md border border-secondary-container/30 mb-1 tracking-widest">1.2m</span>
+<div class="w-[1px] h-12 bg-gradient-to-b from-secondary-container to-transparent opacity-60"></div>
+</div>
+<!-- Placed Object Status Tag -->
+<div class="absolute top-[35%] left-[60%] z-10 pointer-events-none flex flex-col items-start">
+<div class="w-3 h-3 bg-primary-container rounded-full animate-pulse shadow-[0_0_15px_#bd00ff] mb-2 relative">
+<div class="absolute inset-0 rounded-full border border-primary-container animate-[ping_2s_cubic-bezier(0,0,0.2,1)_infinite]"></div>
+</div>
+<div class="glass-panel px-3 py-1.5 rounded-lg border-l-2 border-l-primary-container">
+<p class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider mb-0.5">Aero Lounge Chair</p>
+<p class="font-label-sm text-[10px] text-on-surface-variant opacity-80">Polished Chrome / Obsidian Leather</p>
+</div>
+</div>
+</div>
+<!-- Top App Bar (Custom for AR View - Suppressed standard nav, using contextual actions) -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 bg-gradient-to-b from-surface-container-lowest/80 to-transparent backdrop-blur-sm pointer-events-auto">
+<button aria-label="Close AR View" class="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-on-surface hover:text-primary transition-colors hover:bg-white/10">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+<div class="flex items-center gap-2 glass-panel px-4 py-2 rounded-full border-t-0 border-b-0">
+<span class="w-2 h-2 rounded-full bg-secondary-container shadow-[0_0_8px_#00eefc]"></span>
+<span class="font-label-md text-label-md text-on-surface tracking-widest uppercase">Live View</span>
+</div>
+<button aria-label="Settings" class="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-on-surface hover:text-secondary-container transition-colors hover:bg-white/10">
+<span class="material-symbols-outlined" data-icon="tune">tune</span>
+</button>
+</header>
+<!-- Contextual AR Controls Canvas -->
+<main class="flex-grow relative z-20 pointer-events-none flex flex-col justify-end pb-stack-xl px-margin-mobile">
+<!-- Floating Tool Palette (Right Side) -->
+<div class="absolute right-margin-mobile bottom-32 flex flex-col gap-4 pointer-events-auto">
+<button aria-label="Switch Object" class="w-12 h-12 rounded-full glass-panel flex items-center justify-center text-on-surface hover:text-primary transition-colors hover:bg-white/10 group relative">
+<span class="material-symbols-outlined" data-icon="category">category</span>
+<span class="absolute right-full mr-3 top-1/2 -translate-y-1/2 px-2 py-1 glass-panel rounded text-label-sm font-label-sm opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Switch Object</span>
+</button>
+<button aria-label="Lighting Adjust" class="w-12 h-12 rounded-full glass-panel flex items-center justify-center text-on-surface hover:text-primary transition-colors hover:bg-white/10 group relative">
+<span class="material-symbols-outlined" data-icon="lightbulb">lightbulb</span>
+<span class="absolute right-full mr-3 top-1/2 -translate-y-1/2 px-2 py-1 glass-panel rounded text-label-sm font-label-sm opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Lighting</span>
+</button>
+<button aria-label="Measurements" class="w-12 h-12 rounded-full glass-panel flex items-center justify-center text-on-surface hover:text-primary transition-colors hover:bg-white/10 group relative">
+<span class="material-symbols-outlined" data-icon="straighten">straighten</span>
+<span class="absolute right-full mr-3 top-1/2 -translate-y-1/2 px-2 py-1 glass-panel rounded text-label-sm font-label-sm opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Measure</span>
+</button>
+</div>
+<!-- Primary Action Area (Bottom) -->
+<div class="flex items-center justify-center gap-6 w-full pointer-events-auto max-w-md mx-auto">
+<!-- Share/Export Button -->
+<button aria-label="Share Snapshot" class="w-14 h-14 rounded-full glass-btn flex items-center justify-center text-secondary-container">
+<span class="material-symbols-outlined" data-icon="ios_share">ios_share</span>
+</button>
+<!-- Primary Action: Place Item / Snap Photo -->
+<button aria-label="Place Item" class="w-20 h-20 rounded-full glass-btn-primary flex items-center justify-center text-primary-fixed group relative">
+<!-- Inner recording/action circle -->
+<div class="w-14 h-14 rounded-full bg-primary-container/20 border border-primary-container/50 group-hover:bg-primary-container/40 transition-colors flex items-center justify-center shadow-[inset_0_0_20px_rgba(189,0,255,0.5)]">
+<span class="material-symbols-outlined text-3xl group-hover:scale-110 transition-transform" data-icon="add_circle">add_circle</span>
+</div>
+</button>
+<!-- Reset/Clear Button -->
+<button aria-label="Reset View" class="w-14 h-14 rounded-full glass-btn flex items-center justify-center text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined" data-icon="restart_alt">restart_alt</span>
+</button>
+</div>
+</main>
+<!-- Environmental Hint Toast -->
+<div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-30 pointer-events-none">
+<div class="glass-modal px-6 py-2 rounded-full flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container text-sm" data-icon="explore">explore</span>
+<span class="font-label-md text-label-md text-on-surface">Move phone slowly to scan floor</span>
+</div>
+</div>
+</body></html>
