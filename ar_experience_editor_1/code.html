@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>B Socio AR Studio - Editor</title>
+<script type='text/javascript' nonce='RxyRWhaZVi6BQdIH2yTzsg==' src='https://contribution.usercontent.google.com/Mey3KERxIPvk3Hx3wdowQUULklnC84trNCT9pd6XvwWRn8hj_Cr_G6aGwT_uY4-1eWnAmLjWzPaQ_p_qEiIQjNu0jKNW3YpnbrWQkpFW3sL5syCrFPHC5q7ycFhSg5nQMHHJdGdjS7OFXWOVnlKdCjkCyty03JLk7Ld8pp26sOda2jMQmQSoiPvZCf7Xel95MG-f8AIgHadmLSIGsMwyRTc2hFD-QE8PlW3ElR-xDYQUDkxvyW_yXc7y76o5Eat-0RhgS-K-fxoBr2oaIwu0hvMsjYk8VZT_vXyBupsVRJUAOybwfKzpl3P2RlPlCSAjiWn_MepUKr07IMJ_2GSmpvHlLP2PEvhMQnpkbj1hlu85gRlMnoTXbFXWjYiEATH-fg1pvPQbXoPpS2ZbIBYHLHezg22Mt4rOfWmnkYgE6JUP_frIIP6UcLWGSD0ey6C1LDrKLaKK_GMMYDfK1dBd4myVfSc_lvqrZJ9CxL-bbwi4syVangT9C1wVWyaunWVTZvsFq4JaYwcDd0CLcn1uHhvf051B36NclP_TB3Wky1-vsGfqgMX7looziMgkqj4SqcUJ3hhfqLRZHP7rZ0jJjWtsosikLTRgMk-0zoOn3fR4TWrRs58rLAqjSca2FT0B4QrUJKiSdNDZ6usCGMdrFRURCgbFU56JK286ChXi50VESmdO8lHBzxevpB6qG0xzkfBb7choS9-jp2CaEDoqxIJjjXE0hLo9gV8T9FnChxocH2L3SJwPAk47Lwbn8xoJ8zTFYe7zcdKbruDE3mgyW6MLLVSDui8IwOXwyg'></script><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400&amp;family=Geist:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#282933",
+                        "tertiary-container": "#dd00a3",
+                        "secondary-container": "#00eefc",
+                        "inverse-primary": "#9900cf",
+                        "on-tertiary": "#610046",
+                        "outline": "#9d8ba0",
+                        "secondary": "#d3fbff",
+                        "secondary-fixed": "#7df4ff",
+                        "on-secondary-fixed-variant": "#004f54",
+                        "on-error-container": "#ffdad6",
+                        "background": "#11131c",
+                        "on-background": "#e1e1ef",
+                        "error-container": "#93000a",
+                        "on-primary-container": "#ffffff",
+                        "tertiary": "#ffaed9",
+                        "surface-bright": "#373943",
+                        "on-tertiary-fixed": "#3c002a",
+                        "inverse-surface": "#e1e1ef",
+                        "surface-dim": "#11131c",
+                        "surface-variant": "#32343e",
+                        "outline-variant": "#514255",
+                        "on-tertiary-container": "#fffeff",
+                        "surface-container-lowest": "#0c0e17",
+                        "on-secondary-container": "#00686f",
+                        "on-surface-variant": "#d4c0d7",
+                        "surface": "#11131c",
+                        "surface-container": "#1d1f29",
+                        "surface-container-low": "#191b24",
+                        "tertiary-fixed": "#ffd8ea",
+                        "inverse-on-surface": "#2e303a",
+                        "primary-fixed": "#f8d8ff",
+                        "primary-fixed-dim": "#ecb2ff",
+                        "on-secondary-fixed": "#002022",
+                        "on-tertiary-fixed-variant": "#890064",
+                        "tertiary-fixed-dim": "#ffaed9",
+                        "on-secondary": "#00363a",
+                        "on-primary-fixed-variant": "#74009f",
+                        "secondary-fixed-dim": "#00dbe9",
+                        "surface-container-highest": "#32343e",
+                        "error": "#ffb4ab",
+                        "surface-tint": "#ecb2ff",
+                        "primary-container": "#bd00ff",
+                        "on-primary-fixed": "#320047",
+                        "primary": "#ecb2ff",
+                        "on-primary": "#520071",
+                        "on-surface": "#e1e1ef",
+                        "on-error": "#690005"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-xl": "48px",
+                        "margin-mobile": "20px",
+                        "stack-xs": "4px",
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "container-max": "1440px",
+                        "gutter": "24px",
+                        "stack-md": "16px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Space Grotesk"],
+                        "headline-lg": ["Space Grotesk"],
+                        "headline-md": ["Space Grotesk"],
+                        "label-md": ["Geist"],
+                        "label-sm": ["Geist"],
+                        "headline-lg-mobile": ["Space Grotesk"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(25, 27, 36, 0.6);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .neon-border {
+            border: 1px solid theme('colors.primary');
+            box-shadow: 0 0 10px rgba(236, 178, 255, 0.2), inset 0 0 10px rgba(236, 178, 255, 0.1);
+        }
+        .neon-text {
+            text-shadow: 0 0 8px rgba(236, 178, 255, 0.5);
+        }
+        .viewport-bg {
+            background: radial-gradient(circle at center, #1d1f29 0%, #0c0e17 100%);
+        }
+        /* Hide scrollbar for clean UI */
+        ::-webkit-scrollbar { display: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background h-screen w-screen overflow-hidden flex flex-col font-body-md text-body-md">
+<!-- TopAppBar -->
+<header class="bg-white/3 dark:bg-white/3 backdrop-blur-[40px] docked full-width top-0 border-b border-white/10 shadow-sm flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-stack-md z-40 h-[72px]">
+<div class="flex items-center gap-4">
+<button class="text-primary dark:text-primary hover:bg-white/10 transition-all duration-300 p-2 rounded-full Active: scale-95 transition-transform flex items-center justify-center w-10 h-10">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 1;">hub</span>
+</button>
+<h1 class="font-headline-md text-headline-md tracking-tighter text-primary dark:text-primary">B Socio AR Studio</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary/20 text-primary border border-primary/50 rounded-full px-4 py-1.5 font-label-sm text-label-sm uppercase tracking-widest hover:bg-primary/30 transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">qr_code_2</span> Generate QR
+            </button>
+<button class="bg-primary text-on-primary rounded-full px-4 py-1.5 font-label-sm text-label-sm uppercase tracking-widest hover:bg-primary-fixed transition-colors flex items-center gap-2 neon-border">
+<span class="material-symbols-outlined text-[16px]">view_in_ar</span> Preview in AR
+            </button>
+<div class="w-10 h-10 rounded-full bg-surface-container-highest overflow-hidden border border-white/10 ml-2">
+<img alt="User avatar" class="w-full h-full object-cover" data-alt="A futuristic avatar of a digital creator, wearing high-tech AR glasses reflecting neon code. Set against a deep obsidian background with subtle magenta lighting. Detailed, photorealistic, cyberpunk aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXmg8cKvRqohlfa14Mzi12BMXFe9mGPy95P1d-Fu7cCdupVOvDT4zeVwjc1B_9CIMfTLg6X-3P5ZatJLx6oXqw9qY-xHFz2_Z7SUBEoQB6yy6SLFZUDbBDlSVr_ESkWel0cXlJGmfei1T-tIQIvCN0omwyOCuZrUOJUcU7KAx3OLIqu_0ecye8rvmGGpPI-QMjLbqj4sb5R8AK94n_mrrI3JGYg5tMZZE5mbeWhUFhbi3CliB0HAcsK-TmSXD6kq6OhQFyhtRpaYM"/>
+</div>
+</div>
+</header>
+<!-- Main Workspace -->
+<main class="flex-1 flex overflow-hidden relative viewport-bg">
+<!-- AR Viewport Canvas -->
+<div class="flex-1 relative flex items-center justify-center p-4">
+<!-- 3D Model Placeholder -->
+<div class="relative w-full max-w-[400px] aspect-square rounded-2xl border border-white/5 bg-surface-container/20 flex items-center justify-center">
+<img alt="3D Model" class="w-4/5 h-4/5 object-contain opacity-80" data-alt="A highly detailed 3D render of a futuristic sports shoe floating in mid-air. The shoe features sleek black materials with glowing neon magenta and cyan accents. High-tech, clean environment, studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfOlZyrwXdCxguOtM6WcJM5HdLCDQowTPeJvhR7DxH3_Mg5u6lQ9qyKAc949RaX0FP816F4fkjkJW7k9Xi3Kt_RfSceEhFpWJ-J-8B9KBV3MyHfUpqGdKbvzKiR8XYXSQ8PbJQv-Zaw8_kS3MPghesH-O2x3bbADZdDuno2DZAtn3Os9PXxoxMU3fKTMHtPR9ZyFxeQUV9MN5idf0Lu83covxjrzleC4mL_HZCgRfODOUXLUU7x1knUzN1xE-Ea2nug4GWFEJnPFE"/>
+<!-- Interactive Hotspots -->
+<div class="absolute top-[30%] left-[60%] w-6 h-6 rounded-full bg-secondary flex items-center justify-center shadow-[0_0_15px_rgba(211,251,255,0.6)] cursor-pointer hover:scale-125 transition-transform z-10 group animate-pulse">
+<span class="w-2 h-2 rounded-full bg-on-secondary"></span>
+<!-- Tooltip -->
+<div class="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-surface-container-highest border border-white/10 px-3 py-1 rounded text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">Lace Material</div>
+</div>
+<div class="absolute top-[60%] left-[30%] w-6 h-6 rounded-full bg-primary flex items-center justify-center shadow-[0_0_15px_rgba(236,178,255,0.6)] cursor-pointer hover:scale-125 transition-transform z-10 group">
+<span class="w-2 h-2 rounded-full bg-on-primary"></span>
+<!-- Tooltip -->
+<div class="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-surface-container-highest border border-white/10 px-3 py-1 rounded text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">Sole Color</div>
+</div>
+<!-- Grid Floor -->
+<div class="absolute bottom-[10%] w-[120%] h-[40px] border-t border-white/5 flex items-center justify-center perspective-[500px]" style="transform: rotateX(70deg);">
+<div class="w-full h-full bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:20px_20px]"></div>
+</div>
+</div>
+<!-- Overlays -->
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="glass-panel px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span> Tracking: Anchored
+                </span>
+<span class="glass-panel px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+                    Scale: 1:1
+                </span>
+</div>
+<div class="absolute bottom-24 right-4 flex flex-col gap-2 z-10">
+<button class="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-on-surface-variant hover:text-white transition-colors">
+<span class="material-symbols-outlined">zoom_in</span>
+</button>
+<button class="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-on-surface-variant hover:text-white transition-colors">
+<span class="material-symbols-outlined">zoom_out</span>
+</button>
+<button class="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-on-surface-variant hover:text-white transition-colors mt-2">
+<span class="material-symbols-outlined">center_focus_strong</span>
+</button>
+</div>
+</div>
+<!-- Right Side Panel: Assets & Properties (Desktop: visible, Mobile: hidden/drawer) -->
+<aside class="w-80 h-full border-l border-white/5 bg-surface-container-lowest/80 backdrop-blur-xl flex flex-col z-30 hidden md:flex">
+<!-- Tabs -->
+<div class="flex border-b border-white/5">
+<button class="flex-1 py-3 text-center font-label-md text-label-md text-primary border-b-2 border-primary bg-primary/5">Assets</button>
+<button class="flex-1 py-3 text-center font-label-md text-label-md text-on-surface-variant hover:bg-white/5">Properties</button>
+</div>
+<!-- Assets Content -->
+<div class="flex-1 overflow-y-auto p-4 flex flex-col gap-4">
+<!-- Search -->
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full bg-surface-container border border-white/10 rounded-lg pl-10 pr-4 py-2 text-sm text-white focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all placeholder:text-on-surface-variant/50" placeholder="Search assets..." type="text"/>
+</div>
+<!-- Categories -->
+<div class="flex gap-2 overflow-x-auto pb-1 -mx-4 px-4 scrollbar-hide">
+<button class="px-3 py-1 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm border border-primary/20 whitespace-nowrap">All</button>
+<button class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm border border-white/5 hover:bg-white/5 whitespace-nowrap">3D Models</button>
+<button class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm border border-white/5 hover:bg-white/5 whitespace-nowrap">Images</button>
+<button class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm border border-white/5 hover:bg-white/5 whitespace-nowrap">UI Elements</button>
+</div>
+<!-- Asset Grid -->
+<div class="grid grid-cols-2 gap-3 mt-2">
+<!-- Asset Card 1 -->
+<div class="bg-surface-container rounded-lg border border-white/5 overflow-hidden group cursor-grab hover:border-primary/50 transition-colors">
+<div class="h-24 bg-surface-container-high relative flex items-center justify-center p-2">
+<span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-[#BD00FF]"></span>
+<img alt="Watch Model" class="max-h-full max-w-full object-contain mix-blend-screen" data-alt="A sleek, minimalist 3D rendering of a modern smartwatch face. Dark metallic finish with glowing cyan UI elements. Studio lighting, dark background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD31mKDEMLntWQutQbrooYWUSOgwMnq77hAuJjDB6PH3PxL_6ncKRpWU9aQ07UabU-ftjUcSjG7Os6oO1_sVHzrl0XrpueUxZUQSwHh3RaxYHWh94brJ0Cr9nDqHB0M5Mo6m5B9vuTbw30o50hWNSv9QFDZcqUcKRgtqXMcKNaL4bwpsaq6lUosxdcqV-jGGrIwB9SBjTjSs6x4_SOaIaBGLauU-Zu_kjR7bKeUC5RY5OmtoJ4JQ_QWNfwLMbDvUNQt7dj6SjGsofI"/>
+</div>
+<div class="p-2">
+<p class="font-label-sm text-label-sm text-white truncate">Smartwatch.glb</p>
+<p class="text-[10px] text-on-surface-variant mt-0.5">2.4 MB</p>
+</div>
+</div>
+<!-- Asset Card 2 -->
+<div class="bg-surface-container rounded-lg border border-white/5 overflow-hidden group cursor-grab hover:border-primary/50 transition-colors">
+<div class="h-24 bg-surface-container-high relative flex items-center justify-center p-2">
+<span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-[#00F0FF]"></span>
+<span class="material-symbols-outlined text-[32px] text-secondary">image</span>
+</div>
+<div class="p-2">
+<p class="font-label-sm text-label-sm text-white truncate">Texture_Base.png</p>
+<p class="text-[10px] text-on-surface-variant mt-0.5">850 KB</p>
+</div>
+</div>
+<!-- Asset Card 3 -->
+<div class="bg-surface-container rounded-lg border border-white/5 overflow-hidden group cursor-grab hover:border-primary/50 transition-colors">
+<div class="h-24 bg-surface-container-high relative flex items-center justify-center p-2">
+<span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-white"></span>
+<span class="material-symbols-outlined text-[32px] text-on-surface-variant">title</span>
+</div>
+<div class="p-2">
+<p class="font-label-sm text-label-sm text-white truncate">Price Label</p>
+<p class="text-[10px] text-on-surface-variant mt-0.5">UI Component</p>
+</div>
+</div>
+<!-- Add New -->
+<button class="bg-surface-container rounded-lg border border-dashed border-white/20 h-full min-h-[140px] flex flex-col items-center justify-center text-on-surface-variant hover:text-white hover:border-white/50 transition-all hover:bg-white/5 group">
+<span class="material-symbols-outlined text-[32px] mb-2 group-hover:scale-110 transition-transform">add_circle</span>
+<span class="font-label-sm text-label-sm">Upload Asset</span>
+</button>
+</div>
+</div>
+<!-- Drag & Drop Hint -->
+<div class="p-4 border-t border-white/5 bg-surface-container/50">
+<div class="flex items-center gap-2 text-on-surface-variant text-sm">
+<span class="material-symbols-outlined text-[18px]">drag_indicator</span>
+<span class="font-label-sm">Drag assets into viewport</span>
+</div>
+</div>
+</aside>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="bg-white/3 dark:bg-white/3 backdrop-blur-[40px] fixed bottom-margin-mobile left-1/2 -translate-x-1/2 w-[calc(100%-40px)] rounded-full border border-white/10 shadow-[0_0_20px_rgba(0,238,252,0.15)] flex justify-center px-margin-mobile md:hidden z-50">
+<div class="flex w-full justify-between items-center py-2">
+<button class="flex flex-col items-center justify-center text-on-surface-variant opacity-60 p-2 hover:opacity-100 hover:text-secondary transition-opacity w-16">
+<span class="material-symbols-outlined mb-1">dashboard</span>
+<span class="font-label-sm text-[10px] uppercase tracking-widest hidden sm:block">Projects</span>
+</button>
+<button class="flex flex-col items-center justify-center text-secondary-fixed font-bold bg-white/10 rounded-full p-2 w-16 h-16 -mt-6 shadow-lg border border-secondary/20 Active: scale-90 transition-transform neon-border">
+<span class="material-symbols-outlined text-[24px]">architecture</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant opacity-60 p-2 hover:opacity-100 hover:text-secondary transition-opacity w-16">
+<span class="material-symbols-outlined mb-1">category</span>
+<span class="font-label-sm text-[10px] uppercase tracking-widest hidden sm:block">Templates</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant opacity-60 p-2 hover:opacity-100 hover:text-secondary transition-opacity w-16">
+<span class="material-symbols-outlined mb-1">person</span>
+<span class="font-label-sm text-[10px] uppercase tracking-widest hidden sm:block">Profile</span>
+</button>
+</div>
+</nav>
+</body></html>

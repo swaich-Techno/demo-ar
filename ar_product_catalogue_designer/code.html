@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>B SOCIO AR - Interactive Product Catalogue</title>
+<script type='text/javascript' nonce='BcjUPxoHStPEajzWPQpGHQ==' src='https://contribution.usercontent.google.com/TPmFDkmtzUlWDNWv2WS8RzlTCrr_hHHXdGlkQGNKmME6aWZqjpOGjqvQ1lDWNBN3yJ8ZM2NCDOICxCwyc3hHVs9DllbBW2pRHhnk_4IJYERHQwjJ_OViEtYwzaLxKb2JX6IdEsycH-F3oQUc2TLIRN-6gMe9StqpgK3JmQNO2mL1D3OQgLfSwxrEASJjz4U28GOKh47LJUVNQf_y9PPy-G1K8AYhC3DQYK7GuyrruGT8IfZtm78oUsyFZe0JGUmVlH66bVTsN3vNG4np6YiA_SPm8TnlLq1BYK_0viLnxjuzbGhLQowCOmLc2Uf5iLxMC70IV_xjRMje4ziu60ToaXW2W1w9SxVO-lg-tmWlYqLdAXin7O_Z2JCxeIwUixF_YdCV_UlZBKl4Yiu5T8_svRhz0verXx5nhwhmuLdtK4LplBLCZt_ATXkgWa0sgCjNl2_OXwEJ1j5UXwkVX4m1nftIScKOqQp1Br7iBkvOjggDnZjduJrMHvntbF8PhM-adnGOtqK9zJA-OEYXLi1zxBqupbOx31VE9vTUrxtKpfpXwKRFaF4iBMOb1VwLfy5euBUn6Ti2P2iZsN76uKKI6N2QIU2XLKkzf7fBIFA4-PZMbdgtYhYwsWkAG3NH8xlCV_XS3lvbZE_rE1bKDcvI_Wh5DlgXsuD3Pp1sJmN_vNo1EXQ3J7Cy9tZiCnsEda80beFJv6YGFr3ZVOK3beUze8vBm4WeTRuJSiZ0nsiZNQiNGbaPf6CqM4Jl6_r3_zSerQioPvDahxIL9o7qqcbUEgwo1o_CmWbW1GU9uQ'></script><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;family=Geist:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#373943",
+                        "secondary-container": "#00eefc",
+                        "on-tertiary-fixed": "#3c002a",
+                        "primary-container": "#bd00ff",
+                        "surface-container-high": "#282933",
+                        "on-secondary-fixed-variant": "#004f54",
+                        "error": "#ffb4ab",
+                        "on-secondary-fixed": "#002022",
+                        "inverse-on-surface": "#2e303a",
+                        "background": "#11131c",
+                        "on-surface-variant": "#d4c0d7",
+                        "on-surface": "#e1e1ef",
+                        "on-secondary": "#00363a",
+                        "tertiary-container": "#dd00a3",
+                        "on-error": "#690005",
+                        "on-tertiary": "#610046",
+                        "secondary-fixed": "#7df4ff",
+                        "surface-dim": "#11131c",
+                        "primary": "#ecb2ff",
+                        "on-error-container": "#ffdad6",
+                        "surface-variant": "#32343e",
+                        "tertiary": "#ffaed9",
+                        "primary-fixed-dim": "#ecb2ff",
+                        "on-primary-container": "#ffffff",
+                        "on-background": "#e1e1ef",
+                        "surface-container-lowest": "#0c0e17",
+                        "secondary-fixed-dim": "#00dbe9",
+                        "secondary": "#d3fbff",
+                        "primary-fixed": "#f8d8ff",
+                        "inverse-surface": "#e1e1ef",
+                        "surface-container-highest": "#32343e",
+                        "on-secondary-container": "#00686f",
+                        "on-tertiary-container": "#fffeff",
+                        "surface-tint": "#ecb2ff",
+                        "surface-container-low": "#191b24",
+                        "outline-variant": "#514255",
+                        "on-primary-fixed": "#320047",
+                        "error-container": "#93000a",
+                        "tertiary-fixed-dim": "#ffaed9",
+                        "outline": "#9d8ba0",
+                        "inverse-primary": "#9900cf",
+                        "tertiary-fixed": "#ffd8ea",
+                        "on-primary-fixed-variant": "#74009f",
+                        "surface-container": "#1d1f29",
+                        "on-tertiary-fixed-variant": "#890064",
+                        "on-primary": "#520071",
+                        "surface": "#11131c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "container-max": "1440px",
+                        "stack-xs": "4px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "stack-xl": "48px",
+                        "unit": "8px",
+                        "stack-md": "16px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Space Grotesk"],
+                        "display-lg": ["Space Grotesk"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Space Grotesk"],
+                        "label-sm": ["Geist"],
+                        "headline-lg-mobile": ["Space Grotesk"],
+                        "label-md": ["Geist"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #05060A;
+            background-image: radial-gradient(circle at 50% 0%, rgba(189, 0, 255, 0.05) 0%, transparent 50%), radial-gradient(circle at 100% 100%, rgba(0, 238, 252, 0.05) 0%, transparent 50%);
+            background-attachment: fixed;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px -10px rgba(0, 238, 252, 0.1);
+        }
+        .neon-border {
+            border: 1px solid rgba(0, 238, 252, 0.3);
+            box-shadow: inset 0 0 10px rgba(0, 238, 252, 0.1);
+        }
+        .neon-text-glow {
+            text-shadow: 0 0 8px rgba(0, 238, 252, 0.4);
+        }
+        .glass-stroke {
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+        .pb-safe {
+            padding-bottom: env(safe-area-inset-bottom, 20px);
+        }
+        
+        /* Custom Scrollbar for dark theme */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.02);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-on-surface antialiased overflow-x-hidden min-h-screen flex flex-col md:flex-row">
+<!-- TopAppBar (Mobile Only) -->
+<header class="md:hidden bg-surface/80 dark:bg-surface/80 backdrop-blur-xl fixed top-0 w-full z-50 shadow-none border-b border-glass-stroke flex justify-between items-center px-margin-mobile h-16">
+<button class="text-on-surface-variant hover:bg-white/5 transition-colors p-2 rounded-full cursor-pointer active:scale-95 transition-transform flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 0;">menu</span>
+</button>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold tracking-tighter text-primary-fixed drop-shadow-[0_0_8px_rgba(0,238,252,0.4)]">B SOCIO AR</h1>
+<div class="h-8 w-8 rounded-full overflow-hidden border border-glass-stroke cursor-pointer active:scale-95 transition-transform">
+<img alt="User profile photo" class="w-full h-full object-cover" data-alt="A futuristic avatar of a digital creator in a neon-lit cyberpunk environment. The portrait is high contrast, moody, with sharp specular highlights on metallic accessories. Shot against a deep space black background with subtle magenta and cyan rim lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqrKOJPPzmWSJ4rGl_zY8aJwtk99nVV6X6jySWUhE4CL9XhM9TW0Xjq5CoUcS_TCVZLB4-W7Sp-qPwENZdqKt0Swg2ZtaVgmWwm2bNeH0iBZCYyHcuvamI4rQxBw3n9piRLyUZYQkM_0nEn1mvacbPudPINBbERPWJ9nJVuuJtPBkCV_NmZ2Zf7kYoVIVBXWjUvp65KzHCTEhiAec-pC8VDFTeMynwxryeBOVCz5XirIQLSHXFUsUk4F3iFoRPc1OgaBoemg23yo0"/>
+</div>
+</header>
+<!-- NavigationDrawer (Desktop Only) -->
+<aside class="hidden md:flex flex-col bg-surface-container-high/95 dark:bg-surface-container-high/95 backdrop-blur-2xl border-r border-glass-stroke shadow-2xl shadow-black h-screen w-80 fixed left-0 top-0 z-[60] p-gutter transition-all duration-300 ease-in-out">
+<!-- Brand & Profile Header -->
+<div class="flex items-center gap-4 mb-stack-xl mt-4">
+<div class="h-12 w-12 rounded-full overflow-hidden border border-primary/30 p-[2px]">
+<img alt="User profile" class="w-full h-full object-cover rounded-full" data-alt="A futuristic avatar of a digital creator in a neon-lit cyberpunk environment. The portrait is high contrast, moody, with sharp specular highlights on metallic accessories. Shot against a deep space black background with subtle magenta and cyan rim lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMalkUFmrHmye7XYdPVkHT5Nxv2S9k1xRJxZ_XQPiVAOzXHMHdEV7M-HCkN75w_BvF6CTkk9o9svEK9S3qKwjW3jVnRErePtz35SwD5L-syxvBDdkQtFNEnzPdk5QNlteLoOuIIjLNaNMOG5gTnURp9w4YahYpU28GhWcNJ341nMb67qAWR2j-4_7ziAqTRUQCXhhjwXFiE-cDBb4C1_lQqPm3rmLU7icPCPbkQDP5nYlm6AOieQLFM5IqGjPu3CWE2UvzfQCpybc"/>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-md text-primary-fixed leading-tight tracking-tighter">B SOCIO AR</span>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">AR Creator</span>
+<span class="h-1 w-1 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-primary-container">Pro Tier</span>
+</div>
+</div>
+</div>
+<!-- Navigation Links -->
+<nav class="flex-1 flex flex-col gap-2">
+<a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 font-body-md text-body-md py-3 px-4 rounded-lg flex items-center gap-3 transition-colors" href="#">
+<span class="material-symbols-outlined">folder_open</span>
+<span>Projects</span>
+</a>
+<a class="bg-primary-fixed/10 text-primary-fixed font-bold border-l-2 border-primary-fixed font-body-md text-body-md py-3 px-4 rounded-lg flex items-center gap-3 transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 1;">inventory_2</span>
+<span>Asset Library</span>
+</a>
+<a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 font-body-md text-body-md py-3 px-4 rounded-lg flex items-center gap-3 transition-colors" href="#">
+<span class="material-symbols-outlined">lightbulb</span>
+<span>Light Studio</span>
+</a>
+<a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 font-body-md text-body-md py-3 px-4 rounded-lg flex items-center gap-3 transition-colors" href="#">
+<span class="material-symbols-outlined">view_in_ar</span>
+<span>Scene Settings</span>
+</a>
+<a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 font-body-md text-body-md py-3 px-4 rounded-lg flex items-center gap-3 transition-colors" href="#">
+<span class="material-symbols-outlined">settings_suggest</span>
+<span>Render Engine</span>
+</a>
+</nav>
+<!-- Footer / Meta -->
+<div class="mt-auto pt-4 border-t border-glass-stroke flex justify-between items-center text-on-surface-variant">
+<span class="font-label-sm text-label-sm opacity-50">v2.4.0</span>
+<button class="hover:text-primary-fixed transition-colors">
+<span class="material-symbols-outlined">help</span>
+</button>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-1 mt-16 md:mt-0 md:ml-80 p-margin-mobile md:p-margin-desktop min-h-screen flex flex-col gap-stack-xl relative">
+<!-- Header Section -->
+<header class="flex flex-col md:flex-row md:items-end justify-between gap-stack-md z-10 relative">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="font-label-sm text-label-sm text-secondary-container bg-secondary-container/10 px-2 py-1 rounded border border-secondary-container/20 uppercase tracking-widest">Workspace</span>
+<span class="text-on-surface-variant">/</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Catalogue</span>
+</div>
+<h2 class="font-display-lg text-display-lg text-on-surface leading-tight">Interactive Product Catalogue</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-2xl">Manage and configure 3D assets for WebAR deployment. Adjust materials, variants, and spatial properties before publishing.</p>
+</div>
+<!-- Action Bar -->
+<div class="flex items-center gap-3 mt-4 md:mt-0 glass-panel p-2 rounded-xl">
+<button class="flex items-center gap-2 bg-white/5 hover:bg-white/10 text-on-surface px-4 py-2 rounded-lg font-label-md text-label-md transition-colors border border-glass-stroke">
+<span class="material-symbols-outlined text-[18px]">add</span>
+                    Import Asset
+                </button>
+<button class="flex items-center gap-2 bg-primary-container/20 hover:bg-primary-container/30 text-primary-fixed px-6 py-2 rounded-lg font-label-md text-label-md transition-all border border-primary-container/50 neon-border">
+<span class="material-symbols-outlined text-[18px]">rocket_launch</span>
+                    Publish to WebAR
+                </button>
+</div>
+</header>
+<!-- View Controls & Filters -->
+<div class="flex flex-col sm:flex-row justify-between items-center gap-4 glass-panel p-3 rounded-xl z-10 relative">
+<!-- Toggle Views -->
+<div class="flex bg-surface-container-lowest rounded-lg p-1 border border-glass-stroke w-full sm:w-auto">
+<button class="flex-1 sm:flex-none flex items-center justify-center gap-2 px-4 py-2 rounded-md bg-white/10 text-on-surface font-label-md text-label-md shadow-sm transition-all">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+                    Grid
+                </button>
+<button class="flex-1 sm:flex-none flex items-center justify-center gap-2 px-4 py-2 rounded-md text-on-surface-variant hover:text-on-surface hover:bg-white/5 font-label-md text-label-md transition-all">
+<span class="material-symbols-outlined text-[18px]">view_in_ar</span>
+                    AR Stage
+                </button>
+</div>
+<!-- Search & Filter -->
+<div class="flex items-center gap-3 w-full sm:w-auto">
+<div class="relative w-full sm:w-64">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full bg-surface-container-lowest border-0 border-b border-glass-stroke focus:border-secondary-container focus:ring-0 text-on-surface pl-10 py-2 font-body-md text-body-md transition-colors placeholder:text-on-surface-variant/50" placeholder="Search assets..." type="text"/>
+</div>
+<button class="p-2 text-on-surface-variant hover:text-primary-fixed bg-surface-container-lowest rounded-lg border border-glass-stroke transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined">tune</span>
+</button>
+</div>
+</div>
+<!-- Product Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter z-10 relative pb-32 md:pb-0">
+<!-- Asset Card 1: Main Feature -->
+<div class="glass-card rounded-2xl overflow-hidden flex flex-col group lg:col-span-2 lg:row-span-2 relative min-h-[400px]">
+<!-- Interactive 3D Placeholder/Image -->
+<div class="absolute inset-0 bg-gradient-to-br from-surface-container-highest to-background">
+<div class="w-full h-full bg-cover bg-center opacity-80 group-hover:opacity-100 transition-opacity duration-500 mix-blend-screen" data-alt="A highly detailed, photorealistic 3D render of a futuristic streetwear hoodie floating in a void. The hoodie features iridescent, holographic fabric sections that catch cyan and magenta light. The background is a stark, dark studio setup with subtle atmospheric fog. Premium, high-fashion presentation." style="background-image: url(&#39;https://lh3.googleusercontent.com/aida-public/AB6AXuBpry6xAVoP0hK81fpvgGgChKOubw7S30Zlz7ANISWI2fy6GoQsYxylgdLppYsrMID0aRS_Ae9pfptm7XTXvYsLBN_cWuuGPCRFC8BqCMSnt3OUJ4yANpSYegTij6dcf9DQ0f6GiZyERM0FInCNjBPVY09vYLqXkUb6QfaqXc_0RErMhPUwY7jABply-ezVff8KQVoN929k-hwxaEBBtO3eMYjjbI19oVONj322BDfOq1lfmZJ-BCxrtxtYTl5HqJYATES8m_I5tyI&#39;)"></div>
+</div>
+<!-- Overlay Gradients for readability -->
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+<!-- Status Badges -->
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-surface/80 backdrop-blur-md border border-glass-stroke text-on-surface font-label-sm text-label-sm px-2 py-1 rounded flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-[#00F0FF]"></span> 3D Model
+                    </span>
+<span class="bg-surface/80 backdrop-blur-md border border-glass-stroke text-on-surface font-label-sm text-label-sm px-2 py-1 rounded flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">public</span> Published
+                    </span>
+</div>
+<!-- Action FAB -->
+<button class="absolute top-4 right-4 h-10 w-10 rounded-full bg-surface/50 backdrop-blur-md border border-glass-stroke flex items-center justify-center text-on-surface hover:text-primary-fixed hover:border-primary-fixed transition-all hover:scale-105">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+<!-- Content -->
+<div class="mt-auto p-6 relative z-10">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Cyber-Weave Hoodie X1</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">High-poly garment with dynamic cloth physics and iridescent material mapping.</p>
+<!-- Quick Controls -->
+<div class="flex items-center justify-between border-t border-glass-stroke pt-4 mt-2">
+<div class="flex gap-2">
+<!-- Color Variants -->
+<button class="w-6 h-6 rounded-full bg-primary-container border-2 border-white/20 ring-2 ring-primary-fixed/50"></button>
+<button class="w-6 h-6 rounded-full bg-secondary-container border-2 border-white/20 hover:scale-110 transition-transform"></button>
+<button class="w-6 h-6 rounded-full bg-surface-bright border-2 border-white/20 hover:scale-110 transition-transform"></button>
+</div>
+<div class="flex gap-2">
+<button class="px-3 py-1.5 rounded bg-white/5 hover:bg-white/10 border border-glass-stroke text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">edit</span> Edit
+                            </button>
+<button class="px-3 py-1.5 rounded bg-primary-fixed/10 hover:bg-primary-fixed/20 border border-primary-fixed/30 text-primary-fixed font-label-sm text-label-sm transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">visibility</span> Preview AR
+                            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Asset Card 2 -->
+<div class="glass-card rounded-2xl overflow-hidden flex flex-col group relative min-h-[300px]">
+<div class="absolute inset-0 bg-surface-container">
+<div class="w-full h-full bg-cover bg-center opacity-60 group-hover:opacity-80 transition-opacity duration-300" data-alt="A sleek, minimalist 3D render of a futuristic low-top sneaker. The shoe has sharp geometric lines, matte black primary materials, and glowing neon purple sole accents. Presented in a dark void with dramatic, high-contrast studio rim lighting." style="background-image: url(&#39;https://lh3.googleusercontent.com/aida-public/AB6AXuCZsdAdl-hjs-wbVZ5VUv8walVjN33BliNtGaj0FXNjZTkbn2qpoO3CcVItuBT4NbUPU59RpDxz3Jyc9gwSlKWdtGv2h0RLS6UllGscprqV4hn0yH0hMHJ-D8R9_SHBafZh7UNFcson-puGLKUuilKLyMOAXXIMH0CyDzsQlhQHJe2tLWjqZPlpHWirKGebBfuIBuN7Kb78vjknaWiSbkA75JEuqukR9tucyR8Mf0fk2EwzoJ5FgZmj69X0XEX9hCVbjzf0vRvh6KA&#39;)"></div>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+<div class="absolute top-3 left-3">
+<span class="bg-surface/80 backdrop-blur-md border border-glass-stroke text-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-[#BD00FF]"></span> Geometry
+                    </span>
+</div>
+<div class="mt-auto p-4 relative z-10">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold mb-1">Aero-Step Sneaker</h3>
+<div class="flex items-center justify-between mt-3">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Draft • 2.4 MB</span>
+<button class="p-1.5 rounded-full bg-white/5 hover:bg-white/10 text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Asset Card 3 -->
+<div class="glass-card rounded-2xl overflow-hidden flex flex-col group relative min-h-[300px]">
+<div class="absolute inset-0 bg-surface-container">
+<div class="w-full h-full bg-cover bg-center opacity-60 group-hover:opacity-80 transition-opacity duration-300" data-alt="A detailed 3D model of augmented reality smart glasses resting on a dark reflective surface. The lenses reflect a complex holographic UI pattern. The lighting is moody, relying on deep blacks and vivid cyan highlights to emphasize the sleek, technological design." style="background-image: url(&#39;https://lh3.googleusercontent.com/aida-public/AB6AXuAtH_DNzpIEFkm_6xKAzN5aXVGaXCe7lr41NOXfV7WzZwnhVHj5NJdVxaXxBGo8H6ynPi0TJqBmEGbCxQI4CBcj00_VqOSHtCvoNt6XHGGGxa_CPIdmpxCwp6xZRVDetndtw_IC2iyhE-YiyH_t8R-fx1QDXwFSrD7umY6X47BCa2m3Pur_oqwQsnvG_-jxWXJLyZsy71zmW_NeZSEAY2zW_mpAPIF3KPgFD9Tld5brPl-_5EF0eHMrZZUyOw2rWwEOWHHukTqHumQ&#39;)"></div>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+<div class="absolute top-3 left-3">
+<span class="bg-surface/80 backdrop-blur-md border border-glass-stroke text-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-[#00F0FF]"></span> 3D Model
+                    </span>
+</div>
+<div class="mt-auto p-4 relative z-10">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold mb-1">Optic Flow Visor</h3>
+<div class="flex items-center justify-between mt-3">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Published • 1.1 MB</span>
+<button class="p-1.5 rounded-full bg-white/5 hover:bg-white/10 text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Upload Placeholder Card -->
+<div class="glass-panel border-dashed border-2 border-glass-stroke rounded-2xl overflow-hidden flex flex-col items-center justify-center p-8 min-h-[200px] hover:border-primary-fixed/50 hover:bg-white/5 transition-all cursor-pointer group">
+<div class="h-12 w-12 rounded-full bg-surface-container-highest flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary-fixed text-[24px]">cloud_upload</span>
+</div>
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold mb-1 text-center">Upload New Asset</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant text-center">Drag &amp; drop GLTF, GLB, or USDZ</p>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden bg-surface-container/90 dark:bg-surface-container/90 backdrop-blur-xl fixed bottom-0 w-full z-50 border-t border-glass-stroke shadow-2xl shadow-primary-fixed/5 fixed bottom-0 left-0 w-full flex justify-around items-center h-20 px-2 pb-safe">
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary-fixed transition-all active:scale-90 transition-transform duration-200 w-16" href="#">
+<span class="material-symbols-outlined mb-1 text-[24px]">folder_open</span>
+<span class="font-label-sm text-label-sm text-[10px]">Projects</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary-fixed bg-primary-fixed/10 rounded-xl py-1 px-3 hover:text-primary-fixed transition-all active:scale-90 transition-transform duration-200 w-20" href="#">
+<span class="material-symbols-outlined mb-1 text-[24px]" style="font-variation-settings: &#39;FILL&#39; 1;">precision_manufacturing</span>
+<span class="font-label-sm text-label-sm text-[10px]">Editor</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary-fixed transition-all active:scale-90 transition-transform duration-200 w-16" href="#">
+<span class="material-symbols-outlined mb-1 text-[24px]">dashboard_customize</span>
+<span class="font-label-sm text-label-sm text-[10px]">Templates</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary-fixed transition-all active:scale-90 transition-transform duration-200 w-16" href="#">
+<span class="material-symbols-outlined mb-1 text-[24px]">insights</span>
+<span class="font-label-sm text-label-sm text-[10px]">Analytics</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary-fixed transition-all active:scale-90 transition-transform duration-200 w-16" href="#">
+<span class="material-symbols-outlined mb-1 text-[24px]">account_circle</span>
+<span class="font-label-sm text-label-sm text-[10px]">Profile</span>
+</a>
+</nav>
+</body></html>

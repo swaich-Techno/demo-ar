@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NEON_FORGE VFX Editor</title>
+<script type='text/javascript' nonce='6KvkltwWSjP6mzg2RV+3mg==' src='https://contribution.usercontent.google.com/hFUsPf2DoYKV-r5aEacuA_JUKrdmJizBePuUApaKggTJfaCfIx_3VowPxciTBs3469w4g_ioJyO7b0Pj5nxzTtryQ2rqQhxPf5wbPZX223nTORh08fFwakmpFlrd_q3g6_CUmWTDo7vBrNuSCuz8prDBir9TAyoZIYuveqB6iumTHNGvqVyq1_proJAyDNfLyhgu15KYdEhU89GDsiXJL6lOt4uTCiP9KP-sa0cJN1FkG0nWq3VIljqPhaNw35z_CeaJYbF3Cj_vjrcWoFzyN0uRoki514g6bf-AaXMZAEKo3cLl6DtHr8Z-uk6vPXqL5ClAxqzT21BAUd_FfzwgFVY3oGp1mYM9b_wrsIFwyNZF7mpwAqttqexO4-dWi7R0T3qtFJKncMe5Vs5NbW29tdrmDgMe6MTdRqXvq15_mznxRhAqR3O9Gfr7yoU00PtqrTY9VpHgyHz_3dG8rNekj1a5QRW0q6LWqCNpyUzVTow3_EvulWGxnctHOxVf1zgYUD7cNEVnlhBkJrNxGTeK0V0wgKx33JlkkX7EJo5Nd3t5gghaiOJiuAycCxBHKjdIsg4JeMlMVy_g2rMO_Myw-DF_V-S-HDYPh-wRqbd-u2aVzaS160s7Ux5tAgKy2vPYfh2qbCjweGVO6U8V6XqRyLzuXZ0r3WPE3Gog1OxmykgZcMbZMOF1LqpZJ0bGCCcBzZnNaIBVE9ZQAM11sduwhb2jaHdrh61bbiCW9l6nyRX4s3anmGvldGO9QgxJgMCFLrYRmfvrEiZpqAFeJydScJa_KJiLD9LhyvjvAQ'></script><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=Geist:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#610046",
+                        "secondary-container": "#00eefc",
+                        "surface-container-highest": "#32343e",
+                        "primary-fixed": "#f8d8ff",
+                        "primary": "#ecb2ff",
+                        "tertiary-container": "#dd00a3",
+                        "outline-variant": "#514255",
+                        "surface-bright": "#373943",
+                        "inverse-primary": "#9900cf",
+                        "on-primary": "#520071",
+                        "secondary": "#d3fbff",
+                        "surface-dim": "#11131c",
+                        "surface": "#11131c",
+                        "on-secondary-fixed-variant": "#004f54",
+                        "error": "#ffb4ab",
+                        "surface-container": "#1d1f29",
+                        "surface-container-lowest": "#0c0e17",
+                        "on-error": "#690005",
+                        "primary-fixed-dim": "#ecb2ff",
+                        "inverse-on-surface": "#2e303a",
+                        "on-error-container": "#ffdad6",
+                        "on-background": "#e1e1ef",
+                        "on-primary-fixed-variant": "#74009f",
+                        "tertiary": "#ffaed9",
+                        "surface-variant": "#32343e",
+                        "outline": "#9d8ba0",
+                        "on-surface-variant": "#d4c0d7",
+                        "on-primary-fixed": "#320047",
+                        "tertiary-fixed-dim": "#ffaed9",
+                        "on-tertiary-container": "#fffeff",
+                        "secondary-fixed-dim": "#00dbe9",
+                        "on-tertiary-fixed": "#3c002a",
+                        "on-surface": "#e1e1ef",
+                        "on-secondary": "#00363a",
+                        "surface-tint": "#ecb2ff",
+                        "on-tertiary-fixed-variant": "#890064",
+                        "surface-container-high": "#282933",
+                        "surface-container-low": "#191b24",
+                        "secondary-fixed": "#7df4ff",
+                        "on-secondary-container": "#00686f",
+                        "primary-container": "#bd00ff",
+                        "background": "#11131c",
+                        "tertiary-fixed": "#ffd8ea",
+                        "on-primary-container": "#ffffff",
+                        "inverse-surface": "#e1e1ef",
+                        "on-secondary-fixed": "#002022",
+                        "error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "container-max": "1440px",
+                        "margin-desktop": "64px",
+                        "stack-xl": "48px",
+                        "stack-xs": "4px",
+                        "margin-mobile": "20px",
+                        "stack-md": "16px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Geist"],
+                        "headline-lg-mobile": ["Space Grotesk"],
+                        "headline-md": ["Space Grotesk"],
+                        "display-lg": ["Space Grotesk"],
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Space Grotesk"],
+                        "label-sm": ["Geist"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #05060A; /* Level 0 Base */
+            color: #e1e1ef;
+            overflow-x: hidden;
+        }
+        
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .glass-panel:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .neon-slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+            outline: none;
+        }
+
+        .neon-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #00eefc;
+            cursor: pointer;
+            box-shadow: 0 0 10px #00eefc, 0 0 20px #00eefc;
+            transition: all 0.2s ease;
+        }
+
+        .neon-slider::-webkit-slider-thumb:hover {
+            transform: scale(1.2);
+        }
+
+        .neon-slider-primary::-webkit-slider-thumb {
+            background: #ecb2ff;
+            box-shadow: 0 0 10px #ecb2ff, 0 0 20px #ecb2ff;
+        }
+        
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .vfx-canvas-bg {
+            background: radial-gradient(circle at center, rgba(0, 238, 252, 0.05) 0%, transparent 70%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="h-screen w-screen flex flex-col font-body-md overflow-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-desktop h-[72px] bg-opacity-3 dark:bg-white/5 backdrop-blur-xl border-b border-white/10 shadow-none text-primary dark:text-primary transition-all duration-200">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-2xl" data-icon="deployed_code">deployed_code</span>
+<span class="font-display-lg text-headline-md tracking-tighter text-primary dark:text-primary">NEON_FORGE</span>
+</div>
+<div class="flex items-center gap-8 font-label-md text-label-md">
+<nav class="hidden md:flex gap-6">
+<!-- Assuming "Stage" is active intent for an Editor module -->
+<a class="text-primary font-bold hover:bg-white/10 transition-colors px-3 py-1.5 rounded-md flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-[18px]">view_in_ar</span> Stage
+                </a>
+<a class="text-on-surface-variant hover:bg-white/10 transition-colors px-3 py-1.5 rounded-md flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-[18px]">database</span> Assets
+                </a>
+<a class="text-on-surface-variant hover:bg-white/10 transition-colors px-3 py-1.5 rounded-md flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-[18px]">terminal</span> Scripts
+                </a>
+<a class="text-on-surface-variant hover:bg-white/10 transition-colors px-3 py-1.5 rounded-md flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-[18px]">layers</span> Layers
+                </a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary/20 text-primary border border-primary/30 px-4 py-1.5 rounded-full font-label-sm text-label-sm hover:bg-primary/30 transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">rocket_launch</span> Publish
+            </button>
+<div class="w-8 h-8 rounded-full bg-surface-variant border border-white/10 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A macro shot of a sleek, minimalist cybernetic eye glowing softly in deep neon purple and cyan, serving as a futuristic user profile avatar against a pitch black background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvo2oP2xm3j3SsaZjq_OsykWxO92ulK9ROtv0EyS6JI6Z_9dsd4-Yo4zzC1aFIKQ_RcdSH26lDYK-3z3pNzeMTITegxDhU3L279xazFuUmaULrRRk2DiAxU0ai0RYq3ZvLQ3KwacdFcPsN5ZQlGug5pHWbjej0garcVsUDIbyrZYHb1DwHwMhjINloXgwqSwFgfA72zNuhxw_fnvAuVOeoiRPWAo4-4k_O7axKYlqT_YRLXK-TbLh0GkrSwQNXdeKDEBI5IK7I5ng"/>
+</div>
+</div>
+</header>
+<!-- Main Workspace -->
+<main class="flex-1 flex mt-[72px] h-[calc(100vh-72px)] relative overflow-hidden">
+<!-- Left Panel: Scene Graph / Layers -->
+<aside class="hidden lg:flex flex-col w-[280px] glass-panel m-4 rounded-xl flex-shrink-0 z-10 custom-scrollbar overflow-y-auto">
+<div class="p-4 border-b border-white/10 flex justify-between items-center sticky top-0 bg-[#05060A]/80 backdrop-blur-md">
+<h2 class="font-headline-md text-headline-md text-on-surface">Scene Graph</h2>
+<button class="text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+<div class="p-4 flex flex-col gap-2 font-label-md text-label-md">
+<div class="flex items-center gap-2 text-on-surface cursor-pointer p-2 rounded hover:bg-white/5 group">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant transition-transform group-hover:text-primary">visibility</span>
+<span class="material-symbols-outlined text-[18px] text-primary">trip_origin</span>
+<span class="flex-1">Energy Core Orb</span>
+</div>
+<div class="pl-6 flex flex-col gap-1 border-l border-white/10 ml-3">
+<div class="flex items-center gap-2 text-on-surface-variant cursor-pointer p-2 rounded hover:bg-white/5 hover:text-on-surface">
+<span class="material-symbols-outlined text-[16px]">blur_on</span>
+<span class="flex-1">Core Bloom Emitter</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant cursor-pointer p-2 rounded hover:bg-white/5 hover:text-on-surface bg-white/5 border-l-2 border-secondary-container">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">scatter_plot</span>
+<span class="flex-1 text-secondary-container font-bold">Orbital Particles</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant cursor-pointer p-2 rounded hover:bg-white/5 hover:text-on-surface">
+<span class="material-symbols-outlined text-[16px]">lens_blur</span>
+<span class="flex-1">Chromatic Distortion</span>
+</div>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant cursor-pointer p-2 rounded hover:bg-white/5 mt-2">
+<span class="material-symbols-outlined text-[18px]">visibility_off</span>
+<span class="material-symbols-outlined text-[18px]">data_object</span>
+<span class="flex-1">Cybernetic Ring</span>
+</div>
+</div>
+</aside>
+<!-- Center Viewport: Stage -->
+<section class="flex-1 relative flex flex-col items-center justify-center m-4 z-0 vfx-canvas-bg border border-white/5 rounded-xl overflow-hidden">
+<!-- Simulated 3D Viewport placeholder -->
+<div class="absolute inset-0 w-full h-full flex items-center justify-center opacity-80" data-alt="A highly detailed, real-time 3D rendering of a futuristic glowing energy orb surrounded by swirling cyan and purple particle effects, floating in a dark, infinite grid space typical of a professional VFX software viewport. The lighting is dramatic and moody." style="background-image: url(&#39;https://lh3.googleusercontent.com/aida-public/AB6AXuAkThK9ZhmNIPCVRo-rlGzALsdvpN9mwIOz5CWtiUp-rdzV62OirjGQn8sImwv5ZoJ76LqnaE3Z_ROy6OkxMLt0YCGnModWfxAYONi14gODWNkqMs76tlRmNz2rmLGaagedW3If6WbP7LDy8ogXAmrhK2-DnzRbRBj1ZVR9-s-L5VrbXcdbCiBp9iRwOsIdH_tuqtuRGh8vtSVl2PP-Zod7OQgxoRfvOJT9vuCXi5m210k3f7FicSZyS9-dJmexxFMZi09N-k9bBOA&#39;)"></div>
+<!-- Viewport Controls overlay -->
+<div class="absolute top-4 left-4 glass-panel rounded-lg flex gap-1 p-1">
+<button class="p-2 rounded hover:bg-white/10 text-on-surface-variant hover:text-primary transition-colors" title="Select">
+<span class="material-symbols-outlined text-[20px]">pan_tool_alt</span>
+</button>
+<button class="p-2 rounded hover:bg-white/10 text-on-surface-variant hover:text-primary transition-colors" title="Translate">
+<span class="material-symbols-outlined text-[20px]">open_with</span>
+</button>
+<button class="p-2 rounded bg-white/10 text-primary transition-colors" title="Rotate">
+<span class="material-symbols-outlined text-[20px]">rotate_right</span>
+</button>
+<button class="p-2 rounded hover:bg-white/10 text-on-surface-variant hover:text-primary transition-colors" title="Scale">
+<span class="material-symbols-outlined text-[20px]">aspect_ratio</span>
+</button>
+</div>
+<div class="absolute bottom-4 right-4 flex gap-2 font-label-sm text-label-sm">
+<span class="glass-panel px-3 py-1 rounded-full text-on-surface-variant">FPS: 120</span>
+<span class="glass-panel px-3 py-1 rounded-full text-secondary-container">GPU Render: Active</span>
+</div>
+</section>
+<!-- Right Panel: Properties / VFX Editor -->
+<aside class="hidden md:flex flex-col w-[320px] glass-panel m-4 rounded-xl flex-shrink-0 z-10 custom-scrollbar overflow-y-auto">
+<div class="p-4 border-b border-white/10 sticky top-0 bg-[#05060A]/80 backdrop-blur-md z-20">
+<h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container">tune</span> Properties
+                </h2>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">Orbital Particles</div>
+</div>
+<div class="p-4 flex flex-col gap-6 font-body-md text-body-md">
+<!-- Transform Section -->
+<div class="space-y-4">
+<h3 class="font-label-md text-label-md text-on-surface border-b border-white/5 pb-2">Transform</h3>
+<div class="grid grid-cols-3 gap-2">
+<div class="bg-surface-container-low border border-white/5 rounded p-2 flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant mb-1">X</span>
+<span class="text-on-surface">0.00</span>
+</div>
+<div class="bg-surface-container-low border border-white/5 rounded p-2 flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant mb-1">Y</span>
+<span class="text-on-surface">1.50</span>
+</div>
+<div class="bg-surface-container-low border border-white/5 rounded p-2 flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant mb-1">Z</span>
+<span class="text-on-surface">-2.00</span>
+</div>
+</div>
+</div>
+<!-- VFX Parameters -->
+<div class="space-y-6">
+<h3 class="font-label-md text-label-md text-on-surface border-b border-white/5 pb-2 flex justify-between items-center">
+                        Visual Effects
+                        <label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-9 h-5 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[&#39;&#39;] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary-container"></div>
+</label>
+</h3>
+<!-- Bloom Slider -->
+<div class="space-y-2">
+<div class="flex justify-between font-label-md text-label-md">
+<span class="text-on-surface-variant">Bloom Intensity</span>
+<span class="text-secondary-container font-mono">3.2</span>
+</div>
+<input class="neon-slider" max="10" min="0" step="0.1" type="range" value="3.2"/>
+</div>
+<!-- Particle Density Slider -->
+<div class="space-y-2">
+<div class="flex justify-between font-label-md text-label-md">
+<span class="text-on-surface-variant">Particle Density</span>
+<span class="text-primary font-mono">85%</span>
+</div>
+<input class="neon-slider neon-slider-primary" max="100" min="0" type="range" value="85"/>
+</div>
+<!-- Chromatic Aberration Slider -->
+<div class="space-y-2">
+<div class="flex justify-between font-label-md text-label-md">
+<span class="text-on-surface-variant">Chromatic Aberration</span>
+<span class="text-secondary-container font-mono">1.5</span>
+</div>
+<input class="neon-slider" max="5" min="0" step="0.1" type="range" value="1.5"/>
+</div>
+<!-- Color Picker Mock -->
+<div class="space-y-2">
+<span class="font-label-md text-label-md text-on-surface-variant block">Emission Color</span>
+<div class="flex gap-2">
+<div class="w-8 h-8 rounded-full bg-[#00eefc] shadow-[0_0_15px_rgba(0,238,252,0.5)] cursor-pointer border-2 border-white/50"></div>
+<div class="w-8 h-8 rounded-full bg-[#ecb2ff] cursor-pointer border border-white/10 hover:border-white/30 transition-colors"></div>
+<div class="w-8 h-8 rounded-full bg-[#bd00ff] cursor-pointer border border-white/10 hover:border-white/30 transition-colors"></div>
+<div class="w-8 h-8 rounded-full bg-white cursor-pointer border border-white/10 hover:border-white/30 transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-surface-container-highest">add</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</aside>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 flex justify-around items-center px-4 py-2 bg-white/3 dark:bg-white/5 backdrop-blur-2xl border-t border-white/10 shadow-[0_-4px_20px_rgba(0,238,252,0.1)] rounded-t-xl">
+<a class="flex flex-col items-center justify-center text-secondary-container bg-secondary-container/10 rounded-xl px-4 py-1 font-label-sm text-label-sm translate-y-[-2px] transition-transform" href="#">
+<span class="material-symbols-outlined text-[24px] mb-1">view_in_ar</span>
+            Stage
+        </a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary-container hover:bg-white/5 rounded-xl px-4 py-1 font-label-sm text-label-sm transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px] mb-1">database</span>
+            Assets
+        </a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary-container hover:bg-white/5 rounded-xl px-4 py-1 font-label-sm text-label-sm transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px] mb-1">layers</span>
+            Layers
+        </a>
+</nav>
+</body></html>

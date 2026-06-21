@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AR Studio Settings</title>
+<script type='text/javascript' nonce='cpmYsvYhyahWnzfDpuIgHw==' src='https://contribution.usercontent.google.com/pAbk1ZQSJ0uMyXImG-hAbk8YmYGYAlaY47YdRHQrHndx1t6hLVSb7J6ADPnaH0p_qxiTrImHfYcURBNbmryOW9JTIsALPxP1sp-3KnkpOyZqdKA2mTyzxXlTXTzzvz3KE5G9O9S3wyjrZEkqkYcLgC-MkXh9G1bDcZMGlmcJQRw6M416wJDImS6FaEW_Jo5Uj1KA2DwFyft3RPvCuLSdkBM3ONqyRQU9Sxx8nwjzsYPAOlcZmEDWSu-ZYLldCz-r2pG_cSA8BKJauuzjglXae0e8r-c1fCz8huvMj7DJyAnRX04aTUD2W2ezGfkHYNqCVDk-3dp_L73q9t-8v3zuL7g_U_V-5IMk81uJgziIV6amLY_0eYHNVkVTNZhnD8jih4v2dyNe1RNiWi1NAnr34AGxNLJmm76EpJG159SHaIkgxWwMYBjTGzXn10oTOJGhCbdwRZAdCOP_dYBphhVduYnUkjntEAPbB-dBe5k4nXURuO1s1yzwWCr9mBV5Mv8qCH549TE6yBTEnqJeYO4b052Vi1KtY6c8rq4-YFTxtuvO02E3GT59vxQypKRS_CM6uohUSDSEsgymILZJwRdN3leg1EkqVy1ySW5wmrEU-pXjtTtnO2zSAt-nY045u7bZJ7anpZYu_vz5Pw7VsQ-iet8UzFZWeetyCbmZ5N912AtMvrKoWyPc6OpIp1rYvRTi_jeZsBl2jUks5-mCUCjKClX5eYsYQ6rJMbHqc33mp8hnJVJs9Mb46yhVj_4qp_YEfMO9ocj-FjlB3ptu4543tS7GnWoLuAcr_miKDg'></script><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=Geist:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#610046",
+                        "on-tertiary-fixed-variant": "#890064",
+                        "surface-variant": "#32343e",
+                        "on-secondary-fixed-variant": "#004f54",
+                        "primary": "#ecb2ff",
+                        "on-primary": "#520071",
+                        "on-primary-container": "#ffffff",
+                        "inverse-on-surface": "#2e303a",
+                        "surface-container-lowest": "#0c0e17",
+                        "surface-container-high": "#282933",
+                        "error": "#ffb4ab",
+                        "on-error-container": "#ffdad6",
+                        "surface-bright": "#373943",
+                        "inverse-surface": "#e1e1ef",
+                        "inverse-primary": "#9900cf",
+                        "primary-fixed": "#f8d8ff",
+                        "on-secondary-container": "#00686f",
+                        "on-error": "#690005",
+                        "background": "#11131c",
+                        "surface": "#11131c",
+                        "secondary-fixed": "#7df4ff",
+                        "on-surface-variant": "#d4c0d7",
+                        "on-primary-fixed-variant": "#74009f",
+                        "secondary-fixed-dim": "#00dbe9",
+                        "outline": "#9d8ba0",
+                        "tertiary": "#ffaed9",
+                        "surface-tint": "#ecb2ff",
+                        "surface-container": "#1d1f29",
+                        "on-background": "#e1e1ef",
+                        "tertiary-fixed-dim": "#ffaed9",
+                        "on-primary-fixed": "#320047",
+                        "outline-variant": "#514255",
+                        "on-surface": "#e1e1ef",
+                        "tertiary-container": "#dd00a3",
+                        "secondary": "#d3fbff",
+                        "tertiary-fixed": "#ffd8ea",
+                        "on-tertiary-container": "#fffeff",
+                        "secondary-container": "#00eefc",
+                        "primary-container": "#bd00ff",
+                        "primary-fixed-dim": "#ecb2ff",
+                        "surface-dim": "#11131c",
+                        "on-secondary": "#00363a",
+                        "on-secondary-fixed": "#002022",
+                        "error-container": "#93000a",
+                        "surface-container-low": "#191b24",
+                        "surface-container-highest": "#32343e",
+                        "on-tertiary-fixed": "#3c002a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "stack-xl": "48px",
+                        "margin-desktop": "64px",
+                        "container-max": "1440px",
+                        "stack-xs": "4px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Space Grotesk"],
+                        "display-lg": ["Space Grotesk"],
+                        "body-lg": ["Inter"],
+                        "label-md": ["Geist"],
+                        "headline-md": ["Space Grotesk"],
+                        "body-md": ["Inter"],
+                        "label-sm": ["Geist"],
+                        "headline-lg": ["Space Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #05060A; /* Level 0 Base */
+            color: #e1e1ef;
+        }
+        
+        .glass-panel {
+            background-color: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(40px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .glass-panel-interactive {
+            background-color: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(40px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .glass-panel-interactive:hover {
+            background-color: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 15px rgba(236, 178, 255, 0.1);
+        }
+
+        .neon-border {
+            border: 1px solid rgba(236, 178, 255, 0.5); /* primary color */
+            box-shadow: inset 0 0 10px rgba(236, 178, 255, 0.2);
+        }
+
+        .toggle-checkbox:checked {
+            right: 0;
+            border-color: #ecb2ff;
+        }
+        .toggle-checkbox:checked + .toggle-label {
+            background-color: #bd00ff;
+        }
+        .toggle-checkbox:checked + .toggle-label:after {
+            transform: translateX(100%);
+            border-color: white;
+        }
+        
+        /* Custom scrollbar for data dense areas */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(255,255,255,0.02);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255,255,255,0.1);
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255,255,255,0.2);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="antialiased min-h-screen flex flex-col md:flex-row relative overflow-hidden">
+<!-- TopAppBar (Mobile Only - Settings is a sub-page, but required to render Navs for demonstration based on prompt context, assuming it acts as a primary tool dashboard here) -->
+<header class="md:hidden bg-surface dark:bg-surface fixed top-0 w-full border-b border-outline-variant/10 backdrop-blur-xl shadow-none z-50 transition-all duration-300 ease-out flex items-center justify-between px-margin-mobile h-16">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary dark:text-primary cursor-pointer active:scale-95 transition-transform" data-icon="menu">menu</span>
+<h1 class="font-headline-md text-headline-md font-bold text-primary">Branding Studio</h1>
+</div>
+<div>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer active:scale-95 transition-transform" data-icon="account_circle">account_circle</span>
+</div>
+</header>
+<!-- NavigationDrawer (Desktop) -->
+<nav class="hidden md:flex bg-surface-container-low dark:bg-surface-container-low h-full w-72 rounded-r-xl border-r border-white/5 backdrop-blur-3xl shadow-xl fixed inset-y-0 left-0 z-[60] flex-col">
+<div class="p-6 border-b border-white/5">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">SA</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-primary text-sm font-bold">Studio Admin</h2>
+<p class="font-body-md text-body-md text-on-surface-variant text-xs">Pro Plan</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col py-4 flex-1 overflow-y-auto">
+<a class="text-on-surface-variant px-4 py-3 hover:bg-white/5 hover:text-on-surface transition-colors duration-200 flex items-center gap-3 font-body-md text-body-md" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+                Dashboard
+            </a>
+<a class="text-on-surface-variant px-4 py-3 hover:bg-white/5 hover:text-on-surface transition-colors duration-200 flex items-center gap-3 font-body-md text-body-md" href="#">
+<span class="material-symbols-outlined" data-icon="view_in_ar">view_in_ar</span>
+                Assets
+            </a>
+<a class="text-on-surface-variant px-4 py-3 hover:bg-white/5 hover:text-on-surface transition-colors duration-200 flex items-center gap-3 font-body-md text-body-md" href="#">
+<span class="material-symbols-outlined" data-icon="insights">insights</span>
+                Analytics
+            </a>
+<a class="bg-primary/20 text-primary border-l-4 border-primary px-4 py-3 transition-colors duration-200 flex items-center gap-3 font-body-md text-body-md" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+                Settings
+            </a>
+<a class="text-on-surface-variant px-4 py-3 hover:bg-white/5 hover:text-on-surface transition-colors duration-200 flex items-center gap-3 font-body-md text-body-md mt-auto" href="#">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+                Support
+            </a>
+</div>
+</nav>
+<!-- Main Canvas -->
+<main class="flex-1 w-full md:ml-72 pt-20 md:pt-8 px-4 md:px-margin-desktop pb-32 md:pb-8 h-screen overflow-y-auto relative z-10">
+<!-- Background Ambient Element -->
+<div class="absolute top-0 right-0 w-full h-full pointer-events-none overflow-hidden -z-10 opacity-30">
+<div class="absolute top-[-10%] right-[-5%] w-96 h-96 bg-primary-container rounded-full blur-[120px] opacity-20"></div>
+<div class="absolute bottom-[20%] left-[10%] w-64 h-64 bg-secondary-container rounded-full blur-[100px] opacity-10"></div>
+</div>
+<div class="max-w-container-max mx-auto space-y-gutter">
+<!-- Header Section -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-stack-xl">
+<div>
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-2 tracking-tight">AR Optimization &amp; Manifest</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Configure asset compression algorithms, texture memory limits, and target platform manifest requirements for native deployment.</p>
+</div>
+<div class="flex gap-3">
+<button class="px-6 py-2 rounded-lg font-label-md text-label-md bg-transparent border border-outline-variant text-on-surface-variant hover:bg-white/5 transition-colors">Discard</button>
+<button class="px-6 py-2 rounded-lg font-label-md text-label-md bg-primary-container text-on-primary-container shadow-[0_0_15px_rgba(189,0,255,0.4)] hover:bg-primary-fixed hover:text-on-primary transition-all active:scale-95 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]" data-icon="save">save</span>
+                        Save Configuration
+                    </button>
+</div>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Asset Compression (Span 8) -->
+<section class="glass-panel rounded-xl p-6 lg:col-span-8 flex flex-col">
+<div class="flex items-center gap-3 mb-6 border-b border-white/5 pb-4">
+<span class="material-symbols-outlined text-secondary" data-icon="compress">compress</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">3D Asset Compression</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 flex-1">
+<!-- Draco Settings -->
+<div class="glass-panel-interactive rounded-lg p-5">
+<div class="flex justify-between items-center mb-4">
+<h3 class="font-label-md text-label-md text-primary tracking-wider uppercase">Draco Encoder</h3>
+<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+<input checked="" class="toggle-checkbox absolute block w-5 h-5 rounded-full bg-white border-4 appearance-none cursor-pointer z-10 transition-all duration-300" id="toggle-draco" name="toggle-draco" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-5 rounded-full bg-surface-container-high cursor-pointer transition-colors duration-300" for="toggle-draco"></label>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm mb-4">Geometry compression for GLTF/GLB files. Best for complex meshes.</p>
+<div class="space-y-4">
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1 text-on-surface-variant">
+<span>Compression Level</span>
+<span class="text-secondary">7</span>
+</div>
+<input class="w-full h-1 bg-surface-container-high rounded-lg appearance-none cursor-pointer accent-secondary" max="10" min="0" type="range" value="7"/>
+</div>
+<div class="grid grid-cols-2 gap-4 pt-2">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Position Quantization</label>
+<div class="relative">
+<select class="w-full bg-surface-container-low border-b border-outline-variant text-on-surface font-body-md text-sm py-2 px-1 focus:outline-none focus:border-primary focus:border-b-2 appearance-none">
+<option>14 bits</option>
+<option>12 bits</option>
+<option>10 bits</option>
+</select>
+<span class="material-symbols-outlined absolute right-1 top-2 text-on-surface-variant pointer-events-none text-[18px]" data-icon="arrow_drop_down">arrow_drop_down</span>
+</div>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Normal Quantization</label>
+<div class="relative">
+<select class="w-full bg-surface-container-low border-b border-outline-variant text-on-surface font-body-md text-sm py-2 px-1 focus:outline-none focus:border-primary focus:border-b-2 appearance-none">
+<option>10 bits</option>
+<option>8 bits</option>
+</select>
+<span class="material-symbols-outlined absolute right-1 top-2 text-on-surface-variant pointer-events-none text-[18px]" data-icon="arrow_drop_down">arrow_drop_down</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Meshopt Settings -->
+<div class="glass-panel-interactive rounded-lg p-5">
+<div class="flex justify-between items-center mb-4">
+<h3 class="font-label-md text-label-md text-tertiary tracking-wider uppercase">Meshopt Encoder</h3>
+<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+<input class="toggle-checkbox absolute block w-5 h-5 rounded-full bg-white border-4 appearance-none cursor-pointer z-10 transition-all duration-300" id="toggle-meshopt" name="toggle-meshopt" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-5 rounded-full bg-surface-container-high cursor-pointer transition-colors duration-300" for="toggle-meshopt"></label>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm mb-4">Vertex cache optimization. Ideal for real-time web rendering performance.</p>
+<div class="space-y-4 opacity-50 pointer-events-none"> <!-- Disabled state -->
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1 text-on-surface-variant">
+<span>Target Error Rate</span>
+<span>0.01</span>
+</div>
+<input class="w-full h-1 bg-surface-container-high rounded-lg appearance-none cursor-pointer accent-tertiary" max="100" min="0" type="range" value="10"/>
+</div>
+<div class="mt-4 pt-4 border-t border-white/5">
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="form-checkbox bg-surface-container-low border-outline-variant text-tertiary rounded focus:ring-0 focus:ring-offset-0" type="checkbox"/>
+<span class="font-body-md text-sm text-on-surface-variant">Optimize vertex fetch</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Texture Limits (Span 4) -->
+<section class="glass-panel rounded-xl p-6 lg:col-span-4 flex flex-col">
+<div class="flex items-center gap-3 mb-6 border-b border-white/5 pb-4">
+<span class="material-symbols-outlined text-secondary" data-icon="texture">texture</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Texture Limits</h2>
+</div>
+<div class="space-y-6 flex-1">
+<div>
+<label class="font-label-md text-label-md text-on-surface block mb-2">Max Resolution Target</label>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2 px-3 rounded bg-surface-container-low border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary transition-colors font-label-sm text-label-sm">1024 x 1024</button>
+<button class="py-2 px-3 rounded neon-border bg-primary/10 text-primary font-label-sm text-label-sm">2048 x 2048</button>
+<button class="py-2 px-3 rounded bg-surface-container-low border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary transition-colors font-label-sm text-label-sm">4096 x 4096</button>
+<button class="py-2 px-3 rounded bg-surface-container-low border border-outline-variant text-on-surface-variant opacity-50 cursor-not-allowed font-label-sm text-label-sm">8192 (Pro)</button>
+</div>
+</div>
+<div>
+<label class="font-label-md text-label-md text-on-surface block mb-2">Format Compression</label>
+<div class="space-y-2">
+<label class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low border border-transparent hover:border-white/10 cursor-pointer transition-colors">
+<input checked="" class="form-radio text-primary bg-transparent border-outline-variant focus:ring-0 focus:ring-offset-0" name="tex-format" type="radio"/>
+<div class="flex flex-col">
+<span class="font-body-md text-sm text-on-surface">KTX2 / BasisU</span>
+<span class="font-body-md text-xs text-on-surface-variant">Universal hardware support</span>
+</div>
+<span class="ml-auto font-label-sm text-[10px] px-2 py-1 bg-secondary/20 text-secondary rounded">REC</span>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low border border-transparent hover:border-white/10 cursor-pointer transition-colors">
+<input class="form-radio text-primary bg-transparent border-outline-variant focus:ring-0 focus:ring-offset-0" name="tex-format" type="radio"/>
+<div class="flex flex-col">
+<span class="font-body-md text-sm text-on-surface">WebP</span>
+<span class="font-body-md text-xs text-on-surface-variant">High quality fallback</span>
+</div>
+</label>
+</div>
+</div>
+</div>
+</section>
+<!-- Native App Permissions & Manifest (Span 12) -->
+<section class="glass-panel rounded-xl p-6 lg:col-span-12">
+<div class="flex items-center justify-between mb-6 border-b border-white/5 pb-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container" data-icon="app_settings_alt">app_settings_alt</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Native Manifest &amp; Permissions</h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 py-1 px-2.5 rounded-full font-label-sm text-[10px] bg-secondary-container/20 text-secondary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+                                iOS Validated
+                            </span>
+<span class="inline-flex items-center gap-1.5 py-1 px-2.5 rounded-full font-label-sm text-[10px] bg-secondary-container/20 text-secondary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+                                Android Validated
+                            </span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+<!-- Core Requirements -->
+<div class="space-y-4">
+<h3 class="font-label-md text-label-md text-on-surface-variant uppercase border-b border-white/5 pb-2">Framework Requirements</h3>
+<label class="flex items-start gap-3 cursor-pointer group">
+<div class="mt-1">
+<input checked="" class="form-checkbox bg-surface-container-low border-outline-variant text-primary rounded focus:ring-0 focus:ring-offset-0" type="checkbox"/>
+</div>
+<div>
+<div class="font-body-md text-sm text-on-surface group-hover:text-primary transition-colors">Require ARCore (Android)</div>
+<div class="font-label-sm text-[11px] text-on-surface-variant font-mono mt-1 bg-black/30 p-1 rounded inline-block">&lt;uses-feature android:name="android.hardware.camera.ar" android:required="true" /&gt;</div>
+</div>
+</label>
+<label class="flex items-start gap-3 cursor-pointer group">
+<div class="mt-1">
+<input checked="" class="form-checkbox bg-surface-container-low border-outline-variant text-primary rounded focus:ring-0 focus:ring-offset-0" type="checkbox"/>
+</div>
+<div>
+<div class="font-body-md text-sm text-on-surface group-hover:text-primary transition-colors">Require ARKit (iOS)</div>
+<div class="font-label-sm text-[11px] text-on-surface-variant font-mono mt-1 bg-black/30 p-1 rounded inline-block">UIRequiredDeviceCapabilities: [arkit]</div>
+</div>
+</label>
+</div>
+<!-- Hardware Access -->
+<div class="space-y-4">
+<h3 class="font-label-md text-label-md text-on-surface-variant uppercase border-b border-white/5 pb-2">Hardware Access</h3>
+<div class="space-y-3">
+<div class="flex items-center justify-between p-2 rounded hover:bg-white/5 transition-colors">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant" data-icon="photo_camera">photo_camera</span>
+<span class="font-body-md text-sm text-on-surface">Camera Access</span>
+</div>
+<span class="font-label-sm text-xs text-error">Required</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded hover:bg-white/5 transition-colors">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant" data-icon="mic">mic</span>
+<span class="font-body-md text-sm text-on-surface">Microphone</span>
+</div>
+<div class="relative inline-block w-8 align-middle select-none">
+<input class="toggle-checkbox absolute block w-4 h-4 rounded-full bg-white border-2 appearance-none cursor-pointer z-10 transition-all duration-300" id="toggle-mic" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-4 rounded-full bg-surface-container-high cursor-pointer transition-colors duration-300" for="toggle-mic"></label>
+</div>
+</div>
+<div class="flex items-center justify-between p-2 rounded hover:bg-white/5 transition-colors">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant" data-icon="location_on">location_on</span>
+<span class="font-body-md text-sm text-on-surface">Geospatial / Location</span>
+</div>
+<div class="relative inline-block w-8 align-middle select-none">
+<input class="toggle-checkbox absolute block w-4 h-4 rounded-full bg-white border-2 appearance-none cursor-pointer z-10 transition-all duration-300" id="toggle-loc" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-4 rounded-full bg-surface-container-high cursor-pointer transition-colors duration-300" for="toggle-loc"></label>
+</div>
+</div>
+</div>
+</div>
+<!-- Prompt Strings -->
+<div class="space-y-4">
+<h3 class="font-label-md text-label-md text-on-surface-variant uppercase border-b border-white/5 pb-2">Permission Prompts (iOS Info.plist)</h3>
+<div>
+<label class="font-label-sm text-xs text-on-surface-variant block mb-1">NSCameraUsageDescription</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/30 rounded p-2 text-sm text-on-surface font-body-md focus:border-primary focus:ring-1 focus:ring-primary transition-all" type="text" value="This app requires camera access to render AR experiences."/>
+</div>
+<div>
+<label class="font-label-sm text-xs text-on-surface-variant block mb-1">NSLocationWhenInUseUsageDescription</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/10 rounded p-2 text-sm text-on-surface-variant font-body-md opacity-50 cursor-not-allowed" disabled="" placeholder="Required if Geospatial is enabled..." type="text"/>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden bg-surface/80 dark:bg-surface/80 text-primary dark:text-primary font-label-sm text-label-sm font-headline-md text-headline-md text-primary fixed bottom-0 w-full rounded-t-xl border-t border-white/10 backdrop-blur-2xl shadow-[0_-4px_20px_rgba(0,0,0,0.5)] z-50 flex justify-around items-center px-4 py-2">
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-transform duration-200 active:scale-90" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="deployed_code">deployed_code</span>
+<span>Experience</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-transform duration-200 active:scale-90" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="badge">badge</span>
+<span>Identity</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-transform duration-200 active:scale-90" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="language">language</span>
+<span>Domain</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary-container bg-primary/10 rounded-xl px-3 py-1 hover:text-primary transition-transform duration-200 active:scale-90" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="palette">palette</span>
+<span>Theme</span>
+</a>
+</nav>
+</body></html>
